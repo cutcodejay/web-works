@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html class='no-js' lang='zh-Hant-TW'>
+
+<head>
+	<meta charset='utf-8'>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+	<title>上架-旅宿列表-新增編輯 旅宿資料</title>
+	<meta description=''>
+	<meta keywords=''>
+	<link crossorigin='anonymous' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css'
+		rel='stylesheet'>
+
+
+	<link href='css/all.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body class='Web__admin'>
+	<!-- / ========================== Container_start ========================== -->
+	<div id='container'>
+		<!-- / ========================== Header_start ========================== -->
+		<div class='content header_bg'>
+			<header class='web_header'>
+				<div class='head_company'>
+					<button aria-controls='offcanvasExample' data-bs-target='#offcanvasExample' data-bs-toggle='offcanvas'
+						type='button'>
+						<img alt='' class='svg' src='images/bars.svg'>
+					</button>
+					<div class='logo'></div>
+				</div>
+				<div aria-labelledby='offcanvasExampleLabel' class='aside offcanvas offcanvas-start' id='offcanvasExample'
+					tabindex='-1'>
+					<div class='offcanvas-header'>
+						<h5 class='offcanvas-title' id='offcanvasExampleLabel'>
+							<a href=''>
+								<img alt='' class='svg' src='images/circle-question.svg'>
+								Help
+							</a>
+							<a href=''><img alt='' class='svg' src='images/right-from-bracket.svg'>登出
+							</a>
+						</h5>
+						<button aria-label='Close' class='btn-close' data-bs-dismiss='offcanvas' type='button'></button>
+					</div>
+					<div class='offcanvas-body'>
+						<div id='asideAdmin'>
+							<div class='aside_item'>
+								<h5>
+									<img alt='' class='svg' src='images/gear.svg'>
+									設定
+								</h5>
+								<div class='card card-body'>
+									<a href=''>基本資料</a>
+									<a href=''>員工列表</a>
+									<a href=''>角色設定</a>
+									<a href=''>功能選單維護</a>
+									<a href=''>類別字集</a>
+								</div>
+							</div>
+							<div class='aside_item'>
+								<h5>
+									旅宿管理
+								</h5>
+								<div class='card card-body'>
+									<a href=''>上架人員列表</a>
+									<a href=''>旅宿列表</a>
+									<a href=''>房型列表</a>
+									<a href=''>Line@ 上架管理</a>
+								</div>
+							</div>
+							<div class='aside_item'>
+								<h5>
+									訂單管理
+								</h5>
+								<div class='card card-body'>
+									<a href=''>訂單列表</a>
+									<a href=''>推薦碼列表</a>
+								</div>
+							</div>
+							<div class='aside_item'>
+								<h5>
+									銷售管理
+								</h5>
+								<div class='card card-body'>
+									<a href='LaunchedAlready_SalesReport.html'>銷售報表</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='head_data'>
+					<div class='user'>
+						<a href=''>
+							<img alt='' src='https://unsplash.it/250/250'>
+							Ton
+						</a>
+					</div>
+					<div class='setup'>
+						<a aria-expanded='false' class='btn btn-secondary dropdown-toggle' data-bs-toggle='dropdown' href='#'
+							role='button'>
+							<img alt='' class='svg' src='images/gear.svg'>
+							設定
+						</a>
+						<ul class='dropdown-menu'>
+							<li>
+								<a class='dropdown-item' href='#'>基本資料</a>
+							</li>
+							<li>
+								<a class='dropdown-item' href='#'>員工列表</a>
+							</li>
+							<li>
+								<a class='dropdown-item' href='#'>角色設定</a>
+							</li>
+							<li>
+								<a class='dropdown-item' href='#'>功能選單維護</a>
+							</li>
+							<li>
+								<a class='dropdown-item' href='#'>類別字集</a>
+							</li>
+							<li>
+								<a class='dropdown-item' href='#'>登出</a>
+							</li>
+						</ul>
+					</div>
+					<div class='help'>
+						<a href=''>
+							<img alt='' class='svg' src='images/circle-question.svg'>
+							Help
+						</a>
+					</div>
+				</div>
+			</header>
+		</div>
+
+		<!-- / ========================== Header_end ========================== -->
+		<!-- / ========================== Content_start ========================== -->
+		<div id='content'>
+			<!-- / ========================== Aside_start ========================== -->
+			<aside id='asideAdmin'>
+				<div class='aside_item'>
+					<h5>
+						旅宿管理
+					</h5>
+					<div class='card card-body'>
+						<a href='LaunchedAlready_personlist.html'>上架人員列表</a>
+						<a href='LaunchedAlready_guesthouselist.html'>旅宿列表</a>
+						<a href='LaunchedAlready_roomlist.html'>房型列表</a>
+						<a href='LaunchedAlready_ShelfManagement.html'>Line@ 上架管理</a>
+					</div>
+				</div>
+				<div class='aside_item'>
+					<h5>
+						訂單管理
+					</h5>
+					<div class='card card-body'>
+						<a href='LaunchedAlready_orderlist.html'>訂單列表</a>
+						<a href='LaunchedAlready_ReferralCode.html'>推薦碼列表</a>
+					</div>
+				</div>
+				<div class='aside_item'>
+					<h5>
+						銷售管理
+					</h5>
+					<div class='card card-body'>
+						<a href='LaunchedAlready_SalesReport.html'>銷售報表</a>
+					</div>
+				</div>
+			</aside>
+			<!-- / ========================== Aside_end ========================== -->
+
+			<!-- / ========================== Main_start ========================== -->
+			<main id='mainAdmin'>
+				<form action='' class='needs-validation' novalidate=''>
+					<h2>新增/編輯旅宿資料</h2>
+					<div class='form__Layout4'>
+						<div class='form__item'>
+							<label class='form-label' for='UpLine_GuestHouseNumber'>旅宿編號</label>
+							<input class='form-control' disabled='disabled' id='UpLine_GuestHouseNumber' required='required'
+								type='text' value='系統自動編號'>
+						</div>
+						<div class='form__item'>
+							<label class='form-label' for='UpLine_TaxIDNumber'>統一編號</label>
+							<input class='form-control' disabled='disabled' id='UpLine_TaxIDNumber' required='required' type='text'
+								value='90845830'>
+						</div>
+						<div class='form__item'>
+							<label class='form-label' for='UpLine_GuestHouseCityCounty'>旅宿縣市別</label>
+							<input class='form-control' disabled='disabled' id='UpLine_GuestHouseCityCounty' required='required'
+								type='text' value='台南市'>
+						</div>
+						<div class='form__item'>
+							<label class='form-label' for='UpLine_GuestHouseTownshipDistrict'>旅宿行政區</label>
+							<input class='form-control' disabled='disabled' id='UpLine_GuestHouseTownshipDistrict' required='required'
+								type='text' value='永康區'>
+						</div>
+					</div>
+					<div class='form__Layout2'>
+						<div class='form__item'>
+							<label class='form-label' for='UpLine_GuestHouseName'>旅宿名稱</label>
+							<input class='form-control' disabled='disabled' id='UpLine_GuestHouseName' required='required' type='text'
+								value='遊拹拹文旅'>
+						</div>
+					</div>
+					<!-- / === 簡介 ========================== -->
+					<div class='form__Layout'>
+						<div class='item--content'>
+							<div class='form__item'>
+								<label class='form-label' for='UpLine_GuestHousIntroduction'>
+									<i class='fa-solid fa-star'></i>
+									簡介
+								</label>
+								<textarea class='form-control' disabled='disabled' id='UpLine_GuestHousIntroduction' placeholder='請輸入簡介'
+									required='required' rows='5'></textarea>
+								<div class='valid-feedback'>簡介 OK!</div>
+								<div class='invalid-feedback'>簡介有誤，請重新輸入.</div>
+							</div>
+						</div>
+					</div>
+					<!-- / === 簡介 ========================== -->
+					<!-- / === 地址,旅宿電話(市話) ========================== -->
+					<div class='form__Layout2-3_1'>
+						<div class='item--content'>
+							<div class='form__item'>
+								<label class='form-label' for='UpLine_Address'>
+									<i class='fa-solid fa-star'></i>
+									地址
+								</label>
+								<input class='form-control' disabled='disabled' id='UpLine_Address' placeholder='請輸入地址'
+									required='required' type='text'>
+								<div class='valid-feedback'>地址 OK!</div>
+								<div class='invalid-feedback'>地址有誤，請重新輸入.</div>
+							</div>
+						</div>
+						<div class='item--content'>
+							<div class='form__item'>
+								<label class='form-label' for='UpLine_Telephone'>
+									<i class='fa-solid fa-star'></i>
+									旅宿電話(市話)
+								</label>
+								<input class='form-control' disabled='disabled' id='UpLine_Telephone' placeholder='請輸入旅宿電話'
+									required='required' type='tel'>
+								<div class='valid-feedback'>旅宿電話 OK!</div>
+								<div class='invalid-feedback'>旅宿電話有誤，請重新輸入.</div>
+							</div>
+						</div>
+					</div>
+					<!-- / === 地址,旅宿電話(市話) ========================== -->
+					<!-- / === 可入住時間,需退房時間 ========================== -->
+					<div class='form__Layout2'>
+						<div class='item--content'>
+							<div class='form__item'>
+								<label class='form-label' for='UpLine_CheckIn'>
+									<i class='fa-solid fa-star'></i>
+									可入住時間
+								</label>
+								<input class='form-control' disabled='disabled' id='UpLine_CheckIn' placeholder='請輸入住時間'
+									required='required' type='time'>
+								<div class='valid-feedback'>可入住時間 OK!</div>
+								<div class='invalid-feedback'>可入住時間有誤，請重新輸入.</div>
+							</div>
+						</div>
+						<div class='item--content'>
+							<div class='form__item'>
+								<label class='form-label' for='UpLine_CheckOut'>需退房時間</label>
+								<input class='form-control' disabled='disabled' id='UpLine_CheckOut' placeholder='請輸入退房時間'
+									required='required' type='time'>
+								<div class='valid-feedback'>需退房時間 OK!</div>
+								<div class='invalid-feedback'>需退房時間有誤，請重新輸入.</div>
+							</div>
+						</div>
+					</div>
+					<!-- / === 可入住時間,需退房時間 ========================== -->
+					<!-- / === 上傳旅宿圖片 ========================== -->
+					<div class='form__Layout'>
+						<div class='item--content'>
+							<div class='form__item'>
+								<label class='form-label' for='UpLine_GuestHouseImg'>
+									<i class='fa-solid fa-star'></i>
+									上傳旅宿圖片
+								</label>
+								<input class='form-control' disabled='disabled' id='UpLine_GuestHouseImg' placeholder='請上傳旅宿圖片'
+									required='required' type='file'>
+								<div class='valid-feedback'>上傳旅宿圖片 OK!</div>
+								<div class='invalid-feedback'>上傳旅宿圖片有誤，請重新輸入.</div>
+								<div class='form-text red'>＊圖片比例建議</div>
+								<button class='btn' data-bs-target='#exampleModal' data-bs-toggle='modal' type='button'>
+									旅宿電子名片預覽圖
+								</button>
+								<div aria-hidden='true' aria-labelledby='exampleModalLabel' class='modal fade' id='exampleModal'
+									tabindex='-1'>
+									<div class='modal-dialog'>
+										<div class='modal-content'>
+											<div class='modal-header'>
+												<h4>旅宿電子名片預覽圖</h4>
+												<button aria-label='Close' class='btn-close' data-bs-dismiss='modal' type='button'></button>
+											</div>
+											<div class='modal-body'>
+												<img alt='' src='images/card.jpg'>
+												<div class='button_box'>
+													<button class='btn' data-bs-dismiss='modal' type='button'>關閉</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- / === 上傳旅宿圖片 ========================== -->
+					<!-- / === Google地圖地點連結 ========================== -->
+					<div class='form__Layout'>
+						<div class='item--content'>
+							<div class='form__item'>
+								<label class='form-label' for='UpLine_GoogleMap'>
+									<i class='fa-solid fa-star'></i>
+									Google地圖地點連結
+								</label>
+								<input class='form-control' disabled='disabled' id='UpLine_GoogleMap' placeholder='請輸入Google地圖地點連結'
+									required='required' type='url'>
+								<div class='valid-feedback'>Google地圖地點連結 OK!</div>
+								<div class='invalid-feedback'>Google地圖地點連結有誤，請重新輸入.</div>
+							</div>
+						</div>
+					</div>
+					<!-- / === Google地圖地點連結 ========================== -->
+					<!-- / === 設施項目 ========================== -->
+					<div class='form__Layout'>
+						<div class='form__item'>
+							<label class='form-label' for=''>
+								<i class='fa-solid fa-star'></i>
+								設施項目
+							</label>
+							<div class='accordion accordion-flush' id='GuestHouseEquipment'>
+								<div class='accordion-item'>
+									<h2 class='accordion-header'>
+										<button aria-controls='GuestHouseEquipment1' aria-expanded='false' class='btn collapsed'
+											data-bs-target='#GuestHouseEquipment1' data-bs-toggle='collapse' type='button'>
+											公共區域設施與服務
+										</button>
+									</h2>
+									<div class='accordion-collapse collapse' data-bs-parent='#GuestHouseEquipment'
+										id='GuestHouseEquipment1'>
+										<div class='accordion-body'>
+											<div class='ProjectsBox'>
+												<ul>
+													<li>
+														<div class='form-check'>
+															<input checked='checked' class='form-check-input' disabled='disabled'
+																id='Checkbox_Meetingroom' type='checkbox'>
+															<label class='form-check-label' for='Checkbox_Meetingroom'>會議室</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input checked='checked' class='form-check-input' disabled='disabled'
+																id='Checkbox_BusinessCenter' type='checkbox'>
+															<label class='form-check-label' for='Checkbox_BusinessCenter'>商務中心</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input checked='checked' class='form-check-input' disabled='disabled' id='Checkbox_Saloon'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_Saloon'>交誼廳</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input checked='checked' class='form-check-input' disabled='disabled' id='Checkbox_Gym'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_Gym'>健身房</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_GamingZone'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_GamingZone'>兒童遊戲區</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_PublicBath'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_PublicBath'>公共浴池</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_SwimmingPool'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_SwimmingPool'>戶外游泳池</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_SwimmingBath'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_SwimmingBath'>室內游泳池</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_OpenAirBath'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_OpenAirBath'>露天浴池</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_HotSpring'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_HotSpring'>溫泉</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_CommunalRefrigerator'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_CommunalRefrigerator'>公用冰箱</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_PublicComputer'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_PublicComputer'>公共電腦</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_Elevator'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_Elevator'>電梯</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_SharedBathroom'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_SharedBathroom'>公用衛浴</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_PublicWiFi'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_PublicWiFi'>公共區域 WIFI</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_Transformer'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_Transformer'>變壓器</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_PlugAdaptor'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_PlugAdaptor'>轉接頭</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_Crib' type='checkbox'>
+															<label class='form-check-label' for='Checkbox_Crib'>嬰兒床</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_BabyBath'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_BabyBath'>嬰兒澡盆</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_Iron' type='checkbox'>
+															<label class='form-check-label' for='Checkbox_Iron'>熨斗/燙衣板</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_TravelTickets'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_TravelTickets'>代售旅遊票券</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_Owner' type='checkbox'>
+															<label class='form-check-label' for='Checkbox_Owner'>與主人同住</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_NoPetsAllowed'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_NoPetsAllowed'>禁止寵物</label>
+														</div>
+													</li>
+												</ul>
+												<ul>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_FaxPay' type='checkbox'>
+															<label class='form-check-label' for='Checkbox_FaxPay'>傳真/複印</label>
+															<select aria-label='Checkbox_FaxPay' class='form-select' disabled='disabled'>
+																<option value='free'>免費提供</option>
+																<option selected value='pay'>需額外購買，現場付費</option>
+															</select>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_Luggage' type='checkbox'>
+															<label class='form-check-label' for='Checkbox_Luggage'>行李寄放</label>
+															<select aria-label='Checkbox_Luggage' class='form-select' disabled='disabled'>
+																<option selected value='free'>免費提供</option>
+																<option value='pay'>需額外購買，現場付費</option>
+															</select>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_PetsAllowed'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_PetsAllowed'>寵物友善</label>
+															<select aria-label='Checkbox_PetsAllowed' class='form-select' disabled='disabled'>
+																<option selected value='free'>免費提供</option>
+																<option value='pay'>需額外購買，現場付費</option>
+															</select>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_ParkingSpace'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_ParkingSpace'>停車場</label>
+															<select aria-label='Checkbox_ParkingSpace' class='form-select' disabled='disabled'>
+																<option selected value='free'>免費提供</option>
+																<option value='pay'>需額外購買，現場付費</option>
+															</select>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_VenueRental'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_VenueRental'>提供場地租借</label>
+															<select aria-label='Checkbox_VenueRental' class='form-select' disabled='disabled'>
+																<option selected value='free'>免費提供</option>
+																<option value='pay'>需額外購買，現場付費</option>
+															</select>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_Earplugs'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_Earplugs'>耳塞</label>
+															<select aria-label='Checkbox_Earplugs' class='form-select' disabled='disabled'>
+																<option selected value='free'>免費提供</option>
+																<option value='pay'>需額外購買，現場付費</option>
+															</select>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_Dryer' type='checkbox'>
+															<label class='form-check-label' for='Checkbox_Dryer'>自助烘衣設備</label>
+															<select aria-label='Checkbox_Dryer' class='form-select' disabled='disabled'>
+																<option selected value='free'>免費提供</option>
+																<option value='pay'>需額外購買，現場付費</option>
+															</select>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_Laundromat'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_Laundromat'>自助洗衣設備</label>
+															<select aria-label='Checkbox_Laundromat' class='form-select' disabled='disabled'>
+																<option selected value='free'>免費提供</option>
+																<option value='pay'>需額外購買，現場付費</option>
+															</select>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_BBQ' type='checkbox'>
+															<label class='form-check-label' for='Checkbox_BBQ'>BBQ燒烤設備</label>
+															<select aria-label='Checkbox_BBQ' class='form-select' disabled='disabled'>
+																<option selected value='free'>免費提供</option>
+																<option value='pay'>需額外購買，現場付費</option>
+															</select>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_AirportService'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_AirportService'>機場接送</label>
+															<select aria-label='Checkbox_AirportService' class='form-select' disabled='disabled'>
+																<option selected value='free'>免費提供</option>
+																<option value='pay'>需額外購買，現場付費</option>
+															</select>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_PierService'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_PierService'>港口接送</label>
+															<select aria-label='Checkbox_PierService' class='form-select' disabled='disabled'>
+																<option selected value='free'>免費提供</option>
+																<option value='pay'>需額外購買，現場付費</option>
+															</select>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_ChargingStation'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_ChargingStation'>電動車充電設備</label>
+															<select aria-label='Checkbox_ChargingStation' class='form-select' disabled='disabled'>
+																<option selected value='free'>免費提供</option>
+																<option value='pay'>需額外購買，現場付費</option>
+															</select>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class='accordion-item'>
+									<h2 class='accordion-header'>
+										<button aria-controls='GuestHouseEquipment2' aria-expanded='false' class='btn collapsed'
+											data-bs-target='#GuestHouseEquipment2' data-bs-toggle='collapse' type='button'>
+											餐飲設備
+										</button>
+									</h2>
+									<div class='accordion-collapse collapse' data-bs-parent='#GuestHouseEquipment'
+										id='GuestHouseEquipment2'>
+										<div class='accordion-body'>
+											<div class='ProjectsBox'>
+												<ul>
+													<li>
+														<div class='form-check'>
+															<input checked='checked' class='form-check-input' disabled='disabled'
+																id='Checkbox_Restaurant' type='checkbox'>
+															<label class='form-check-label' for='Checkbox_Restaurant'>餐廳</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input checked='checked' class='form-check-input' disabled='disabled'
+																id='Checkbox_Dishwasher' type='checkbox'>
+															<label class='form-check-label' for='Checkbox_Dishwasher'>洗碗機</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input checked='checked' class='form-check-input' disabled='disabled'
+																id='Checkbox_Kitchenware' type='checkbox'>
+															<label class='form-check-label' for='Checkbox_Kitchenware'>廚房用具</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input checked='checked' class='form-check-input' disabled='disabled'
+																id='Checkbox_WaterCooler' type='checkbox'>
+															<label class='form-check-label' for='Checkbox_WaterCooler'>飲水機</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_WelcomeDrink'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_WelcomeDrink'>免費迎賓飲料</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_TeaCoffee'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_TeaCoffee'>茶/咖啡</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_DiningArea'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_DiningArea'>公用用餐區</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_Sharedkitchen'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_Sharedkitchen'>公用廚房</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_HighChair'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_HighChair'>兒童高腳椅</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_GasRange'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_GasRange'>爐台</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_Fridge' type='checkbox'>
+															<label class='form-check-label' for='Checkbox_Fridge'>冰箱</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_AlfrescoDining'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_AlfrescoDining'>戶外用餐區</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_WaterBoiler'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_WaterBoiler'>電熱水壺</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_Microwave'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_Microwave'>微波爐</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_Tableware'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_Tableware'>餐具</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_OrderFood'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_OrderFood'>代客訂餐服務</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_SparklingWater'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_SparklingWater'>氣泡水機</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_Toaster' type='checkbox'>
+															<label class='form-check-label' for='Checkbox_Toaster'>烤麵包機</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_Oven' type='checkbox'>
+															<label class='form-check-label' for='Checkbox_Oven'>烤箱</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class='accordion-item'>
+									<h2 class='accordion-header'>
+										<button aria-controls='GuestHouseEquipment3' aria-expanded='false' class='btn collapsed'
+											data-bs-target='#GuestHouseEquipment3' data-bs-toggle='collapse' type='button'>
+											安全設備
+										</button>
+									</h2>
+									<div class='accordion-collapse collapse' data-bs-parent='#GuestHouseEquipment'
+										id='GuestHouseEquipment3'>
+										<div class='accordion-body'>
+											<div class='ProjectsBox'>
+												<ul>
+													<li>
+														<div class='form-check'>
+															<input checked='checked' class='form-check-input' disabled='disabled'
+																id='Checkbox_Monitor' type='checkbox'>
+															<label class='form-check-label' for='Checkbox_Monitor'>監視器</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input checked='checked' class='form-check-input' disabled='disabled'
+																id='Checkbox_DelugeSprinklerSystem' type='checkbox'>
+															<label class='form-check-label' for='Checkbox_DelugeSprinklerSystem'>灑水設備</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input checked='checked' class='form-check-input' disabled='disabled'
+																id='Checkbox_MedicineKit' type='checkbox'>
+															<label class='form-check-label' for='Checkbox_MedicineKit'>醫藥箱</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_SmokeDetection'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_SmokeDetection'>煙霧偵測器</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_FireExtinguisher'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_FireExtinguisher'>滅火器</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_EscapeApparatus'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_EscapeApparatus'>逃生設備</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_COMonoxideDetector'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_COMonoxideDetector'>一氧化碳偵測器</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class='accordion-item'>
+									<h2 class='accordion-header'>
+										<button aria-controls='GuestHouseEquipment4' aria-expanded='false' class='btn collapsed'
+											data-bs-target='#GuestHouseEquipment4' data-bs-toggle='collapse' type='button'>
+											休閒娛樂設備
+										</button>
+									</h2>
+									<div class='accordion-collapse collapse' data-bs-parent='#GuestHouseEquipment'
+										id='GuestHouseEquipment4'>
+										<div class='accordion-body'>
+											<div class='ProjectsBox'>
+												<ul>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_BikeRental'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_BikeRental'>自行車租借</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input checked='checked' class='form-check-input' disabled='disabled'
+																id='Checkbox_TabletopGame' type='checkbox'>
+															<label class='form-check-label' for='Checkbox_TabletopGame'>桌遊</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input checked='checked' class='form-check-input' disabled='disabled' id='Checkbox_Books'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_Books'>圖書室</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_MachiangTable'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_MachiangTable'>麻將桌</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_Karaoke' type='checkbox'>
+															<label class='form-check-label' for='Checkbox_Karaoke'>卡拉OK</label>
+															<select aria-label='Checkbox_Karaoke' class='form-select' disabled='disabled'>
+																<option selected value='free'>免費提供</option>
+																<option value='pay'>需額外購買，現場付費</option>
+															</select>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_GuidedTour'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_GuidedTour'>導覽/課程</label>
+															<select aria-label='Checkbox_GuidedTour' class='form-select' disabled='disabled'>
+																<option selected value='free'>免費提供</option>
+																<option value='pay'>需額外購買，現場付費</option>
+															</select>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class='accordion-item'>
+									<h2 class='accordion-header'>
+										<button aria-controls='GuestHouseEquipment5' aria-expanded='false' class='btn collapsed'
+											data-bs-target='#GuestHouseEquipment5' data-bs-toggle='collapse' type='button'>
+											服務語言
+										</button>
+									</h2>
+									<div class='accordion-collapse collapse' data-bs-parent='#GuestHouseEquipment'
+										id='GuestHouseEquipment5'>
+										<div class='accordion-body'>
+											<div class='ProjectsBox'>
+												<ul>
+													<li>
+														<div class='form-check'>
+															<input checked='checked' class='form-check-input' disabled='disabled'
+																id='Checkbox_Chinese' type='checkbox'>
+															<label class='form-check-label' for='Checkbox_Chinese'>中文</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input checked='checked' class='form-check-input' disabled='disabled'
+																id='Checkbox_English' type='checkbox'>
+															<label class='form-check-label' for='Checkbox_English'>英文</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_Japanese'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_Japanese'>日文</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_Korean' type='checkbox'>
+															<label class='form-check-label' for='Checkbox_Korean'>韓文</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_HongKongCantonese'
+																type='checkbox'>
+															<label class='form-check-label' for='Checkbox_HongKongCantonese'>粵語</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_Thai' type='checkbox'>
+															<label class='form-check-label' for='Checkbox_Thai'>泰文</label>
+														</div>
+													</li>
+													<li>
+														<div class='form-check'>
+															<input class='form-check-input' disabled='disabled' id='Checkbox_Hokkien' type='checkbox'>
+															<label class='form-check-label' for='Checkbox_Hokkien'>閩南語</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- / === 設施項目 ========================== -->
+					<!-- / === 狀態 ========================== -->
+					<div class='form__item'>
+						<label class='form-label'>
+							<i class='fa-solid fa-star'></i>
+							狀態
+						</label>
+						<div class='form-check form-switch'>
+							<input class='form-check-input' disabled='disabled' id='flexSwitchCheckChecked' role='switch'
+								type='checkbox'>
+							<label class='form-check-label active' for='flexSwitchCheckChecked'>上架</label>
+							<label class='form-check-label noActive' for='flexSwitchCheckChecked'>下架</label>
+						</div>
+					</div>
+					<!-- / === 狀態 ========================== -->
+					<!-- / === Button Box ========================== -->
+					<div class='button_box'>
+						<button class='btn' type='button'>取消</button>
+						<button class='btn' type='submit'>確認</button>
+					</div>
+					<!-- / === Button Box ========================== -->
+				</form>
+			</main>
+			<!-- / ========================== Main_end ========================== -->
+		</div>
+		<!-- / ========================== Content_end ========================== -->
+		<script>
+			// Example starter JavaScript for disabling form submissions if there are invalid fields
+			(() => {
+				'use strict'
+
+				// Fetch all the forms we want to apply custom Bootstrap validation styles to
+				const forms = document.querySelectorAll('.needs-validation')
+
+				// Loop over them and prevent submission
+				Array.from(forms).forEach(form => {
+					form.addEventListener('submit', event => {
+						if (!form.checkValidity()) {
+							event.preventDefault()
+							event.stopPropagation()
+						}
+
+						form.classList.add('was-validated')
+					}, false)
+				})
+			})()
+		</script>
+
+		<!-- / ========================== Footer_start ========================== -->
+		<!-- / ========================== Footer_end ========================== -->
+	</div>
+	<!-- / ========================== Container_end ========================== -->
+	<script src='javascripts/rwd_nav.js' type='text/javascript'></script>
+
+	<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js'
+		type='text/javascript'></script>
+
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js' type='text/javascript'></script>
+
+	<script src='javascripts/SVGimgtoSVG.js' type='text/javascript'></script>
+
+	<script src='javascripts/all.js' type='text/javascript'></script>
+
+</body>
+
+</html>

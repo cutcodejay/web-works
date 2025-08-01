@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html class='no-js' lang='zh-Hant-TW'>
+
+<head>
+	<meta charset='utf-8'>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+	<title>上架-上架人員列表</title>
+	<meta description=''>
+	<meta keywords=''>
+	<link crossorigin='anonymous' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css'
+		rel='stylesheet'>
+
+
+	<link href='css/all.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body class='Web__admin'>
+	<!-- / ========================== Container_start ========================== -->
+	<div id='container'>
+		<!-- / ========================== Header_start ========================== -->
+		<div class='content header_bg'>
+			<header class='web_header'>
+				<div class='head_company'>
+					<button aria-controls='offcanvasExample' data-bs-target='#offcanvasExample' data-bs-toggle='offcanvas'
+						type='button'>
+						<img alt='' class='svg' src='images/bars.svg'>
+					</button>
+					<div class='logo'></div>
+				</div>
+				<div aria-labelledby='offcanvasExampleLabel' class='aside offcanvas offcanvas-start' id='offcanvasExample'
+					tabindex='-1'>
+					<div class='offcanvas-header'>
+						<h5 class='offcanvas-title' id='offcanvasExampleLabel'>
+							<a href=''>
+								<img alt='' class='svg' src='images/circle-question.svg'>
+								Help
+							</a>
+							<a href=''><img alt='' class='svg' src='images/right-from-bracket.svg'>登出
+							</a>
+						</h5>
+						<button aria-label='Close' class='btn-close' data-bs-dismiss='offcanvas' type='button'></button>
+					</div>
+					<div class='offcanvas-body'>
+						<div id='asideAdmin'>
+							<div class='aside_item'>
+								<h5>
+									<img alt='' class='svg' src='images/gear.svg'>
+									設定
+								</h5>
+								<div class='card card-body'>
+									<a href=''>基本資料</a>
+									<a href=''>員工列表</a>
+									<a href=''>角色設定</a>
+									<a href=''>功能選單維護</a>
+									<a href=''>類別字集</a>
+								</div>
+							</div>
+							<div class='aside_item'>
+								<h5>
+									旅宿管理
+								</h5>
+								<div class='card card-body'>
+									<a href=''>上架人員列表</a>
+									<a href=''>旅宿列表</a>
+									<a href=''>房型列表</a>
+									<a href=''>Line@ 上架管理</a>
+								</div>
+							</div>
+							<div class='aside_item'>
+								<h5>
+									訂單管理
+								</h5>
+								<div class='card card-body'>
+									<a href=''>訂單列表</a>
+									<a href=''>推薦碼列表</a>
+								</div>
+							</div>
+							<div class='aside_item'>
+								<h5>
+									銷售管理
+								</h5>
+								<div class='card card-body'>
+									<a href='LaunchedAlready_SalesReport.html'>銷售報表</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='head_data'>
+					<div class='user'>
+						<a href=''>
+							<img alt='' src='https://unsplash.it/250/250'>
+							Ton
+						</a>
+					</div>
+					<div class='setup'>
+						<a aria-expanded='false' class='btn btn-secondary dropdown-toggle' data-bs-toggle='dropdown' href='#'
+							role='button'>
+							<img alt='' class='svg' src='images/gear.svg'>
+							設定
+						</a>
+						<ul class='dropdown-menu'>
+							<li>
+								<a class='dropdown-item' href='#'>基本資料</a>
+							</li>
+							<li>
+								<a class='dropdown-item' href='#'>員工列表</a>
+							</li>
+							<li>
+								<a class='dropdown-item' href='#'>角色設定</a>
+							</li>
+							<li>
+								<a class='dropdown-item' href='#'>功能選單維護</a>
+							</li>
+							<li>
+								<a class='dropdown-item' href='#'>類別字集</a>
+							</li>
+							<li>
+								<a class='dropdown-item' href='#'>登出</a>
+							</li>
+						</ul>
+					</div>
+					<div class='help'>
+						<a href=''>
+							<img alt='' class='svg' src='images/circle-question.svg'>
+							Help
+						</a>
+					</div>
+				</div>
+			</header>
+		</div>
+
+		<!-- / ========================== Header_end ========================== -->
+		<!-- / ========================== Content_start ========================== -->
+		<div id='content'>
+			<!-- / ========================== Aside_start ========================== -->
+			<aside id='asideAdmin'>
+				<div class='aside_item'>
+					<h5>
+						旅宿管理
+					</h5>
+					<div class='card card-body'>
+						<a href='LaunchedAlready_personlist.html'>上架人員列表</a>
+						<a href='LaunchedAlready_guesthouselist.html'>旅宿列表</a>
+						<a href='LaunchedAlready_roomlist.html'>房型列表</a>
+						<a href='LaunchedAlready_ShelfManagement.html'>Line@ 上架管理</a>
+					</div>
+				</div>
+				<div class='aside_item'>
+					<h5>
+						訂單管理
+					</h5>
+					<div class='card card-body'>
+						<a href='LaunchedAlready_orderlist.html'>訂單列表</a>
+						<a href='LaunchedAlready_ReferralCode.html'>推薦碼列表</a>
+					</div>
+				</div>
+				<div class='aside_item'>
+					<h5>
+						銷售管理
+					</h5>
+					<div class='card card-body'>
+						<a href='LaunchedAlready_SalesReport.html'>銷售報表</a>
+					</div>
+				</div>
+			</aside>
+			<!-- / ========================== Aside_end ========================== -->
+
+			<!-- / ========================== Main_start ========================== -->
+			<main id='mainAdmin'>
+				<form action='' class='needs-validation' novalidate=''>
+					<h2>上架人員列表</h2>
+					<!-- / === main_bar 1 ========================== -->
+					<div class='main_bar'>
+						<div class='left_box'>
+							<div class='form_item'>
+								<button class='btn btnOne' data-bs-target='#OrderNewModal' data-bs-toggle='modal'
+									type='button'>新增上架人員</button>
+								<div aria-hidden='true' aria-labelledby='OrderNewModalLabel' class='modal fade text_left'
+									id='OrderNewModal' tabindex='-1'>
+									<div class='modal-dialog modal-lg'>
+										<div class='modal-content'>
+											<div class='modal-header'>
+												<h4>新增上架人員</h4>
+												<button aria-label='Close' class='btn-close' data-bs-dismiss='modal' type='button'></button>
+											</div>
+											<div class='modal-body'>
+												<div class='form__Layout4'>
+													<div class='form__item'>
+														<div class='item--content'>
+															<label class='form-label' for='UpLine_TaxIDNumber'>
+																<i class='fa-solid fa-star'></i>
+																統一編號
+															</label>
+															<input class='form-control' id='UpLine_TaxIDNumber' placeholder='請輸入統一編號'
+																required='required' type='text'>
+															<div class='valid-feedback'>統一編號 OK!</div>
+															<div class='invalid-feedback'>統一編號有誤，請重新輸入.</div>
+														</div>
+													</div>
+													<div class='form__item'>
+														<div class='item--content'>
+															<label class='form-label' for='UpLine_GuestHouseName'>
+																<i class='fa-solid fa-star'></i>
+																旅宿名稱
+															</label>
+															<input class='form-control' id='UpLine_GuestHouseName' placeholder='請輸入旅宿名稱'
+																required='required' type='text'>
+															<div class='valid-feedback'>旅宿名稱 OK!</div>
+															<div class='invalid-feedback'>旅宿名稱有誤，請重新輸入.</div>
+														</div>
+													</div>
+													<div class='form__item'>
+														<div class='item--content'>
+															<label class='form-label' for='UpLine_GuestHouseCityCounty'>
+																<i class='fa-solid fa-star'></i>
+																旅宿縣市別
+															</label>
+															<select aria-label='UpLine_GuestHouseCityCounty' class='form-select noLabel'
+																required='required'>
+																<option value='1'>台南市</option>
+																<option value='2'>Two</option>
+																<option value='3'>Three</option>
+															</select>
+															<div class='valid-feedback'>旅宿縣市別 OK!</div>
+															<div class='invalid-feedback'>旅宿縣市別有誤，請重新輸入.</div>
+														</div>
+													</div>
+													<div class='form__item'>
+														<div class='item--content'>
+															<label class='form-label' for='UpLine_GuestHouseTownshipDistrict'>
+																<i class='fa-solid fa-star'></i>
+																旅宿行政區
+															</label>
+															<select aria-label='UpLine_GuestHouseTownshipDistrict' class='form-select noLabel'
+																required='required'>
+																<option value='1'>安平區</option>
+																<option value='2'>Two</option>
+																<option value='3'>Three</option>
+															</select>
+															<div class='valid-feedback'>旅宿行政區 OK!</div>
+															<div class='invalid-feedback'>旅宿行政區有誤，請重新輸入.</div>
+														</div>
+													</div>
+												</div>
+												<div class='form__Layout2-3_1'>
+													<div class='form__item'>
+														<div class='item--content'>
+															<label class='form-label' for='UpLine_Address'>
+																<i class='fa-solid fa-star'></i>
+																旅宿地址
+															</label>
+															<input class='form-control' id='UpLine_Address' placeholder='請輸入旅宿地址' required='required'
+																type='text'>
+															<div class='valid-feedback'>旅宿地址 OK!</div>
+															<div class='invalid-feedback'>旅宿地址有誤，請重新輸入.</div>
+														</div>
+													</div>
+													<div class='form__item'>
+														<div class='item--content'>
+															<label class='form-label' for='UpLine_Telephone'>旅宿電話(市話)</label>
+															<input class='form-control' id='UpLine_Telephone' placeholder='請輸入旅宿電話'
+																required='required' type='text'>
+															<div class='valid-feedback'>旅宿電話 OK!</div>
+															<div class='invalid-feedback'>旅宿電話有誤，請重新輸入.</div>
+														</div>
+													</div>
+												</div>
+												<div class='form__Layout4'>
+													<div class='form__item'>
+														<div class='item--content'>
+															<label class='form-label' for='UpLine_Personnel'>
+																<i class='fa-solid fa-star'></i>
+																上架人員姓名
+															</label>
+															<input class='form-control' id='UpLine_Personnel' placeholder='請輸入上架人員姓名'
+																required='required' type='text'>
+															<div class='valid-feedback'>上架人員姓名 OK!</div>
+															<div class='invalid-feedback'>上架人員姓名有誤，請重新輸入.</div>
+														</div>
+													</div>
+													<div class='form__item'>
+														<div class='item--content'>
+															<label class='form-label' for='UpLine_Mobilel'>
+																<i class='fa-solid fa-star'></i>
+																上架人員手機
+															</label>
+															<input class='form-control' id='UpLine_Mobilel' placeholder='請輸入上架人員手機'
+																required='required' type='tel'>
+															<div class='valid-feedback'>上架人員手機 OK!</div>
+															<div class='invalid-feedback'>上架人員手機有誤，請重新輸入.</div>
+														</div>
+													</div>
+													<div class='form__item'>
+														<div class='item--content'>
+															<label class='form-label' for='UpLine_State'>
+																<i class='fa-solid fa-star'></i>
+																狀態
+															</label>
+															<select aria-label='UpLine_State' class='form-select noLabel' required='required'>
+																<option value='1'>正常</option>
+																<option value='2'>停用</option>
+															</select>
+															<div class='valid-feedback'>狀態 OK!</div>
+															<div class='invalid-feedback'>狀態有誤，請重新輸入.</div>
+														</div>
+													</div>
+												</div>
+												<div class='binding'>
+													是否綁定：
+													<span class='danger'>未綁定</span>
+												</div>
+												<div class='button_box'>
+													<button class='btn' type='button'>取消</button>
+													<button class='btn' type='submit'>確認</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='right_box'>
+							<div class='form_item'>
+								<div class='input-group'>
+									<input aria-describedby='search-button' class='form-control' placeholder='輸入統一編號/上架人員姓名'
+										type='search'>
+									<button class='btn btn-outline-secondary' id='search-button' type='button'>搜尋</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- / === main_bar 1 ========================== -->
+					<!-- / === main_bar 2 ========================== -->
+					<div class='main_bar'>
+						<div class='left_box'></div>
+						<div class='right_box'>
+							<div class='form_item'>
+								<div class='input-group'>
+									<select aria-label='CityCounty' class='form-select'>
+										<option selected='selected'>請選擇縣市別</option>
+										<option value='1'>One</option>
+										<option value='2'>Two</option>
+										<option value='3'>Three</option>
+									</select>
+									<select aria-label='TownshipDistrict' class='form-select'>
+										<option selected='selected'>請選擇行政區域</option>
+										<option value='1'>One</option>
+										<option value='2'>Two</option>
+										<option value='3'>Three</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- / === main_bar 2 ========================== -->
+					<!-- / === table ========================== -->
+					<table class='responTable'>
+						<thead>
+							<tr>
+								<th>序號</th>
+								<th><span>統一</span>編號
+								</th>
+								<th><span>旅宿</span>名稱
+								</th>
+								<th><span>旅宿</span>縣市別
+								</th>
+								<th><span>旅宿</span>行政區
+								</th>
+								<th><span>上架人員</span>姓名
+								</th>
+								<th><span>上架人員</span>手機
+								</th>
+								<th>狀態</th>
+								<th>是否綁定</th>
+								<th>功能</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td data-th='序號'>
+									<div class='td_content'>1</div>
+								</td>
+								<td data-th='統一編號'>
+									<div class='td_content'>90845830</div>
+								</td>
+								<td data-th='旅宿名稱'>
+									<div class='td_content'>遊拹拹文旅</div>
+								</td>
+								<td data-th='旅宿縣市別'>
+									<div class='td_content'>台南市</div>
+								</td>
+								<td data-th='旅宿行政區'>
+									<div class='td_content'>永康區</div>
+								</td>
+								<td data-th='上架人員姓名'>
+									<div class='td_content'>遊小拹</div>
+								</td>
+								<td data-th='上架人員手機'>
+									<div class='td_content'>09XX-XXX-XXX</div>
+								</td>
+								<td data-th='狀態'>
+									<div class='td_content success'>正常</div>
+								</td>
+								<td data-th='是否綁定'>
+									<div class='td_content unconfirmed'>已綁定</div>
+								</td>
+								<td data-th='功能'>
+									<div class='td_content'>
+										<button class='btn details' data-bs-target='#OrderModal' data-bs-toggle='modal'
+											type='button'>編輯</button>
+										<div aria-hidden='true' aria-labelledby='OrderModalLabel' class='modal fade text_left'
+											id='OrderModal' tabindex='-1'>
+											<div class='modal-dialog modal-lg'>
+												<div class='modal-content'>
+													<div class='modal-header'>
+														<h4>編輯上架人員</h4>
+														<button aria-label='Close' class='btn-close' data-bs-dismiss='modal' type='button'></button>
+													</div>
+													<div class='modal-body'>
+														<div class='form__Layout4'>
+															<div class='form__item'>
+																<div class='item--content'>
+																	<label class='form-label' for='UpLine_TaxIDNumber'>
+																		<i class='fa-solid fa-star'></i>
+																		統一編號
+																	</label>
+																	<input class='form-control' id='UpLine_TaxIDNumber' placeholder='請輸入統一編號'
+																		required='required' type='text' value='12341234'>
+																	<div class='valid-feedback'>統一編號 OK!</div>
+																	<div class='invalid-feedback'>統一編號有誤，請重新輸入.</div>
+																</div>
+															</div>
+															<div class='form__item'>
+																<div class='item--content'>
+																	<label class='form-label' for='UpLine_GuestHouseName'>
+																		<i class='fa-solid fa-star'></i>
+																		旅宿名稱
+																	</label>
+																	<input class='form-control' id='UpLine_GuestHouseName' placeholder='請輸入旅宿名稱'
+																		required='required' type='text' value='遊拹拹文旅'>
+																	<div class='valid-feedback'>旅宿名稱 OK!</div>
+																	<div class='invalid-feedback'>旅宿名稱有誤，請重新輸入.</div>
+																</div>
+															</div>
+															<div class='form__item'>
+																<div class='item--content'>
+																	<label class='form-label' for='UpLine_GuestHouseCityCounty'>
+																		<i class='fa-solid fa-star'></i>
+																		旅宿縣市別
+																	</label>
+																	<select aria-label='UpLine_GuestHouseCityCounty' class='form-select noLabel'
+																		required='required'>
+																		<option value='1'>台南市</option>
+																		<option value='2'>Two</option>
+																		<option value='3'>Three</option>
+																	</select>
+																	<div class='valid-feedback'>旅宿縣市別 OK!</div>
+																	<div class='invalid-feedback'>旅宿縣市別有誤，請重新輸入.</div>
+																</div>
+															</div>
+															<div class='form__item'>
+																<div class='item--content'>
+																	<label class='form-label' for='UpLine_GuestHouseTownshipDistrict'>
+																		<i class='fa-solid fa-star'></i>
+																		旅宿行政區
+																	</label>
+																	<select aria-label='UpLine_GuestHouseTownshipDistrict' class='form-select noLabel'
+																		required='required'>
+																		<option value='1'>安平區</option>
+																		<option value='2'>Two</option>
+																		<option value='3'>Three</option>
+																	</select>
+																	<div class='valid-feedback'>旅宿行政區 OK!</div>
+																	<div class='invalid-feedback'>旅宿行政區有誤，請重新輸入.</div>
+																</div>
+															</div>
+														</div>
+														<div class='form__Layout2-3_1'>
+															<div class='form__item'>
+																<div class='item--content'>
+																	<label class='form-label' for='UpLine_Address'>
+																		<i class='fa-solid fa-star'></i>
+																		旅宿地址
+																	</label>
+																	<input class='form-control' id='UpLine_Address' placeholder='請輸入旅宿地址'
+																		required='required' type='text' value='台北市中山北路2段96號'>
+																	<div class='valid-feedback'>旅宿地址 OK!</div>
+																	<div class='invalid-feedback'>旅宿地址有誤，請重新輸入.</div>
+																</div>
+															</div>
+															<div class='form__item'>
+																<div class='item--content'>
+																	<label class='form-label' for='UpLine_Telephone'>旅宿電話(市話)</label>
+																	<input class='form-control' id='UpLine_Telephone' placeholder='請輸入旅宿電話'
+																		required='required' type='tel' value='02-77516124'>
+																	<div class='valid-feedback'>旅宿電話 OK!</div>
+																	<div class='invalid-feedback'>旅宿電話有誤，請重新輸入.</div>
+																</div>
+															</div>
+														</div>
+														<div class='form__Layout4'>
+															<div class='form__item'>
+																<div class='item--content'>
+																	<label class='form-label' for='UpLine_Personnel'>
+																		<i class='fa-solid fa-star'></i>
+																		上架人員姓名
+																	</label>
+																	<input class='form-control' id='UpLine_Personnel' placeholder='請輸入上架人員姓名'
+																		required='required' type='text' value='莊孝為'>
+																	<div class='valid-feedback'>上架人員姓名 OK!</div>
+																	<div class='invalid-feedback'>上架人員姓名有誤，請重新輸入.</div>
+																</div>
+															</div>
+															<div class='form__item'>
+																<div class='item--content'>
+																	<label class='form-label' for='UpLine_Mobilel'>
+																		<i class='fa-solid fa-star'></i>
+																		上架人員手機
+																	</label>
+																	<input class='form-control' id='UpLine_Mobilel' placeholder='請輸入上架人員手機'
+																		required='required' type='tel' value='09XX-XXX-XXX'>
+																	<div class='valid-feedback'>上架人員手機 OK!</div>
+																	<div class='invalid-feedback'>上架人員手機有誤，請重新輸入.</div>
+																</div>
+															</div>
+															<div class='form__item'>
+																<div class='item--content'>
+																	<label class='form-label' for='UpLine_State'>
+																		<i class='fa-solid fa-star'></i>
+																		狀態
+																	</label>
+																	<select aria-label='UpLine_State' class='form-select noLabel' required='required'>
+																		<option value='1'>正常</option>
+																		<option value='2'>停用</option>
+																	</select>
+																	<div class='valid-feedback'>狀態 OK!</div>
+																	<div class='invalid-feedback'>狀態有誤，請重新輸入.</div>
+																</div>
+															</div>
+														</div>
+														<div class='binding'>
+															是否綁定：
+															<span class='unconfirmed'>已綁定</span>
+														</div>
+														<div class='button_box'>
+															<button class='btn' type='button'>取消</button>
+															<button class='btn' type='submit'>確認</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td data-th='序號'>
+									<div class='td_content'>1</div>
+								</td>
+								<td data-th='統一編號'>
+									<div class='td_content'>90845830</div>
+								</td>
+								<td data-th='旅宿名稱'>
+									<div class='td_content'>圖森文旅</div>
+								</td>
+								<td data-th='旅宿縣市別'>
+									<div class='td_content'>台南市</div>
+								</td>
+								<td data-th='旅宿行政區'>
+									<div class='td_content'>永康區</div>
+								</td>
+								<td data-th='上架人員姓名'>
+									<div class='td_content'>遊小拹</div>
+								</td>
+								<td data-th='上架人員手機'>
+									<div class='td_content'>09XX-XXX-XXX</div>
+								</td>
+								<td data-th='狀態'>
+									<div class='td_content danger'>停用</div>
+								</td>
+								<td data-th='是否綁定'>
+									<div class='td_content'>未綁定</div>
+								</td>
+								<td data-th='功能'>
+									<div class='td_content'>
+										<button class='btn details' data-bs-target='#OrderModal2' data-bs-toggle='modal'
+											type='button'>編輯</button>
+										<div aria-hidden='true' aria-labelledby='OrderModalLabel' class='modal fade text_left'
+											id='OrderModal2' tabindex='-1'>
+											<div class='modal-dialog modal-lg'>
+												<div class='modal-content'>
+													<div class='modal-header'>
+														<h4>編輯上架人員</h4>
+														<button aria-label='Close' class='btn-close' data-bs-dismiss='modal' type='button'></button>
+													</div>
+													<div class='modal-body'>
+														<div class='form__Layout4'>
+															<div class='form__item'>
+																<div class='item--content'>
+																	<label class='form-label' for='UpLine_TaxIDNumber'>
+																		<i class='fa-solid fa-star'></i>
+																		統一編號
+																	</label>
+																	<input class='form-control' id='UpLine_TaxIDNumber' placeholder='請輸入統一編號'
+																		required='required' type='text' value='12341234'>
+																	<div class='valid-feedback'>統一編號 OK!</div>
+																	<div class='invalid-feedback'>統一編號有誤，請重新輸入.</div>
+																</div>
+															</div>
+															<div class='form__item'>
+																<div class='item--content'>
+																	<label class='form-label' for='UpLine_GuestHouseName'>
+																		<i class='fa-solid fa-star'></i>
+																		旅宿名稱
+																	</label>
+																	<input class='form-control' id='UpLine_GuestHouseName' placeholder='請輸入旅宿名稱'
+																		required='required' type='text' value='圖森文旅'>
+																	<div class='valid-feedback'>旅宿名稱 OK!</div>
+																	<div class='invalid-feedback'>旅宿名稱有誤，請重新輸入.</div>
+																</div>
+															</div>
+															<div class='form__item'>
+																<div class='item--content'>
+																	<label class='form-label' for='UpLine_GuestHouseCityCounty'>
+																		<i class='fa-solid fa-star'></i>
+																		旅宿縣市別
+																	</label>
+																	<select aria-label='UpLine_GuestHouseCityCounty' class='form-select noLabel'
+																		required='required'>
+																		<option value='1'>台南市</option>
+																		<option value='2'>Two</option>
+																		<option value='3'>Three</option>
+																	</select>
+																	<div class='valid-feedback'>旅宿縣市別 OK!</div>
+																	<div class='invalid-feedback'>旅宿縣市別有誤，請重新輸入.</div>
+																</div>
+															</div>
+															<div class='form__item'>
+																<div class='item--content'>
+																	<label class='form-label' for='UpLine_GuestHouseTownshipDistrict'>
+																		<i class='fa-solid fa-star'></i>
+																		旅宿行政區
+																	</label>
+																	<select aria-label='UpLine_GuestHouseTownshipDistrict' class='form-select noLabel'
+																		required='required'>
+																		<option value='1'>安平區</option>
+																		<option value='2'>Two</option>
+																		<option value='3'>Three</option>
+																	</select>
+																	<div class='valid-feedback'>旅宿行政區 OK!</div>
+																	<div class='invalid-feedback'>旅宿行政區有誤，請重新輸入.</div>
+																</div>
+															</div>
+														</div>
+														<div class='form__Layout2-3_1'>
+															<div class='form__item'>
+																<div class='item--content'>
+																	<label class='form-label' for='UpLine_Address'>
+																		<i class='fa-solid fa-star'></i>
+																		旅宿地址
+																	</label>
+																	<input class='form-control' id='UpLine_Address' placeholder='請輸入旅宿地址'
+																		required='required' type='text' value='台北市中山北路2段96號'>
+																	<div class='valid-feedback'>旅宿地址 OK!</div>
+																	<div class='invalid-feedback'>旅宿地址有誤，請重新輸入.</div>
+																</div>
+															</div>
+															<div class='form__item'>
+																<div class='item--content'>
+																	<label class='form-label' for='UpLine_Telephone'>旅宿電話(市話)</label>
+																	<input class='form-control' id='UpLine_Telephone' placeholder='請輸入旅宿電話'
+																		required='required' type='text' value='02-77516124'>
+																	<div class='valid-feedback'>旅宿電話 OK!</div>
+																	<div class='invalid-feedback'>旅宿電話有誤，請重新輸入.</div>
+																</div>
+															</div>
+														</div>
+														<div class='form__Layout4'>
+															<div class='form__item'>
+																<div class='item--content'>
+																	<label class='form-label' for='UpLine_Personnel'>
+																		<i class='fa-solid fa-star'></i>
+																		上架人員姓名
+																	</label>
+																	<input class='form-control' id='UpLine_Personnel' placeholder='請輸入上架人員姓名'
+																		required='required' type='text' value='莊孝為'>
+																	<div class='valid-feedback'>上架人員姓名 OK!</div>
+																	<div class='invalid-feedback'>上架人員姓名有誤，請重新輸入.</div>
+																</div>
+															</div>
+															<div class='form__item'>
+																<div class='item--content'>
+																	<label class='form-label' for='UpLine_Mobilel'>
+																		<i class='fa-solid fa-star'></i>
+																		上架人員手機
+																	</label>
+																	<input class='form-control' id='UpLine_Mobilel' placeholder='請輸入上架人員手機'
+																		required='required' type='tel' value='09XX-XXX-XXX'>
+																	<div class='valid-feedback'>上架人員手機 OK!</div>
+																	<div class='invalid-feedback'>上架人員手機有誤，請重新輸入.</div>
+																</div>
+															</div>
+															<div class='form__item'>
+																<div class='item--content'>
+																	<label class='form-label' for='UpLine_State'>
+																		<i class='fa-solid fa-star'></i>
+																		狀態
+																	</label>
+																	<select aria-label='UpLine_State' class='form-select noLabel' required='required'>
+																		<option value='1'>正常</option>
+																		<option value='2'>停用</option>
+																	</select>
+																	<div class='valid-feedback'>狀態 OK!</div>
+																	<div class='invalid-feedback'>狀態有誤，請重新輸入.</div>
+																</div>
+															</div>
+														</div>
+														<div class='binding'>
+															是否綁定：
+															<span class='danger'>未綁定</span>
+														</div>
+														<div class='button_box'>
+															<button class='btn' type='button'>取消</button>
+															<button class='btn' type='submit'>確認</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- / === table ========================== -->
+					<nav aria-label='Page navigation example' class='web_pagination'>
+						<ul class='pagination justify-content-center'>
+							<li class='page-item'>
+								<a class='page-link' href='#'>Previous</a>
+							</li>
+							<li class='page-item active'>
+								<a class='page-link' href='#'>1</a>
+							</li>
+							<li class='page-item'>
+								<a class='page-link' href='#'>2</a>
+							</li>
+							<li class='page-item'>
+								<a class='page-link' href='#'>3</a>
+							</li>
+							<li class='page-item'>
+								<a class='page-link' href='#'>Next</a>
+							</li>
+						</ul>
+					</nav>
+				</form>
+			</main>
+			<!-- / ========================== Main_end ========================== -->
+		</div>
+		<!-- / ========================== Content_end ========================== -->
+		<script>
+			// Example starter JavaScript for disabling form submissions if there are invalid fields
+			(() => {
+				'use strict'
+
+				// Fetch all the forms we want to apply custom Bootstrap validation styles to
+				const forms = document.querySelectorAll('.needs-validation')
+
+				// Loop over them and prevent submission
+				Array.from(forms).forEach(form => {
+					form.addEventListener('submit', event => {
+						if (!form.checkValidity()) {
+							event.preventDefault()
+							event.stopPropagation()
+						}
+
+						form.classList.add('was-validated')
+					}, false)
+				})
+			})()
+		</script>
+
+		<!-- / ========================== Footer_start ========================== -->
+		<!-- / ========================== Footer_end ========================== -->
+	</div>
+	<!-- / ========================== Container_end ========================== -->
+	<script src='javascripts/rwd_nav.js' type='text/javascript'></script>
+
+	<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js'
+		type='text/javascript'></script>
+
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js' type='text/javascript'></script>
+
+	<script src='javascripts/SVGimgtoSVG.js' type='text/javascript'></script>
+
+	<script src='javascripts/all.js' type='text/javascript'></script>
+
+</body>
+
+</html>

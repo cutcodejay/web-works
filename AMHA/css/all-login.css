@@ -1,0 +1,2804 @@
+@charset "UTF-8";
+/***************************************************************************/
+/*                                  Reset                                  */
+/***************************************************************************/
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font size within `section` and `article` contexts in
+ * Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/**
+ * Set consistent quote types.
+ */
+q {
+  quotes: "“" "”" "‘" "’";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+input[type=checkbox],
+input[type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/***************************************************************************/
+/*                                   Color                                 */
+/***************************************************************************/
+/***************************************************************************/
+/*                                 Style                                   */
+/***************************************************************************/
+.success {
+  color: #198754;
+}
+
+.danger {
+  color: #DC3545;
+}
+
+.warning {
+  color: #F3BC17;
+}
+
+.info {
+  color: #04A4C4;
+}
+
+.bg--success {
+  background-color: #198754;
+}
+
+.bg--danger {
+  background-color: #DC3545;
+}
+
+.bg--warning {
+  background-color: #F3BC17;
+}
+
+.bg--info {
+  background-color: #04A4C4;
+}
+
+.btn-outline.success {
+  color: #198754 !important;
+  border-color: #198754 !important;
+}
+
+.btn-outline.danger {
+  color: #DC3545 !important;
+  border-color: #DC3545 !important;
+}
+
+.btn-outline.warning {
+  color: #F3BC17 !important;
+  border-color: #F3BC17 !important;
+}
+
+.btn-outline.info {
+  color: #04A4C4 !important;
+  border-color: #04A4C4 !important;
+}
+
+.red {
+  color: #dc3545;
+}
+
+/***************************************************************************/
+/*                                 Typography                              */
+/***************************************************************************/
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  -webkit-text-size-adjust: none;
+  text-rendering: optimizeLegibility;
+  line-height: 1.5;
+  color: #727171;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Lora", serif;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #727171;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+h1, .h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+h2, .h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+
+h3, .h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+
+h4, .h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+h6, .h6 {
+  font-size: 1.1rem;
+}
+
+@media (min-width: 1200px) {
+  h1, .h1 {
+    font-size: 2.5rem;
+  }
+  h2, .h2 {
+    font-size: 2rem;
+  }
+  h3, .h3 {
+    font-size: 1.75rem;
+  }
+  h4, .h4 {
+    font-size: 1.5rem;
+  }
+  h5, .h5 {
+    font-size: 1.25rem;
+  }
+  h6, .h6 {
+    font-size: 1rem;
+  }
+}
+p, li, th, td {
+  font-size: 1.1rem;
+  line-height: 1.65rem;
+  color: #727171;
+  margin-bottom: 1rem;
+}
+
+p:last-child, li:last-child {
+  margin-bottom: 0;
+}
+
+th, td {
+  line-height: 1.25;
+  margin-bottom: 0;
+}
+
+p.small {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+ul {
+  line-height: 1;
+}
+ul li {
+  margin-bottom: 0.5rem;
+}
+ul li:last-child {
+  margin-bottom: 0;
+}
+
+/***************************************************************************/
+/*                                FormStyle                                */
+/***************************************************************************/
+label.form-label {
+  font-weight: 400;
+  word-break: break-word;
+}
+
+input.form-control, select.form-select, textarea.form-control {
+  color: #727171;
+}
+
+.form-control.is-valid:focus {
+  border-color: #289A51;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(40, 154, 81, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(40, 154, 81, 0.25);
+}
+
+.form-select.is-valid {
+  border-color: #289A51;
+}
+
+.was-validated .form-control:valid:focus {
+  border-color: #289A51;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(40, 154, 81, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(40, 154, 81, 0.25);
+}
+.was-validated .form-control:invalid:focus {
+  border-color: #289A51;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(40, 154, 81, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(40, 154, 81, 0.25);
+}
+.was-validated .form-control:valid {
+  border-color: #289A51;
+}
+.was-validated .form-select:valid {
+  border-color: #289A51;
+}
+.was-validated .form-select:valid:focus {
+  border-color: #289A51;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(40, 154, 81, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(40, 154, 81, 0.25);
+}
+.was-validated .form-check-input:valid:checked {
+  background-color: #289A51;
+}
+.was-validated .form-check-input:valid:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(40, 154, 81, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(40, 154, 81, 0.25);
+}
+.was-validated .form-check-input:valid {
+  border-color: #289A51;
+}
+.was-validated .form-check-input:valid ~ .form-check-label {
+  color: #289A51;
+}
+
+/* =============================================================== */
+/* input
+/* =============================================================== */
+input[type=text]::-moz-placeholder, input[type=tel]::-moz-placeholder, input[type=email]::-moz-placeholder, input[type=url]::-moz-placeholder, input[type=search]::-moz-placeholder, input[type=password]::-moz-placeholder, input[type=number]::-moz-placeholder {
+  color: #adb5bd;
+  font-weight: 300;
+  letter-spacing: 0.7px;
+}
+input[type=text]::-webkit-input-placeholder, input[type=tel]::-webkit-input-placeholder, input[type=email]::-webkit-input-placeholder, input[type=url]::-webkit-input-placeholder, input[type=search]::-webkit-input-placeholder, input[type=password]::-webkit-input-placeholder, input[type=number]::-webkit-input-placeholder {
+  color: #adb5bd;
+  font-weight: 300;
+  letter-spacing: 0.7px;
+}
+input[type=text]:-ms-input-placeholder, input[type=tel]:-ms-input-placeholder, input[type=email]:-ms-input-placeholder, input[type=url]:-ms-input-placeholder, input[type=search]:-ms-input-placeholder, input[type=password]:-ms-input-placeholder, input[type=number]:-ms-input-placeholder {
+  color: #adb5bd;
+  font-weight: 300;
+  letter-spacing: 0.7px;
+}
+input[type=text]::-ms-input-placeholder, input[type=tel]::-ms-input-placeholder, input[type=email]::-ms-input-placeholder, input[type=url]::-ms-input-placeholder, input[type=search]::-ms-input-placeholder, input[type=password]::-ms-input-placeholder, input[type=number]::-ms-input-placeholder {
+  color: #adb5bd;
+  font-weight: 300;
+  letter-spacing: 0.7px;
+}
+input[type=text]::placeholder,
+input[type=tel]::placeholder,
+input[type=email]::placeholder,
+input[type=url]::placeholder,
+input[type=search]::placeholder,
+input[type=password]::placeholder,
+input[type=number]::placeholder {
+  color: #adb5bd;
+  font-weight: 300;
+  letter-spacing: 0.7px;
+}
+
+input[type=color i] {
+  inline-size: 50px;
+  padding: 1px 2px;
+  vertical-align: middle;
+  color: buttontext;
+  background-color: buttonface;
+  border: buttonborder 1px solid;
+  -o-border-image: initial;
+     border-image: initial;
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto;
+  cursor: default;
+  border-radius: 4px;
+}
+
+.form-control-color:valid {
+  width: 50px !important;
+  padding: 1px 2px !important;
+  background-image: none !important;
+}
+
+input[type=range] {
+  width: 100%;
+}
+
+.form-control:focus {
+  border-color: #7edda0;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(40, 154, 81, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(40, 154, 81, 0.25);
+}
+
+input[type=text].ring-primary-500 {
+  -webkit-box-shadow: 0px 0px 0px 1px #289A51;
+          box-shadow: 0px 0px 0px 1px #289A51;
+}
+
+input.focus\:ring-2:focus {
+  -webkit-box-shadow: 0px 0px 0px 1px #289A51;
+          box-shadow: 0px 0px 0px 1px #289A51;
+}
+
+/* =============================================================== */
+/* Select
+/* =============================================================== */
+select::-moz-placeholder {
+  color: #adb5bd;
+}
+select::-webkit-input-placeholder {
+  color: #adb5bd;
+}
+select:-ms-input-placeholder {
+  color: #adb5bd;
+}
+select::-ms-input-placeholder {
+  color: #adb5bd;
+}
+select::placeholder {
+  color: #adb5bd;
+}
+
+.form-select:focus {
+  border-color: #7edda0;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(40, 154, 81, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(40, 154, 81, 0.25);
+}
+
+button.focus\:ring-2:focus {
+  -webkit-box-shadow: 0px 0px 0px 1px #289A51;
+          box-shadow: 0px 0px 0px 1px #289A51;
+}
+
+/* =============================================================== */
+/* Checkbox, Radio, Switches, Checkbox Button, Radio Button
+/* =============================================================== */
+input[type=checkbox]:checked input[type=radio]:checked,
+.form-check-input:checked {
+  background-color: #289A51;
+  border-color: #7edda0;
+}
+
+.form-check {
+  min-height: auto;
+  margin-bottom: 0.25rem;
+}
+.form-check .form-check-input {
+  width: 25px;
+  height: 25px;
+  margin-top: -0.06rem;
+  margin-right: 0.5rem;
+}
+
+.form-check:last-child {
+  margin-bottom: 0;
+}
+
+.form-check-input:focus {
+  border-color: #7edda0;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(40, 154, 81, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(40, 154, 81, 0.25);
+}
+
+.form-switch {
+  display: flex;
+  align-items: center;
+}
+.form-switch .form-check-input {
+  width: 2.5rem;
+  margin-right: 0px;
+}
+.form-switch .form-check-input:focus {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+}
+.form-switch .form-check-input:checked ~ .active {
+  display: block;
+}
+.form-switch .form-check-input:checked ~ .noActive {
+  display: none;
+}
+.form-switch .form-check-input ~ .active {
+  display: none;
+}
+.form-switch .form-check-input ~ .noActive {
+  display: block;
+}
+
+input.full[type=checkbox],
+input.full[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+
+.form-checkbox.text-primary-500:checked, .form-radio.text-primary-500:checked {
+  background-color: #289A51;
+}
+
+/* =============================================================== */
+/* textarea
+/* =============================================================== */
+textarea.form-control::-moz-placeholder {
+  color: #adb5bd;
+}
+textarea.form-control::-webkit-input-placeholder {
+  color: #adb5bd;
+}
+textarea.form-control:-ms-input-placeholder {
+  color: #adb5bd;
+}
+textarea.form-control::-ms-input-placeholder {
+  color: #adb5bd;
+}
+textarea.form-control::placeholder {
+  color: #adb5bd;
+}
+
+textarea.focus\:ring-2:focus {
+  -webkit-box-shadow: 0px 0px 0px 1px #289A51;
+          box-shadow: 0px 0px 0px 1px #289A51;
+}
+
+/* =============================================================== */
+/* Button
+/* =============================================================== */
+button.btn_hover:hover[type=button],
+input.btn_hover:hover[type=button],
+input.btn_hover:hover[type=submit],
+input.btn_hover:hover[type=reset] {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+button.bg-primary-500 {
+  background-color: #289A51;
+}
+
+button.bg-primary-500:hover {
+  background-color: #33c266;
+}
+
+.hover\:bg-primary-50 {
+  color: #289A51;
+}
+
+.hover\:bg-primary-50:hover {
+  color: #289A51;
+  background-color: #a6e8be;
+}
+
+/* =============================================================== */
+/* range
+/* =============================================================== */
+input[type=range].text-primary-500 {
+  color: #289A51;
+}
+
+input[type=range] ~ span.bg-primary-500 {
+  background-color: #289A51;
+}
+
+/***************************************************************************/
+/*                                    Plug                                 */
+/***************************************************************************/
+/* ====================== 文字 ====================== */
+.text_center {
+  text-align: center;
+}
+
+.text_left {
+  text-align: left;
+}
+
+.text_right {
+  text-align: right;
+}
+
+.text_nowrap {
+  white-space: nowrap;
+}
+
+/* ====================== 圖片 ====================== */
+img.center {
+  margin: 0 auto;
+  display: block;
+}
+
+/* ====================== 浮動 ====================== */
+.por {
+  position: relative;
+}
+
+.poa {
+  position: absolute;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.d-b {
+  display: block;
+}
+
+.d-ib {
+  display: inline-block;
+}
+
+.ai_top {
+  align-items: flex-start !important;
+}
+
+.ai_bottom {
+  align-items: flex-end !important;
+}
+
+.ai_center {
+  align-items: center !important;
+}
+
+.jc_center {
+  justify-content: center;
+}
+
+.gap_8 {
+  gap: 0 0.5rem !important;
+}
+
+.gap_0, .noGap {
+  gap: 0 !important;
+}
+
+/* =============================================================== */
+/* 表格 Table
+/* =============================================================== */
+table {
+  caption-side: top;
+}
+
+table.style_table {
+  border-top: #78A221 1px solid;
+  border-left: #78A221 1px solid;
+}
+table.style_table th, table.style_table td {
+  padding: 8px 10px;
+  border-right: #78A221 1px solid;
+  border-bottom: #78A221 1px solid;
+}
+table.style_table thead tr th {
+  color: #fff;
+  background-color: #89B828;
+}
+table.style_table thead tr td {
+  font-weight: bold;
+  background-color: #89B828;
+}
+table.style_table tr.odd {
+  background: #fcfdf8;
+}
+
+table.style_table_left {
+  margin: 0 auto 20px auto;
+  border-top: #78A221 1px solid;
+  border-left: #78A221 1px solid;
+}
+table.style_table_left th, table.style_table_left td {
+  padding: 8px 10px;
+  text-align: center;
+  border-right: #78A221 1px solid;
+  border-bottom: #78A221 1px solid;
+}
+table.style_table_left th {
+  color: #fff;
+  background-color: #89B828;
+}
+table.style_table_left th.two {
+  color: #fff;
+  background-color: #6a8e1f;
+}
+table.style_table_left td.one {
+  background-color: #eee;
+}
+table.style_table_left tr.odd {
+  background: #fcfdf8;
+}
+
+/* =============================================================== */
+/* RWD
+/* =============================================================== */
+.Desktop, .Pad {
+  display: block;
+}
+
+.Mobile {
+  display: none !important;
+}
+
+@media screen and (max-width: 576px) {
+  .Desktop, .Pad {
+    display: none !important;
+  }
+  .Mobile {
+    display: block !important;
+  }
+}
+.Desktop_table, .Pad_table {
+  display: table;
+}
+
+.Mobile_table {
+  display: none !important;
+}
+
+@media screen and (max-width: 576px) {
+  .Desktop_table, .Pad_table {
+    display: none !important;
+  }
+  .Mobile_table {
+    display: table !important;
+  }
+}
+/* =============================================================== */
+/* 特效
+/* =============================================================== */
+.ServicesArchitectureNav.NavRight {
+  width: 100%;
+  position: relative;
+}
+.ServicesArchitectureNav.NavRight .navTop {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  display: -ms-grid;
+  display: grid;
+}
+.ServicesArchitectureNav.NavRight .navTop ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.ServicesArchitectureNav.NavRight .navTop li {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.ServicesArchitectureNav.NavRight .navTop svg {
+  height: 60px;
+}
+.ServicesArchitectureNav.NavRight .navTop svg path {
+  fill: #fff;
+}
+.ServicesArchitectureNav.NavRight .navTop a {
+  padding: 5px 20px 9px;
+  color: #727171;
+  display: block;
+  text-decoration: none;
+  border: #fff 1px solid;
+  border-radius: 20rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.ServicesArchitectureNav.NavRight .navTop a:hover {
+  color: #fff;
+  background-color: #289A51;
+  text-shadow: 1px 1px 3px #555;
+  border: #1d723c 1px solid;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+.ServicesArchitectureNav.NavRight .CardStickyCorner {
+  position: absolute;
+  top: 60px;
+}
+.ServicesArchitectureNav.NavRight img {
+  width: 100%;
+  border-radius: 2.5rem;
+}
+.ServicesArchitectureNav.NavRight .navTop {
+  -ms-grid-columns: 1fr auto;
+  grid-template-columns: 1fr auto;
+}
+.ServicesArchitectureNav.NavRight .navTop ul {
+  border-radius: 2.3rem 0 0 0;
+}
+.ServicesArchitectureNav.NavRight .navTop svg.right {
+  padding-right: 180px;
+}
+.ServicesArchitectureNav.NavRight .navTop svg.left {
+  display: none;
+}
+.ServicesArchitectureNav.NavRight .CardStickyCorner {
+  left: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.ServicesArchitectureNav.NavLeft {
+  width: 100%;
+  position: relative;
+}
+.ServicesArchitectureNav.NavLeft .navTop {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  display: -ms-grid;
+  display: grid;
+}
+.ServicesArchitectureNav.NavLeft .navTop ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.ServicesArchitectureNav.NavLeft .navTop li {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.ServicesArchitectureNav.NavLeft .navTop svg {
+  height: 60px;
+}
+.ServicesArchitectureNav.NavLeft .navTop svg path {
+  fill: #fff;
+}
+.ServicesArchitectureNav.NavLeft .navTop a {
+  padding: 5px 20px 9px;
+  color: #727171;
+  display: block;
+  text-decoration: none;
+  border: #fff 1px solid;
+  border-radius: 20rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.ServicesArchitectureNav.NavLeft .navTop a:hover {
+  color: #fff;
+  background-color: #289A51;
+  text-shadow: 1px 1px 3px #555;
+  border: #1d723c 1px solid;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+.ServicesArchitectureNav.NavLeft .CardStickyCorner {
+  position: absolute;
+  top: 60px;
+}
+.ServicesArchitectureNav.NavLeft img {
+  width: 100%;
+  border-radius: 2.5rem;
+}
+.ServicesArchitectureNav.NavLeft .navTop {
+  -ms-grid-columns: auto 1fr;
+  grid-template-columns: auto 1fr;
+}
+.ServicesArchitectureNav.NavLeft .navTop ul {
+  border-radius: 0 2.3rem 0 0;
+}
+.ServicesArchitectureNav.NavLeft .navTop svg.right {
+  display: none;
+}
+.ServicesArchitectureNav.NavLeft .navTop svg.left {
+  padding-right: 180px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+.ServicesArchitectureNav.NavLeft .CardStickyCorner {
+  right: 0;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.ServicesArchitectureBox__TL {
+  width: 100%;
+  position: relative;
+}
+.ServicesArchitectureBox__TL img {
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 2.5rem;
+}
+.ServicesArchitectureBox__TL .TextCard {
+  z-index: 10;
+  max-width: 500px;
+  position: absolute;
+  background-color: #fff;
+  padding: 1rem 1rem 1.5rem 2rem;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+.ServicesArchitectureBox__TL .TextCard .CardStickyCorner1, .ServicesArchitectureBox__TL .TextCard .CardStickyCorner2 {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  overflow: hidden;
+}
+.ServicesArchitectureBox__TL .TextCard {
+  top: 0;
+  bottom: auto;
+  left: 0;
+  right: auto;
+  border-radius: 0 0 2.5rem 0;
+}
+.ServicesArchitectureBox__TL .TextCard .CardStickyCorner1 {
+  top: 0px;
+  right: -40px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.ServicesArchitectureBox__TL .TextCard .CardStickyCorner2 {
+  bottom: -40px;
+  left: 0px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.ServicesArchitectureBox__TR {
+  width: 100%;
+  position: relative;
+}
+.ServicesArchitectureBox__TR img {
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 2.5rem;
+}
+.ServicesArchitectureBox__TR .TextCard {
+  z-index: 10;
+  max-width: 500px;
+  position: absolute;
+  background-color: #fff;
+  padding: 1rem 1rem 1.5rem 2rem;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+.ServicesArchitectureBox__TR .TextCard .CardStickyCorner1, .ServicesArchitectureBox__TR .TextCard .CardStickyCorner2 {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  overflow: hidden;
+}
+.ServicesArchitectureBox__TR .TextCard {
+  top: 0;
+  bottom: auto;
+  left: auto;
+  right: 0;
+  border-radius: 0 0 0 2.5rem;
+}
+.ServicesArchitectureBox__TR .TextCard .CardStickyCorner1 {
+  top: 0px;
+  left: -40px;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+.ServicesArchitectureBox__TR .TextCard .CardStickyCorner2 {
+  bottom: -40px;
+  right: 0px;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.ServicesArchitectureBox__BL {
+  width: 100%;
+  position: relative;
+}
+.ServicesArchitectureBox__BL img {
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 2.5rem;
+}
+.ServicesArchitectureBox__BL .TextCard {
+  z-index: 10;
+  max-width: 500px;
+  position: absolute;
+  background-color: #fff;
+  padding: 1rem 1rem 1.5rem 2rem;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+.ServicesArchitectureBox__BL .TextCard .CardStickyCorner1, .ServicesArchitectureBox__BL .TextCard .CardStickyCorner2 {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  overflow: hidden;
+}
+.ServicesArchitectureBox__BL .TextCard {
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: auto;
+  border-radius: 0 2.5rem 0 0;
+}
+.ServicesArchitectureBox__BL .TextCard .CardStickyCorner1 {
+  top: -40px;
+  left: 0px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.ServicesArchitectureBox__BL .TextCard .CardStickyCorner2 {
+  bottom: 0px;
+  right: -40px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.ServicesArchitectureBox__BR {
+  width: 100%;
+  position: relative;
+}
+.ServicesArchitectureBox__BR img {
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 2.5rem;
+}
+.ServicesArchitectureBox__BR .TextCard {
+  z-index: 10;
+  max-width: 500px;
+  position: absolute;
+  background-color: #fff;
+  padding: 1rem 1rem 1.5rem 2rem;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+.ServicesArchitectureBox__BR .TextCard .CardStickyCorner1, .ServicesArchitectureBox__BR .TextCard .CardStickyCorner2 {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  overflow: hidden;
+}
+.ServicesArchitectureBox__BR .TextCard {
+  top: auto;
+  bottom: 0;
+  left: auto;
+  right: 0;
+  border-radius: 2.5rem 0 0 0;
+}
+.ServicesArchitectureBox__BR .TextCard .CardStickyCorner1 {
+  top: -40px;
+  right: 0px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+.ServicesArchitectureBox__BR .TextCard .CardStickyCorner2 {
+  bottom: 0px;
+  left: -40px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+/* =============================================================== */
+/* 動畫
+/* =============================================================== */
+/***************************************************************************/
+/*                               Form Company                              */
+/***************************************************************************/
+.w_120 {
+  width: 120px;
+}
+
+.w_200 {
+  width: 200px;
+}
+
+.df_120 {
+  flex: 0 1 120px !important;
+}
+
+.df_200 {
+  flex: 0 1 200px !important;
+}
+
+.df_auto {
+  flex: auto 0 1 !important;
+}
+
+/* =============================================================== */
+/* AAAAAAAA
+/* =============================================================== */
+h3.formTitle {
+  margin-top: 1rem;
+}
+
+fieldset.pageForm__item {
+  padding: 0 0 1rem;
+  margin: 0 0 2rem;
+  border-bottom: #adb5bd 1px dashed;
+  border-top: 0px none;
+  border-left: 0px none;
+  border-right: 0px none;
+  font-family: "Roboto", sans-serif;
+}
+fieldset.pageForm__item legend.h4 {
+  color: #289A51;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+/* =============================================================== */
+/* 2欄 ～ 12欄
+/* =============================================================== */
+.form__Layout {
+  display: -ms-grid;
+  display: grid;
+  gap: 0 1rem;
+  align-items: top;
+  justify-content: center;
+  -ms-grid-columns: (1fr)[1];
+  grid-template-columns: repeat(1, 1fr);
+}
+@media screen and (max-width: 576px) {
+  .form__Layout {
+    gap: 0;
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.form__Layout2 {
+  display: -ms-grid;
+  display: grid;
+  gap: 0 1rem;
+  align-items: top;
+  justify-content: center;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+}
+@media screen and (max-width: 576px) {
+  .form__Layout2 {
+    gap: 0;
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.form__Layout3 {
+  display: -ms-grid;
+  display: grid;
+  gap: 0 1rem;
+  align-items: top;
+  justify-content: center;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+}
+@media screen and (max-width: 576px) {
+  .form__Layout3 {
+    gap: 0;
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.form__Layout4 {
+  display: -ms-grid;
+  display: grid;
+  gap: 0 1rem;
+  align-items: top;
+  justify-content: center;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+}
+@media screen and (max-width: 576px) {
+  .form__Layout4 {
+    gap: 0;
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 1190px) {
+  .form__Layout4 {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.form__Layout5 {
+  display: -ms-grid;
+  display: grid;
+  gap: 0 1rem;
+  align-items: top;
+  justify-content: center;
+  -ms-grid-columns: (1fr)[5];
+  grid-template-columns: repeat(5, 1fr);
+}
+@media screen and (max-width: 576px) {
+  .form__Layout5 {
+    gap: 0;
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 1190px) {
+  .form__Layout5 {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.form__Layout6 {
+  display: -ms-grid;
+  display: grid;
+  gap: 0 1rem;
+  align-items: top;
+  justify-content: center;
+  -ms-grid-columns: (1fr)[6];
+  grid-template-columns: repeat(6, 1fr);
+}
+@media screen and (max-width: 576px) {
+  .form__Layout6 {
+    gap: 0;
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 1190px) {
+  .form__Layout6 {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.form__Layout8 {
+  display: -ms-grid;
+  display: grid;
+  gap: 0 1rem;
+  align-items: top;
+  justify-content: center;
+  -ms-grid-columns: (1fr)[8];
+  grid-template-columns: repeat(8, 1fr);
+}
+@media screen and (max-width: 576px) {
+  .form__Layout8 {
+    gap: 0;
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 1190px) {
+  .form__Layout8 {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.form__Layout10 {
+  display: -ms-grid;
+  display: grid;
+  gap: 0 1rem;
+  align-items: top;
+  justify-content: center;
+  -ms-grid-columns: (1fr)[10];
+  grid-template-columns: repeat(10, 1fr);
+}
+@media screen and (max-width: 576px) {
+  .form__Layout10 {
+    gap: 0;
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 1190px) {
+  .form__Layout10 {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.form__Layout12 {
+  display: -ms-grid;
+  display: grid;
+  gap: 0 1rem;
+  align-items: top;
+  justify-content: center;
+  -ms-grid-columns: (1fr)[12];
+  grid-template-columns: repeat(12, 1fr);
+}
+@media screen and (max-width: 576px) {
+  .form__Layout12 {
+    gap: 0;
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 1190px) {
+  .form__Layout12 {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.form__Layout2-aa {
+  display: -ms-grid;
+  display: grid;
+  gap: 0 1rem;
+  align-items: top;
+  justify-content: center;
+  -ms-grid-columns: (auto)[2];
+  grid-template-columns: repeat(2, auto);
+  justify-content: start;
+}
+@media screen and (max-width: 576px) {
+  .form__Layout2-aa {
+    gap: 0;
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.form__Layout3-1a1 {
+  display: -ms-grid;
+  display: grid;
+  gap: 0 1rem;
+  align-items: top;
+  justify-content: center;
+  -ms-grid-columns: 1fr auto 1fr;
+  grid-template-columns: 1fr auto 1fr;
+}
+@media screen and (max-width: 576px) {
+  .form__Layout3-1a1 {
+    gap: 0;
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.form__Layout3-a {
+  display: -ms-grid;
+  display: grid;
+  gap: 0 1rem;
+  align-items: top;
+  justify-content: center;
+  -ms-grid-columns: (auto)[3];
+  grid-template-columns: repeat(3, auto);
+  justify-content: flex-start;
+}
+@media screen and (max-width: 576px) {
+  .form__Layout3-a {
+    gap: 0;
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.noGap {
+  gap: 0;
+}
+
+.form__Layout.df, .form__Layout.df_0, .form__Layout.df_8 {
+  align-items: start;
+  justify-content: start;
+}
+.form__Layout.df button.btn, .form__Layout.df_0 button.btn, .form__Layout.df_8 button.btn {
+  margin-bottom: 1rem;
+}
+
+/* =============================================================== */
+/* 直式排版
+/* =============================================================== */
+.form__item {
+  margin-bottom: 1rem;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+.form__item .form__item {
+  margin-bottom: 0;
+}
+.form__item .input-group .btn {
+  width: 20%;
+}
+.form__item .input-group > .btn {
+  border-top-right-radius: 0.375rem !important;
+  border-bottom-right-radius: 0.375rem !important;
+}
+.form__item .input-group > select.form-select {
+  border-top-right-radius: 0.375rem !important;
+  border-bottom-right-radius: 0.375rem !important;
+}
+.form__item .input-group > input[type=date].form-control {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+.form__item .input-group > input[type=date].form-control:nth-child(4) {
+  border-top-right-radius: 0.375rem !important;
+  border-bottom-right-radius: 0.375rem !important;
+}
+
+.df, .df_0, .df_8 {
+  display: flex;
+  gap: 0 16px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.df label.form-label, .df_0 label.form-label, .df_8 label.form-label {
+  padding: 0.375rem 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.df .form-control, .df_0 .form-control, .df_8 .form-control, .df .form-select, .df_0 .form-select, .df_8 .form-select, .df input[type=range], .df_0 input[type=range], .df_8 input[type=range] {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.df_8 {
+  gap: 0.5rem;
+}
+
+.df_0 {
+  gap: 0;
+}
+
+.df.mb_0 .form__item, .mb_0.df_8 .form__item, .mb_0.df_0 .form__item {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 576px) {
+  .df.mb_0, .mb_0.df_8, .mb_0.df_0 {
+    display: block;
+  }
+  .df.mb_0 .form__item, .mb_0.df_8 .form__item, .mb_0.df_0 .form__item {
+    margin-bottom: 1rem;
+  }
+  .df.mb_0 .form__item:last-child, .mb_0.df_8 .form__item:last-child, .mb_0.df_0 .form__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.clr-break-row {
+  width: 100%;
+  margin-top: 0.2rem;
+  margin-bottom: 0;
+}
+
+.form__item.df.mb0, .form__item.mb0.df_8, .form__item.mb0.df_0 {
+  margin-bottom: 0.5rem;
+}
+
+.form__item.df .form-check, .form__item.df_8 .form-check, .form__item.df_0 .form-check {
+  margin-top: 0.375rem;
+}
+
+.formBox {
+  width: 100%;
+  margin-top: 0.2rem;
+  margin-bottom: 0;
+}
+.formBox .form__item {
+  margin-bottom: 0.2rem;
+}
+.formBox .form__item:last-child {
+  margin-bottom: 0;
+}
+
+.formBox.disabled label, .formBox.disabled p, .formBox.disabled span {
+  color: #b2b1b1;
+}
+
+/* =============================================================== */
+/* Checks, Radios, Switches
+/* =============================================================== */
+.form-check label.form-check-label {
+  display: block;
+  white-space: nowrap;
+}
+.form-check .form-select, .form-check .form__item {
+  margin-top: 0rem;
+  margin-bottom: 0.5rem;
+}
+.form-check .form-check-input:checked ~ .form__item .form-select, .form-check .form-check-input:checked ~ .form__item .form-control {
+  background-color: #b2ebc7 !important;
+  border-radius: 4px;
+}
+
+.form-check.normal label.form-check-label {
+  white-space: normal;
+}
+
+.form-switch {
+  flex-wrap: wrap;
+}
+.form-switch .clr-break-row .invalid-feedback, .form-switch .clr-break-row .valid-feedback {
+  margin-left: 0.65rem;
+}
+
+.ChecksBtnBox, .RadioBtnBox {
+  margin-top: 0.5rem;
+}
+.ChecksBtnBox .form-check, .RadioBtnBox .form-check {
+  padding-left: 0;
+}
+
+.ChecksBtn {
+  padding-top: 0;
+  margin-right: 0.1rem;
+  display: inline;
+}
+.ChecksBtn label {
+  margin: 3px 0px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  color: #727171;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  white-space: nowrap;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.ChecksBtn svg path {
+  fill: #6c757d;
+}
+.ChecksBtn input[type=checkbox], .ChecksBtn input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+.ChecksBtn input[type=checkbox]:checked + label, .ChecksBtn input[type=radio]:checked + label {
+  color: #fff;
+  background-color: #289A51;
+  border: 1px solid #dee2e6;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.ChecksBtn input[type=checkbox]:focus + label, .ChecksBtn input[type=radio]:focus + label {
+  border: 1px solid #289A51;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(40, 154, 81, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(40, 154, 81, 0.25);
+}
+.ChecksBtn label {
+  padding: 0.375rem 7px 0.375rem 24px;
+}
+.ChecksBtn label svg {
+  height: 14px;
+}
+.ChecksBtn input[type=checkbox] + label .svg-inline--fa.fa-plus {
+  position: absolute;
+  left: 6px;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s, -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s;
+  transition: transform 0.3s ease-in-out, opacity 0.3s, -webkit-transform 0.3s ease-in-out;
+  opacity: 1;
+}
+.ChecksBtn input[type=checkbox]:checked + label .svg-inline--fa.fa-plus {
+  position: absolute;
+  left: 6px;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s, -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s;
+  transition: transform 0.3s ease-in-out, opacity 0.3s, -webkit-transform 0.3s ease-in-out;
+  opacity: 0;
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+}
+.ChecksBtn input[type=checkbox] + label .svg-inline--fa.fa-check {
+  position: absolute;
+  left: 6px;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s, -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s;
+  transition: transform 0.3s ease-in-out, opacity 0.3s, -webkit-transform 0.3s ease-in-out;
+  opacity: 0;
+}
+.ChecksBtn input[type=checkbox]:checked + label .svg-inline--fa.fa-check {
+  position: absolute;
+  left: 6px;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s, -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s;
+  transition: transform 0.3s ease-in-out, opacity 0.3s, -webkit-transform 0.3s ease-in-out;
+  opacity: 1;
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+}
+.ChecksBtn input[type=checkbox]:checked + label .svg-inline--fa.fa-check path {
+  fill: #fff;
+}
+
+.RadioBtn {
+  padding-top: 0;
+  margin-right: 0.1rem;
+  display: inline;
+}
+.RadioBtn label {
+  margin: 3px 0px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  color: #727171;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  white-space: nowrap;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.RadioBtn svg path {
+  fill: #6c757d;
+}
+.RadioBtn input[type=checkbox], .RadioBtn input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+.RadioBtn input[type=checkbox]:checked + label, .RadioBtn input[type=radio]:checked + label {
+  color: #fff;
+  background-color: #289A51;
+  border: 1px solid #dee2e6;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.RadioBtn input[type=checkbox]:focus + label, .RadioBtn input[type=radio]:focus + label {
+  border: 1px solid #289A51;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(40, 154, 81, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(40, 154, 81, 0.25);
+}
+.RadioBtn label {
+  padding: 0.375rem 7px 0.375rem 28px;
+}
+.RadioBtn label svg {
+  height: 18px;
+}
+.RadioBtn input[type=radio] + label .svg-inline--fa.fa-circle {
+  position: absolute;
+  left: 6px;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s, -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s;
+  transition: transform 0.3s ease-in-out, opacity 0.3s, -webkit-transform 0.3s ease-in-out;
+  opacity: 1;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+.RadioBtn input[type=radio]:checked + label .svg-inline--fa.fa-circle {
+  position: absolute;
+  left: 6px;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s, -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s;
+  transition: transform 0.3s ease-in-out, opacity 0.3s, -webkit-transform 0.3s ease-in-out;
+  opacity: 0;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.RadioBtn input[type=radio] + label .svg-inline--fa.fa-circle-dot {
+  position: absolute;
+  left: 6px;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s, -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s;
+  transition: transform 0.3s ease-in-out, opacity 0.3s, -webkit-transform 0.3s ease-in-out;
+  opacity: 0;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+.RadioBtn input[type=radio]:checked + label .svg-inline--fa.fa-circle-dot {
+  position: absolute;
+  left: 6px;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s, -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s;
+  transition: transform 0.3s ease-in-out, opacity 0.3s, -webkit-transform 0.3s ease-in-out;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.RadioBtn input[type=radio]:checked + label .svg-inline--fa.fa-circle-dot path {
+  fill: #fff;
+}
+
+.ChecksImg, .RadioImg {
+  padding-top: 0;
+  margin-right: 0.1rem;
+  display: inline;
+}
+.ChecksImg label, .RadioImg label {
+  margin: 3px 0px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  color: #727171;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  white-space: nowrap;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.ChecksImg svg path, .RadioImg svg path {
+  fill: #6c757d;
+}
+.ChecksImg input[type=checkbox], .ChecksImg input[type=radio], .RadioImg input[type=checkbox], .RadioImg input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+.ChecksImg input[type=checkbox]:checked + label, .ChecksImg input[type=radio]:checked + label, .RadioImg input[type=checkbox]:checked + label, .RadioImg input[type=radio]:checked + label {
+  color: #fff;
+  background-color: #289A51;
+  border: 1px solid #dee2e6;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.ChecksImg input[type=checkbox]:focus + label, .ChecksImg input[type=radio]:focus + label, .RadioImg input[type=checkbox]:focus + label, .RadioImg input[type=radio]:focus + label {
+  border: 1px solid #289A51;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(40, 154, 81, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(40, 154, 81, 0.25);
+}
+.ChecksImg label, .RadioImg label {
+  padding: 10px 25px 10px 10px;
+}
+.ChecksImg img, .RadioImg img {
+  border: #e9ecef 1px solid;
+}
+.ChecksImg img, .ChecksImg svg, .RadioImg img, .RadioImg svg {
+  height: 100px;
+  border-radius: 5px;
+}
+.ChecksImg svg path, .RadioImg svg path {
+  fill: #6c757d;
+}
+.ChecksImg svg.svg-inline--fa, .RadioImg svg.svg-inline--fa {
+  height: 17px;
+  position: absolute;
+  top: 5px;
+  right: 4px;
+}
+.ChecksImg input[type=checkbox] + label, .ChecksImg input[type=radio] + label, .RadioImg input[type=checkbox] + label, .RadioImg input[type=radio] + label {
+  border-width: 2px;
+}
+.ChecksImg input[type=checkbox] + label .fa-circle, .ChecksImg input[type=radio] + label .fa-circle, .RadioImg input[type=checkbox] + label .fa-circle, .RadioImg input[type=radio] + label .fa-circle {
+  display: block;
+}
+.ChecksImg input[type=checkbox] + label .fa-circle path, .ChecksImg input[type=radio] + label .fa-circle path, .RadioImg input[type=checkbox] + label .fa-circle path, .RadioImg input[type=radio] + label .fa-circle path {
+  fill: #ced4da;
+}
+.ChecksImg input[type=checkbox] + label .fa-circle-check, .ChecksImg input[type=radio] + label .fa-circle-check, .RadioImg input[type=checkbox] + label .fa-circle-check, .RadioImg input[type=radio] + label .fa-circle-check {
+  display: none;
+}
+.ChecksImg input[type=checkbox]:checked + label, .ChecksImg input[type=radio]:checked + label, .RadioImg input[type=checkbox]:checked + label, .RadioImg input[type=radio]:checked + label {
+  background-color: #fff;
+  border: 2px solid #289A51;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.ChecksImg input[type=checkbox]:checked + label .fa-circle, .ChecksImg input[type=radio]:checked + label .fa-circle, .RadioImg input[type=checkbox]:checked + label .fa-circle, .RadioImg input[type=radio]:checked + label .fa-circle {
+  display: none;
+}
+.ChecksImg input[type=checkbox]:checked + label .fa-circle-check, .ChecksImg input[type=radio]:checked + label .fa-circle-check, .RadioImg input[type=checkbox]:checked + label .fa-circle-check, .RadioImg input[type=radio]:checked + label .fa-circle-check {
+  display: block;
+}
+.ChecksImg input[type=checkbox]:checked + label .fa-circle-check path, .ChecksImg input[type=radio]:checked + label .fa-circle-check path, .RadioImg input[type=checkbox]:checked + label .fa-circle-check path, .RadioImg input[type=radio]:checked + label .fa-circle-check path {
+  fill: #289A51;
+}
+.ChecksImg input[type=checkbox]:focus + label, .ChecksImg input[type=radio]:focus + label, .RadioImg input[type=checkbox]:focus + label, .RadioImg input[type=radio]:focus + label {
+  background-color: #fff;
+  border: 2px solid #289A51;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+/* =============================================================== */
+/* Button 按鈕
+/* =============================================================== */
+button.btn, a.btn {
+  white-space: nowrap;
+  border: #ced4da 1px solid;
+  color: #727171;
+  background-color: #e9ecef;
+}
+button.btn .svg-inline--fa, a.btn .svg-inline--fa {
+  font-size: 1.2rem;
+  vertical-align: sub;
+}
+
+button.btn.btn-outline, a.btn.btn-outline {
+  white-space: nowrap;
+  color: #727171;
+  border: #ced4da 1px solid;
+  background-color: #fff !important;
+}
+button.btn.btn-outline .svg-inline--fa, a.btn.btn-outline .svg-inline--fa {
+  font-size: 1.2rem;
+  vertical-align: sub;
+}
+
+button.btn:hover, button.btn:active, button.btn:first-child:active, a.btn:hover, a.btn:active, :not(.btn-check) + .btn:active {
+  color: #343a40;
+  background-color: #dee2e6;
+  border: #ced4da 1px solid;
+}
+
+.btn.success {
+  color: #fff;
+  background-color: #198754;
+}
+.btn.success:hover, .btn.success:active {
+  color: #fff;
+  background-color: #198754;
+}
+
+.btn.danger {
+  color: #fff;
+  background-color: #DC3545;
+}
+.btn.danger:hover, .btn.danger:active {
+  color: #fff;
+  background-color: #DC3545;
+}
+
+.btn.warning {
+  color: #fff;
+  background-color: #F3BC17;
+}
+.btn.warning:hover, .btn.warning:active {
+  color: #fff;
+  background-color: #F3BC17;
+}
+
+.btn.info {
+  color: #fff;
+  background-color: #04A4C4;
+}
+.btn.info:hover, .btn.info:active {
+  color: #fff;
+  background-color: #04A4C4;
+}
+
+.btn.btn-outline.success {
+  color: #198754;
+  border-color: #198754;
+}
+.btn.btn-outline.success:hover, .btn.btn-outline.success:active {
+  color: #198754;
+  border-color: #198754;
+}
+
+.btn.btn-outline.danger {
+  color: #DC3545;
+  border-color: #DC3545;
+}
+.btn.btn-outline.danger:hover, .btn.btn-outline.danger:active {
+  color: #DC3545;
+  border-color: #DC3545;
+}
+
+.btn.btn-outline.warning {
+  color: #F3BC17;
+  border-color: #F3BC17;
+}
+.btn.btn-outline.warning:hover, .btn.btn-outline.warning:active {
+  color: #F3BC17;
+  border-color: #F3BC17;
+}
+
+.btn.btn-outline.info {
+  color: #04A4C4;
+  border-color: #04A4C4;
+}
+.btn.btn-outline.info:hover, .btn.btn-outline.info:active {
+  color: #04A4C4;
+  border-color: #04A4C4;
+}
+
+.button_box {
+  margin: 1.5rem auto;
+  text-align: center;
+}
+.button_box .btn {
+  min-width: 120px;
+  margin: 0 3px;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #289A51 !important;
+}
+.button_box .btn:hover, .button_box .btn:active, .button_box .btn:active, .button_box .btn:first-child:active {
+  color: #fff;
+  background-color: #238646;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  text-shadow: none;
+}
+
+.button_box.btn--W100 button.btn {
+  width: 100%;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.display--block .btn {
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.display--inlineblock .btn {
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+/* =============================================================== */
+/* 開關按鈕 Switches
+/* =============================================================== */
+/* Colors: Default */
+.toggle-switchy {
+  color: #fff;
+}
+.toggle-switchy > input + .toggle:before {
+  content: "ON";
+}
+.toggle-switchy > input + .toggle:after {
+  content: "OFF";
+}
+.toggle-switchy > input + .toggle > .switch {
+  background: #fff;
+}
+.toggle-switchy > input + .toggle + .label {
+  color: #000;
+}
+.toggle-switchy > input:checked + .toggle {
+  background: #198754;
+}
+.toggle-switchy > input:checked + .toggle > .switch {
+  border: 3px solid #198754;
+}
+.toggle-switchy > input:not(:checked) + .toggle {
+  background: #dc3545;
+}
+.toggle-switchy > input:not(:checked) + .toggle > .switch {
+  border: 3px solid #dc3545;
+}
+.toggle-switchy > input:focus + .toggle, .toggle-switchy > input:active + .toggle {
+  -webkit-box-shadow: 0 0 5px 3px rgba(40, 154, 81, 0.5);
+          box-shadow: 0 0 5px 3px rgba(40, 154, 81, 0.5);
+}
+
+/* Rounded switch corners 圓角開關 */
+.toggle-switchy > input + .toggle {
+  border-radius: 4px;
+}
+
+.toggle-switchy > input + .toggle .switch {
+  border-radius: 6px;
+}
+
+/* //////////////////////////
+CORE STYLES BELOW - NO TOUCHY 核心風格
+////////////////////////// */
+.toggle-switchy {
+  display: inline-flex;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          -ms-user-select: none;
+      user-select: none;
+  position: relative;
+}
+.toggle-switchy:hover {
+  cursor: pointer;
+}
+.toggle-switchy > input {
+  position: absolute;
+  opacity: 0;
+}
+.toggle-switchy > input + .toggle {
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+.toggle-switchy > input + .toggle > .switch {
+  display: block;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  z-index: 3;
+}
+.toggle-switchy > input[disabled] + .toggle {
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+.toggle-switchy > input[disabled] + .toggle:hover {
+  cursor: not-allowed;
+}
+.toggle-switchy .form-check-label {
+  margin-left: 10px;
+  color: #727171;
+  font-weight: 500;
+}
+.toggle-switchy .form-check-input:checked ~ .active {
+  display: block;
+}
+.toggle-switchy .form-check-input:checked ~ .noActive {
+  display: none;
+}
+.toggle-switchy .form-check-input ~ .active {
+  display: none;
+}
+.toggle-switchy .form-check-input ~ .noActive {
+  display: block;
+}
+
+/* Labels 標籤 */
+.toggle-switchy > input + .toggle:before, .toggle-switchy > input + .toggle:after {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+}
+.toggle-switchy > input + .toggle:before {
+  right: 55%;
+}
+.toggle-switchy > input + .toggle:after {
+  left: 50%;
+}
+.toggle-switchy > input + .toggle + .label {
+  margin-left: 10px;
+}
+
+.toggle-switchy[data-label=left] > input + .toggle {
+  order: 2;
+}
+.toggle-switchy[data-label=left] > input + .toggle + .label {
+  order: 1;
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+/* Show / Hide 顯示/隱藏 */
+.toggle-switchy > input + .toggle:before {
+  opacity: 0;
+}
+.toggle-switchy > input:checked + .toggle:before {
+  opacity: 1;
+}
+.toggle-switchy > input:checked + .toggle:after {
+  opacity: 0;
+}
+
+/* Transitions 過渡動畫 */
+.toggle-switchy > input + .toggle {
+  -webkit-transition: background 200ms linear, -webkit-box-shadow 200ms linear;
+  transition: background 200ms linear, -webkit-box-shadow 200ms linear;
+  transition: background 200ms linear, box-shadow 200ms linear;
+  transition: background 200ms linear, box-shadow 200ms linear, -webkit-box-shadow 200ms linear;
+}
+.toggle-switchy > input + .toggle > .switch {
+  -webkit-transition: right 200ms linear, border-color 200ms linear;
+  transition: right 200ms linear, border-color 200ms linear;
+}
+.toggle-switchy > input + .toggle:before, .toggle-switchy > input + .toggle:after {
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+/* Size: Extra Large 尺寸設定 */
+.toggle-switchy[data-size=xl] > input + .toggle {
+  width: 65px;
+  height: 30px;
+}
+.toggle-switchy[data-size=xl] > input + .toggle > .switch {
+  width: 30px;
+}
+.toggle-switchy[data-size=xl] > input + .toggle:before, .toggle-switchy[data-size=xl] > input + .toggle:after {
+  font-size: 1rem;
+}
+.toggle-switchy[data-size=xl] > input:not(:checked) + .toggle > .switch {
+  right: calc(100% - 30px);
+}
+
+/* =============================================================== */
+/* bootstrap pagination
+/* =============================================================== */
+.pagination .page-link {
+  color: #727171;
+}
+.pagination .page-link:hover {
+  color: #2b4777;
+}
+.pagination .page-item.active .page-link {
+  color: #fff;
+  background-color: #4B75BD;
+  border: #4B75BD 1px solid;
+}
+
+/* =============================================================== */
+/* Grid 橫式排版
+/* =============================================================== */
+.Gform__item {
+  margin-bottom: 1rem;
+  display: -ms-grid;
+  display: grid;
+  gap: 0 0.5rem;
+  align-items: start;
+}
+.Gform__item label.form-label {
+  width: 120px;
+  padding: 0.375rem 0.75rem;
+  margin: 0;
+  text-align: right;
+  background-color: #e9ecef;
+  border-radius: 4px;
+}
+.Gform__item .formItem {
+  margin-top: 0.2rem;
+}
+.Gform__item .Gform__item {
+  margin-bottom: 0.5rem;
+}
+.Gform__item .Gform__item:last-child {
+  margin-bottom: 0;
+}
+
+.formItem .form-check.df.gap_8 .form-check-input, .formItem .form-check.gap_8.df_8 .form-check-input, .formItem .form-check.gap_8.df_0 .form-check-input {
+  margin-right: 0;
+}
+
+.mt_0 {
+  margin-top: 0 !important;
+}
+
+.mr_0 {
+  margin-right: 0 !important;
+}
+
+.mt_5 {
+  margin-top: 0.5rem !important;
+}
+
+.mb_5 {
+  margin-bottom: 0.5rem !important;
+}
+
+.mb_10 {
+  margin-bottom: 1rem !important;
+}
+
+.g_a1 {
+  -ms-grid-columns: auto 1fr;
+  grid-template-columns: auto 1fr;
+}
+
+.g_a1a {
+  -ms-grid-columns: auto 1fr auto;
+  grid-template-columns: auto 1fr auto;
+}
+
+.g_1a {
+  -ms-grid-columns: 1fr auto;
+  grid-template-columns: 1fr auto;
+}
+
+.gcs1 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+}
+
+.gcs2 {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+
+.gce2 {
+  -ms-grid-column-span: 2;
+  grid-column-end: 2;
+}
+
+.gce3 {
+  -ms-grid-column-span: 3;
+  grid-column-end: 3;
+}
+
+.grs1 {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+}
+
+.grs2 {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+}
+
+.grs3 {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+}
+
+.gre2 {
+  -ms-grid-row-span: 2;
+  grid-row-end: 2;
+}
+
+/* ********************************************************/
+/*                         Login                          */
+/**********************************************************/
+body.Web__login {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.login_bg {
+  width: 100vw;
+  height: 80vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.login_box {
+  padding: 2rem 3rem;
+  background-color: #fff;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 30px;
+  border: #289A51 1px solid;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.login_box h2 {
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #289A51;
+  border-bottom: #289A51 2px solid;
+}
+.login_box .form__item a {
+  display: block;
+}
+.login_box .form__item a svg {
+  width: 20px;
+  height: 20px;
+}
+.login_box .form__item a svg path {
+  fill: #4B75BD;
+}
+.login_box .login_bottom {
+  margin-top: 20px;
+  text-align: center;
+}
+.login_box .login_bottom a {
+  padding: 0 5px;
+  color: #289A51;
+  font-weight: 400;
+  text-decoration: none;
+}
+.login_box .button_box {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.login_box .button_box button {
+  min-width: 120px;
+}
+.login_box img.code {
+  border-radius: 0.375rem;
+}
+@media screen and (max-width: 576px) {
+  .login_box .code_img {
+    margin: 5px 20px 0 0;
+  }
+  .login_box svg {
+    vertical-align: middle;
+  }
+  .login_box .form__item {
+    display: flex;
+  }
+  .login_box .form__item button {
+    width: 100%;
+  }
+}
+
+footer {
+  width: 100%;
+}
+footer img {
+  width: 100%;
+}
+
+.ForgotPassword {
+  margin-top: 1rem;
+}
+
+/***************************************************************************/
+/*                             Responsive_Plug                             */
+/***************************************************************************/
+@media screen and (min-width: 1190px) {
+  table.responTable {
+    width: 100%;
+    margin: 20px auto 20px auto;
+    text-rendering: optimizeLegibility;
+    caption-side: top;
+  }
+  table.responTable caption {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: #eee;
+    border-top: #fff 1px solid;
+    border-left: #fff 1px solid;
+    border-right: #fff 1px solid;
+  }
+  table.responTable thead tr th, table.responTable thead tr td, table.responTable tbody tr th, table.responTable tbody tr td {
+    color: #fff;
+    padding: 7px 5px;
+  }
+  table.responTable thead tr th a, table.responTable thead tr td a, table.responTable tbody tr th a, table.responTable tbody tr td a {
+    min-width: 26px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    text-decoration: underline;
+    margin: 0 5px 0 0;
+    cursor: pointer;
+  }
+  table.responTable thead tr th {
+    background: #289A51;
+    font-weight: 400;
+    border-left: #fff 1rem solid;
+  }
+  table.responTable thead tr th:first-child {
+    border-left: 0px none;
+  }
+  table.responTable tbody tr td {
+    color: #727171;
+  }
+  table.responTable tr.odd {
+    background: #f3f3f3;
+  }
+  table.responTable tbody tr:nth-child(2n) td {
+    background: #e9ecef;
+  }
+  table.responTable tbody tr td .td_content a {
+    padding: 0.375rem 0.75rem;
+    display: block;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #fff;
+    border: #fff 1px solid;
+    background-color: #F8F9FA;
+    border-radius: 0.375rem;
+    text-decoration: none;
+  }
+  table.responTable tbody tr td .td_content a:hover {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  table.responTable tbody tr td .td_content .btn {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    display: block;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 1190px) {
+  table.responTable {
+    width: 100%;
+    margin: 20px auto 20px auto;
+    text-rendering: optimizeLegibility;
+    caption-side: top;
+  }
+  table.responTable caption {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: #eee;
+    border-top: #fff 1px solid;
+    border-left: #fff 1px solid;
+    border-right: #fff 1px solid;
+  }
+  table.responTable thead tr th, table.responTable thead tr td, table.responTable tbody tr th, table.responTable tbody tr td {
+    color: #fff;
+    padding: 7px 5px;
+  }
+  table.responTable thead tr th a, table.responTable thead tr td a, table.responTable tbody tr th a, table.responTable tbody tr td a {
+    min-width: 26px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    text-decoration: underline;
+    margin: 0 5px 0 0;
+    cursor: pointer;
+  }
+  table.responTable thead tr th {
+    background: #289A51;
+    font-weight: 400;
+    border-left: #fff 0.5rem solid;
+  }
+  table.responTable thead tr th:first-child {
+    border-left: 0px none;
+  }
+  table.responTable tbody tr td {
+    color: #727171;
+  }
+  table.responTable tr.odd {
+    background: #f3f3f3;
+  }
+  table.responTable tbody tr:nth-child(2n) td {
+    background: #e9ecef;
+  }
+  table.responTable tbody tr td .td_content a {
+    padding: 0.375rem 0.75rem;
+    display: block;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #fff;
+    border: #fff 1px solid;
+    background-color: #F8F9FA;
+    border-radius: 0.375rem;
+    text-decoration: none;
+  }
+  table.responTable tbody tr td .td_content a:hover {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  table.responTable tbody tr td .td_content .btn {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    display: block;
+  }
+}
+@media screen and (max-width: 576px) {
+  table.responTable {
+    display: block;
+    border: none;
+    margin: 20px auto;
+  }
+  table.responTable thead {
+    display: none;
+  }
+  table.responTable tbody tr {
+    position: relative;
+    display: block;
+    margin: 0 0 10px 0;
+  }
+  table.responTable tbody tr td {
+    color: #727171;
+    position: relative;
+    margin-bottom: 0;
+    background-color: #e9ecef;
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    vertical-align: middle;
+    border-top: #fff 1px solid;
+    border-right: #fff 1px solid;
+    border-left: #fff 1px solid;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  table.responTable tbody tr td:last-child {
+    border-bottom: #fff 1px solid;
+  }
+  table.responTable tbody tr td div {
+    color: #727171;
+    display: table-cell;
+    padding: 5px;
+    text-align: left;
+    border-left: #fff 1px solid;
+  }
+  table.responTable tbody tr td div a {
+    display: block;
+    text-decoration: underline;
+    margin: 0 0 5px 0;
+  }
+  table.responTable tbody tr td:first-child { /* background: $t_th_bg_color; */ }
+  table.responTable tbody tr td:before {
+    color: #fff;
+    background: #289A51;
+    content: attr(data-th);
+    display: table-cell;
+    left: 0;
+    width: 130px;
+    margin: 0 5px 0 0;
+    padding: 0 5px; /* border-right: $t_color $t_width $t_style; */
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  table.responTable tbody tr:not(:last-child) {
+    border-right: none;
+    border-bottom: none;
+  }
+  table.responTable tbody tr td .td_content a {
+    padding: 0.375rem 0.75rem;
+    display: block;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #fff;
+    border: #fff 1px solid;
+    background-color: #F8F9FA;
+    border-radius: 0.375rem;
+    text-decoration: none;
+  }
+  table.responTable tbody tr td .td_content a:hover {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  table.responTable tbody tr td .td_content .btn {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    display: block;
+  }
+}
