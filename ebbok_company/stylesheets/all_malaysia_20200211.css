@@ -1,0 +1,912 @@
+@charset "UTF-8";
+/* 不改變文字單位 */
+/* stylelint-disable order/properties-alphabetical-order */
+/* stylelint-enable */
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* ========================================================================== HTML5 display definitions ========================================================================== */
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+* { box-sizing: border-box; }
+
+*::after, *::before { box-sizing: border-box; }
+
+/** Correct `block` display not defined in IE 8/9. */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary { display: block; }
+
+/** Correct `inline-block` display not defined in IE 8/9. */
+audio, canvas, video { display: inline-block; }
+
+/** Prevent modern browsers from displaying `audio` without controls. Remove excess height in iOS 5 devices. */
+audio:not([controls]) { display: none; height: 0; }
+
+/** Address styling not present in IE 8/9. */
+[hidden] { display: none; }
+
+/* ========================================================================== Base ========================================================================== */
+/** 1. Set default font family to sans-serif. 2. Prevent iOS text size adjust after orientation change, without disabling user zoom. */
+html { font-family: sans-serif; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ -ms-text-size-adjust: 100%; /* 2 */ }
+
+/** Remove default margin. */
+body { margin: 0; }
+
+/* ========================================================================== Links ========================================================================== */
+/** Address `outline` inconsistency between Chrome and other browsers. */
+a:focus { outline: thin dotted; }
+
+/** Improve readability when focused and also mouse hovered in all browsers. */
+a:active, a:hover { outline: 0; }
+
+/* ========================================================================== Typography ========================================================================== */
+/** Address variable `h1` font size within `section` and `article` contexts in Firefox 4+, Safari 5, and Chrome. */
+h1 { font-size: 2em; }
+
+/** Address styling not present in IE 8/9, Safari 5, and Chrome. */
+abbr[title] { border-bottom: 1px dotted; }
+
+/** Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome. */
+b, strong { font-weight: bold; }
+
+/** Address styling not present in Safari 5 and Chrome. */
+dfn { font-style: italic; }
+
+/** Address styling not present in IE 8/9. */
+mark { background: #ff0; color: #000; }
+
+/** Correct font family set oddly in Safari 5 and Chrome. */
+code, kbd, pre, samp { font-family: monospace, serif; font-size: 1em; }
+
+/** Improve readability of pre-formatted text in all browsers. */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+/** Set consistent quote types. */
+q { quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/** Address inconsistent and variable font size in all browsers. */
+small { font-size: 80%; }
+
+/** Prevent `sub` and `sup` affecting `line-height` in all browsers. */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+
+sup { top: -0.5em; }
+
+sub { bottom: -0.25em; }
+
+/* ========================================================================== Embedded content ========================================================================== */
+/** Remove border when inside `a` element in IE 8/9. */
+img { border: 0; }
+
+/** Correct overflow displayed oddly in IE 9. */
+svg:not(:root) { overflow: hidden; }
+
+/* ========================================================================== Figures ========================================================================== */
+/** Address margin not present in IE 8/9 and Safari 5. */
+figure { margin: 0; }
+
+/* ========================================================================== Forms ========================================================================== */
+/** Define consistent border, margin, and padding. */
+fieldset { border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
+
+/** 1. Correct `color` not being inherited in IE 8/9. 2. Remove padding so people aren't caught out if they zero out fieldsets. */
+legend { border: 0; /* 1 */ padding: 0; /* 2 */ }
+
+/** 1. Correct font family not being inherited in all browsers. 2. Correct font size not being inherited in all browsers. 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome. */
+button, input, select, textarea { font-family: inherit; /* 1 */ font-size: 100%; /* 2 */ margin: 0; /* 3 */ }
+
+/** Address Firefox 4+ setting `line-height` on `input` using `!important` in the UA stylesheet. */
+button, input { line-height: normal; }
+
+/** 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio` and `video` controls. 2. Correct inability to style clickable `input` types in iOS. 3. Improve usability and consistency of cursor style between image-type `input` and others. */
+button, html input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance: button; /* 2 */ cursor: pointer; /* 3 */ }
+
+/** Re-set default cursor for disabled elements. */
+button[disabled], html input[disabled] { cursor: default; }
+
+/** 1. Address box sizing set to `content-box` in IE 8/9. 2. Remove excess padding in IE 8/9. */
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; /* 1 */ padding: 0; /* 2 */ }
+
+/** 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome. 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome (include `-moz` to future-proof). */
+input[type="search"] { -webkit-appearance: textfield; /* 1 */ -moz-box-sizing: content-box; -webkit-box-sizing: content-box; /* 2 */ box-sizing: content-box; }
+
+/** Remove inner padding and search cancel button in Safari 5 and Chrome on OS X. */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/** Remove inner padding and border in Firefox 4+. */
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/** 1. Remove default vertical scrollbar in IE 8/9. 2. Improve readability and alignment in all browsers. */
+textarea { overflow: auto; /* 1 */ vertical-align: top; /* 2 */ }
+
+/* ========================================================================== Tables ========================================================================== */
+/** Remove most spacing between table cells. */
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* ========================================================================== Typography ========================================================================== */
+html { font-size: 100%; line-height: 1.65; }
+
+body { font-family: "Microsoft YaHei","微软雅黑", "Microsoft Jhenghei","微軟正黑體", 'Meiryo', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: 300; -webkit-text-size-adjust: none; text-rendering: optimizeLegibility; color: #444; }
+
+h1, h2, h3, h4, h5, h6 { margin-top: 0; color: #444; font-family: "Microsoft YaHei","微软雅黑", "Microsoft Jhenghei","微軟正黑體", 'Arimo', sans-serif; /* letter-spacing:1px; */ }
+
+h1 { font-size: 2.5rem; line-height: 1.125; margin-bottom: 1.65rem; }
+
+h2 { font-size: 2rem; line-height: 2; margin-bottom: 1.65rem; }
+
+h3 { font-size: 1.75rem; line-height: 1.2; margin-bottom: 1.65rem; }
+
+h4 { font-size: 1.5rem; line-height: 1.33; margin-bottom: 1.65rem; }
+
+h5 { font-size: 1.25rem; line-height: 1.5; }
+
+h6 { font-size: 1rem; line-height: 1.2; }
+
+p, li { font-family: "Microsoft YaHei","微软雅黑",'Meiryo', "Microsoft Jhenghei","微軟正黑體", "新細明體", 'Roboto', Tahoma, Geneva, sans-serif; letter-spacing: .7px; font-size: 1rem; line-height: 1.6; margin-bottom: 1.65rem; }
+
+th, td { font-size: 1rem; line-height: 1.6; }
+
+p.small { font-size: 0.875rem; line-height: 1.5; }
+
+ul { line-height: 1; }
+
+ul li { margin-bottom: 0.4125rem; }
+
+ul li:last-child { margin-bottom: 0; }
+
+/* ========================================================================== form ========================================================================== */
+/* ====================  input  ==================== */
+input[type="text"]::placeholder, input[type="tel"]::placeholder, input[type="mail"]::placeholder { color: #aaa; }
+
+/* ==================== Select ==================== */
+select::placeholder { color: #aaa; }
+
+/* ==================== textarea ==================== */
+textarea::placeholder { color: #aaa; }
+
+/* ==================== checkbox, radio ==================== */
+input.full[type="checkbox"], input.full[type="radio"] { -moz-appearance: none; border-radius: inherit; cursor: pointer; height: 100%; left: 0px; margin: 0; max-height: 100%; max-width: 100%; min-height: 100%; min-width: 100%; opacity: 0; outline: 0 none; position: absolute; top: 0px; width: 100%; z-index: 2; }
+
+/* ==================== Button ==================== */
+button:hover[type="button"], input:hover[type="button"], input:hover[type="submit"], input:hover[type="reset"] { transform: scale(0.95); }
+
+/* ========================================================================== mixins ========================================================================== */
+/************************************* 表格 */
+table.table_style { margin: 0 auto 20px auto; border-top: #ff0000 1px solid; border-left: #ff0000 1px solid; }
+
+table.table_style th, table.table_style td { padding: 8px 10px; border-right: #ff0000 1px solid; border-bottom: #ff0000 1px solid; }
+
+table.table_style thead tr th { background-color: #ff0000; }
+
+table.table_style thead tr td { font-weight: bold; background-color: #ff0000; }
+
+table.table_style tr.odd, table.table_style tbody.odd tr:nth-child(2n+2), table.table_left_style tbody.odd table.table_style tr:nth-child(2n+2) { background: white; }
+
+table.table_left_style { margin: 0 auto 20px auto; border-top: #ff0000 1px solid; border-left: #ff0000 1px solid; }
+
+table.table_left_style th, table.table_left_style td { padding: 8px 10px; border-right: #ff0000 1px solid; border-bottom: #ff0000 1px solid; }
+
+table.table_left_style th { background-color: #ff0000; }
+
+table.table_left_style tr.odd, table.table_style tbody.odd table.table_left_style tr:nth-child(2n+2), table.table_left_style tbody.odd tr:nth-child(2n+2) { background: white; }
+
+/************************************* RWD 隱藏顯示處理 */
+.desktop { display: block; }
+
+.desktop_table { display: table; }
+
+.mobile, .mobile_table { display: none; }
+
+@media (min-width: 30rem) and (max-width: 45rem) { .desktop { display: block; }
+  .desktop_table { display: table; }
+  .mobile, .mobile_table { display: none; } }
+
+@media (max-width: 30rem) { .desktop, .desktop_table { display: none; }
+  .mobile { display: block; }
+  .mobile_table { display: table; } }
+
+.text_center { text-align: center; }
+
+.text_left { text-align: left; }
+
+.text_right { text-align: right; }
+
+img.center { margin: 0 auto; display: block; }
+
+.por { position: relative; }
+
+.poa { position: absolute; }
+
+.fl { float: left; }
+
+.fr { float: right; }
+
+.gradient-pattern { box-sizing: content-box; border: none; text-overflow: clip; background: linear-gradient(-45deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 75%, rgba(140, 140, 140, 0.03) 75%, rgba(140, 140, 140, 0.03) 100%), linear-gradient(45deg, rgba(140, 140, 140, 0.03) 0, rgba(140, 140, 140, 0.03) 25%, rgba(140, 140, 140, 0) 25%, rgba(255, 255, 255, 0) 100%), linear-gradient(-45deg, rgba(140, 140, 140, 0.03) 0, rgba(140, 140, 140, 0.03) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 100%), linear-gradient(45deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 75%, rgba(140, 140, 140, 0.03) 75%, rgba(140, 140, 140, 0.03) 100%), white; background-origin: padding-box; background-clip: border-box; background-size: 50px 50px; }
+
+/* ========================================================================== Layout ========================================================================== */
+/************************************* body */
+html { box-sizing: border-box; }
+
+*, *:before, *:after { box-sizing: inherit; }
+
+.row { box-sizing: border-box; }
+
+.row::after { clear: both; content: ""; display: block; }
+
+#content::after { clear: both; content: ""; display: block; }
+
+.wrap { position: relative; }
+
+@media (min-width: 45rem) { #content { width: 1 1 1 1 1 1 1 1 1 1 1 1; /*  background: susy-svg-grid() no-repeat scroll; */ }
+  #content::after { clear: both; content: ""; display: block; }
+  .main { float: left; width: 66.1016949153%; background-color: red; margin: 20px 0; }
+  .desktop_nav { display: block; }
+  .mobile_nav { display: none; } }
+
+@media (min-width: 30rem) and (max-width: 45rem) { #content { width: 1 1 1 1 1 1 1 1; /* background: susy-svg-grid() no-repeat scroll; */ }
+  #content::after { clear: both; content: ""; display: block; }
+  .main { float: left; width: 74.358974359%; background-color: blue; margin: 20px 0; }
+  .desktop_nav { display: block; }
+  .mobile_nav { display: none; } }
+
+@media (max-width: 30rem) { #content { width: 1 1 1 1; /* background: susy-svg-grid() no-repeat scroll; */ }
+  #content::after { clear: both; content: ""; display: block; }
+  .main { float: left; width: 100%; background-color: green; }
+  .desktop_nav { display: none; }
+  .mobile_nav { display: block; } }
+
+.cbp-spmenu { overflow: auto; }
+
+/************************************* header */
+header.header_web { width: 100%; padding: 5px 10px; top: 0; position: fixed; z-index: 9999; transition: background .4s ease-in; }
+
+header.header_web::after { clear: both; content: ""; display: block; }
+
+header.header_web .nav_box { width: 100%; position: relative; }
+
+header.header_web .nav_box a { position: absolute; top: 7px; }
+
+header.header_web .nav_box a rect { fill: #fff; }
+
+header.header_web .logo_box { float: right; }
+
+header.header_web .logo_box::after { clear: both; content: ""; display: block; }
+
+header.header_web .logo_box svg.svg { width: 190px; height: 40px; vertical-align: sub; }
+
+header.header_web .logo_box svg.svg path { fill: #fff; }
+
+header.header_web .logo_box img { width: 100%; }
+
+.header_web.sticky { background: #fff; opacity: .9; box-shadow: 0px 1px 2px #000; transition: background .8s ease-out; }
+
+.header_web.sticky .logo_box svg.svg { width: 190px; height: 40px; vertical-align: sub; }
+
+.header_web.sticky .logo_box svg.svg path { fill: #60371c; }
+
+.header_web.sticky li { color: #444; }
+
+.header_web.sticky a { color: #444; }
+
+.header_web.sticky button#showRightPush rect, .header_web.sticky button#showLeftPush rect { fill: #60371c; }
+
+.header_web.sticky .nav_box a rect { fill: #60371c; }
+
+@media (min-width: 30rem) and (max-width: 45rem) { header.header_web ul { float: left; width: 100%; }
+  header.header_web li { width: 19.2%; padding: 2% 1%; margin-right: 0; text-align: center; background: #bbb; border-radius: 2px; }
+  header.header_web a { color: #444; } }
+
+@media (max-width: 30rem) { header.header_web { /* width: auto; margin: 0 auto; top: 4px; left: 50%; margin-left: -100px; */ }
+  header.header_web .nav_box a rect { fill: #60371c; }
+  header.header_web .logo_box { float: none; margin: 0 auto; text-align: center; }
+  header.header_web .logo_box svg.svg path { fill: #60371c; }
+  .header_web { background: #fff; opacity: .9; box-shadow: 0px 1px 2px #000; } }
+
+.panel { width: 15.625em; overflow: auto; position: fixed; left: -15.625em; z-index: 9999; color: #fff; background: #60371c; }
+
+.panel ul { padding: 0; margin: 0; }
+
+.panel ul li { margin-bottom: 0; }
+
+.panel a { padding: 1em; display: block; border-bottom: 1px solid #4A1D00; }
+
+.panel a svg.svg { width: 30px; height: 30px; margin-right: 10px; vertical-align: bottom; }
+
+.panel a svg.svg path { fill: #fff; }
+
+.panel a:link, .panel a:visited { color: #fff; }
+
+.panel a:hover, .panel a:active { color: #fff; background: #8e611d; text-decoration: none; }
+
+.nav-icon { margin-right: 6px; }
+
+#D1:before, #D2:before, #D3:before, #D4:before, #D5:before, #D6:before, #D7:before, #D8:before, #D9:before, #D10:before, #D11:before, #D12:before, #D13:before, #D14:before, #D15:before { display: block; content: " "; margin-top: -40px; height: 40px; visibility: hidden; }
+
+/************************************* footer */
+footer { padding: 15px 0; background-color: #000; opacity: .8; }
+
+footer::after { clear: both; content: ""; display: block; }
+
+footer p { color: #666; }
+
+.footer_sub_nav { text-align: center; }
+
+.footer_sub_nav ul { padding: 0; margin: 0; list-style-type: none; }
+
+.footer_sub_nav li { margin-right: 15px; display: inline-block; }
+
+.footer_sub_nav li:last-child { margin-right: 0; }
+
+.footer_sub_nav a { color: #C89C5B; }
+
+.footer_sub_nav a:hover { color: #cccccc; text-decoration: none; }
+
+.company_info_box { padding: 5px 0; text-align: center; }
+
+.company_info_box ul.text_one, .company_info_box ul.text_two { padding: 0; margin: 0 0 5px 0; list-style-type: none; }
+
+.company_info_box li { margin-right: 15px; margin-bottom: 0; display: inline-block; color: #fff; font-size: 0.875rem; line-height: 1.7; }
+
+.company_info_box a { color: #fff; }
+
+.copyright_box { padding: 5px 10px; text-align: center; color: #999; font-size: 0.875rem; line-height: 1.7; }
+
+.svg_aircraft { width: 27px; height: 25px; display: inline-block; text-align: center; background-color: #60371c; mask-image: url(../images_malaysia/plane.svg); vertical-align: sub; }
+
+.svg_bus { width: 25px; height: 25px; display: inline-block; text-align: center; background-color: #60371c; mask-image: url(../images_malaysia/bus-alt.svg); vertical-align: sub; }
+
+img.map { width: 70%; margin: 0 auto 40px; display: block; text-align: center; }
+
+@media (min-width: 30rem) and (max-width: 45rem) { img.map { width: 100%; } }
+
+@media (max-width: 30rem) { img.map { width: 100%; } }
+
+.red { color: #bd1111; }
+
+.mt30 { margin-top: 30px; }
+
+.mt50 { margin-top: 50px; }
+
+table.default { width: 100%; border-top: #aaa 1px solid; border-left: #aaa 1px solid; }
+
+table.default caption { caption-side: top; }
+
+table.default caption span { font-size: 1.125rem; line-height: 1.33; color: #666; }
+
+table.default thead tr th { text-align: center; color: #fff; background: #60371c; }
+
+table.default thead tr th, table.default thead tr td, table.default tbody tr th, table.default tbody tr td { padding: 5px; border-bottom: #aaa 1px solid; border-right: #aaa 1px solid; }
+
+table.default tbody tr:nth-child(2n) { background: #eee; }
+
+table.default tbody tr td { text-align: left; }
+
+table.default tbody tr td ul { padding: 0; margin: 0; list-style-type: none; }
+
+table.default tbody tr td li { margin-bottom: 0; }
+
+table.default tbody tr td li span.two { display: block; }
+
+table.default tbody tr td li span .Hbox { padding: 1px 5px; display: inline-block; font-size: 0.875rem; line-height: 1.7; text-align: center; vertical-align: middle; border-radius: 20px; }
+
+@media (max-width: 30rem) { table.default tbody tr td li { margin-right: 5px; display: inline-block; }
+  table.default tbody tr td li:after { content: ","; }
+  table.default tbody tr td li:last-child:after { content: ""; } }
+
+table.default tbody tr td .leader { position: relative; color: #bd1111; padding-left: 30px; }
+
+table.default tbody tr td .leader:before { content: "領"; display: inline-block; width: 23px; top: 2px; left: 0; position: absolute; text-align: center; font-size: 0.875rem; line-height: 1.5; border: #bd1111 1px solid; border-radius: 20px; }
+
+/************************************* 刊頭 */
+hgroup { margin: 150px auto 0; padding: 0 3%; position: relative; }
+
+hgroup h1 { padding: 50px 0; margin: 0 auto; color: #fff; text-align: center; font-weight: bold; line-height: 2; text-shadow: 0px 1px 3px #000; letter-spacing: 2px; }
+
+hgroup span.ls { letter-spacing: 0px; }
+
+hgroup span.block { display: block; }
+
+hgroup img { position: absolute; top: 54px; left: 110px; }
+
+@media (min-width: 30rem) and (max-width: 45rem) { hgroup img { margin: 0 auto; display: block; position: static; }
+  hgroup h1 { padding: 10px 0 50px; }
+  hgroup h1 span.block { display: block; } }
+
+@media (max-width: 30rem) { hgroup img { margin: 0 auto; display: block; position: static; }
+  hgroup h1 { padding: 10px 0 50px; }
+  hgroup h1 span.block { display: block; } }
+
+.bg_img { width: 98.9999vw; height: 98.9999vh; display: flex; flex-direction: column; background: url(../images_malaysia/bg_img.jpg) no-repeat center center/cover; }
+
+/************************************* 內容設定 */
+main#content { width: 90%; padding: 30px 0 0; margin: 0 auto; }
+
+h3.title_font { margin: 10px auto 50px; text-align: center; position: relative; color: #60371c; font-size: 2.1875rem; line-height: 1.6; line-height: 1.2; font-family: 'cwTeXYen', sans-serif; }
+
+h3.title_font svg.svg { width: 35px; height: 35px; vertical-align: text-bottom; text-align: center; }
+
+h3.title_font svg.svg path { fill: #60371c; }
+
+h3.title_font span.small { display: block; font-size: 1.125rem; line-height: 1.33; line-height: 1; font-family: 'Open Sans', sans-serif; }
+
+h3.title_font:before { content: ""; width: 37%; top: 40px; left: 0; position: absolute; border-top: #60371c 1px solid; }
+
+h3.title_font:after { content: ""; width: 37%; top: 40px; right: 0; position: absolute; border-top: #60371c 1px solid; }
+
+@media (min-width: 30rem) and (max-width: 45rem) { h3.title_font:before { width: 30%; }
+  h3.title_font:after { width: 30%; } }
+
+@media (max-width: 30rem) { h3.title_font { margin: 10px auto 20px; }
+  h3.title_font:before { width: 22%; }
+  h3.title_font:after { width: 22%; } }
+
+article { margin-bottom: 50px; }
+
+article svg.svg { width: 28px; height: 28px; vertical-align: sub; }
+
+article svg.svg path { fill: #60371c; }
+
+article h3 { color: #60371c; font-size: 1.25rem; line-height: 1.5; }
+
+article h3.travel_font { margin-bottom: 0px; font-size: 2rem; line-height: 2; font-weight: bold; }
+
+article h3.travel_font span { padding: 8px 7px; font-size: 2.5rem; line-height: 1.125; color: #fff; background: #226e93; border-radius: 50px; }
+
+article h5.orange { color: #e78341; }
+
+article span.small { color: #555; }
+
+article p.nomb { margin-bottom: 0; }
+
+article h4 + p { margin-bottom: 30px; }
+
+article p + .photo_box { margin-top: 0; margin-bottom: 30px; }
+
+article ul + h3, article p + h3 { margin-top: 40px; }
+
+article section + h3 { margin-top: 40px; }
+
+article ul.note + section { margin-top: 40px; }
+
+article table.responTable + h3 { margin-top: 40px; }
+
+article .article_title { margin-bottom: 10px; display: grid; grid-template-columns: 110px auto; align-items: center; }
+
+article .article_title h3 { color: #60371c; /* @include typi('h3'); */ line-height: 2em; }
+
+article .num { width: 95px; height: 95px; padding: 5px 0px 10px; margin: 0 10px 10px 0; text-align: center; color: #fff; position: relative; display: inline-block; font-size: 2rem; line-height: 2; line-height: 1.2; background: #226e93; border-radius: 60px; }
+
+article .num span { margin-left: -47px; display: block; font-size: 1.25rem; line-height: 1.5; line-height: 1.2; position: absolute; left: 50%; }
+
+article .num:before { content: ""; display: inline-block; left: 0; bottom: 0; position: absolute; background: #e78341; width: 95px; height: 52px; border-radius: 0 0 80px 80px; }
+
+article .photo_box { display: grid; grid-template-columns: 32.5% 32.5% 32.5%; grid-row-gap: 20px; }
+
+@media (min-width: 30rem) and (max-width: 45rem) { article .photo_box { grid-template-columns: 49% 49%; } }
+
+@media (max-width: 30rem) { article .num { width: auto; height: auto; padding: 10px; margin: 0 auto 10px; }
+  article .num span { margin-left: 0; display: inline-block; position: static; }
+  article .num:before { background: transparent; }
+  article .article_title { grid-template-columns: auto; }
+  article .photo_box { grid-template-columns: auto; } }
+
+article ul.travel { padding: 10px; margin: 30px 0; list-style-type: none; background: #FFF8CA; border-radius: 10px; }
+
+article ul.travel li { display: inline-block; color: #60371c; font-size: 1.5rem; line-height: 1.33; }
+
+article ul.travel svg { vertical-align: bottom; }
+
+article ul.note { padding: 0 0 0 20px; }
+
+article ul.note li.plug { position: relative; }
+
+article ul.note .plug_box { padding: 10px; display: inline-block; text-align: center; position: absolute; top: -100px; left: 330px; background: #eee; border-radius: 5px; }
+
+article ul.note .plug_box img { width: 120px; border-radius: 5px; }
+
+@media (max-width: 30rem) { article ul.note .plug_box { position: static; } }
+
+article ul.view { padding: 0 0 0 20px; }
+
+article ul.view::after { clear: both; content: ""; display: block; }
+
+article ul.view li { float: left; padding: 0 5px; margin-right: 40px; margin-bottom: 15px; list-style-type: decimal; line-height: 2; background: #edd2c1; border-radius: 5px; }
+
+@media (max-width: 30rem) { article ul.view { width: 80%; margin: 0 auto; } }
+
+section { padding: 20px; margin-bottom: 20px; background: #eee; border-radius: 2px; }
+
+section h4 { /* @include typi('h4'); */ }
+
+section p { margin-bottom: 1px; }
+
+section ul { padding-left: 20px; margin: 10px 0; }
+
+section li.plug { position: relative; }
+
+section li.plug .plug_box { margin-top: 5px; text-align: center; position: absolute; top: -95px; right: 10px; }
+
+section li.plug img { width: 160px; margin-top: 5px; border-radius: 5px; }
+
+@media (min-width: 30rem) and (max-width: 45rem) { section li.plug .plug_box { position: static; } }
+
+@media (max-width: 30rem) { section li.plug .plug_box { position: static; } }
+
+/************************************* 集合資訊 */
+article.CI_box { display: grid; grid-column-gap: 20px; grid-template-areas: "collection collection" "flight flight" "leader_information travel_agency_information" "cl_section_box cl_section_box"; }
+
+@media (max-width: 30rem) { article.CI_box .flight_time { margin-bottom: 10px; }
+  article.CI_box .travel_agency_information { margin-bottom: 30px; } }
+
+article.CI_box4 { display: grid; grid-column-gap: 20px; grid-template-areas: "collection" "flight" "leader_information4" "travel_agency_information4" "cl_section_box"; }
+
+article.CI_box4 .collection_information, article.CI_box4 .flight_time, article.CI_box4 .travel_agency_information4 { margin-bottom: 10px; }
+
+article.CI_box4 .leader_information4, article.CI_box4 .leader_information { margin-bottom: 30px; }
+
+@media (max-width: 30rem) { article.CI_box4 .leader_information4, article.CI_box4 .leader_information { margin-bottom: 0px; } }
+
+@media (max-width: 30rem) { article.CI_box { grid-template-areas: "collection" "flight" "leader_information" "travel_agency_information" "cl_section_box"; } }
+
+.collection_information { grid-area: collection; }
+
+.collection_information ul { padding: 0; margin: 0; list-style-type: none; }
+
+.collection_information li { margin-bottom: 0px; }
+
+.flight_time { grid-area: flight; }
+
+.leader_information4::after, .leader_information::after { clear: both; content: ""; display: block; }
+
+.leader_information4 div, .leader_information div { float: left; width: 24%; padding: 0; margin-right: 1%; text-align: center; border-radius: 10px 10px 0 0; }
+
+.leader_information4 .car_date, .leader_information .car_date { float: none; width: 70%; padding: 5px 0; margin: 0 auto; color: #fff; background: #60371c; }
+
+.leader_information4 .car_date span, .leader_information .car_date span { font-size: 1.75rem; line-height: 1.2; font-weight: bold; }
+
+.leader_information4 img, .leader_information img { width: 70%; margin: 0 auto; font-size: 0; vertical-align: top; }
+
+.leader_information4 p, .leader_information p { width: 70%; padding: 0; margin: 0 auto; line-height: 1.5; color: #fff; background: #60371c; }
+
+.leader_information { margin-bottom: 20px; grid-area: leader_information; }
+
+.leader_information div { width: 100%; height: 200px; text-align: left; border-radius: 10px 0 0 10px; }
+
+.leader_information .leader_photo_box { float: left; width: 60%; height: 200px; margin-right: 0; overflow: hidden; position: relative; background: #60371c; }
+
+.leader_information img { width: 100%; position: absolute; top: -50%; }
+
+.leader_information .user_box { float: left; width: 38%; padding-top: 80px; background: #60371c; border-radius: 0 10px 10px 0; }
+
+.leader_information .user_box p { width: 100%; margin: 0; text-align: center; }
+
+@media (min-width: 30rem) and (max-width: 45rem) { .leader_information4 div, .leader_information div { width: 48%; margin-right: 2%; margin-bottom: 20px; }
+  .leader_information div { width: 100%; height: auto; border-radius: 10px 10px 0 0; }
+  .leader_information .leader_photo_box { width: 100%; margin-bottom: 0; }
+  .leader_information img { top: 0px; }
+  .leader_information .user_box { width: 100%; height: auto; padding: 10px 0; border-radius: 0 0 10px 10px; } }
+
+@media (max-width: 30rem) { .leader_information4 div, .leader_information div { width: 48%; margin-right: 2%; margin-bottom: 20px; text-align: center; background: #60371c; }
+  .leader_information4 img, .leader_information img { width: 100%; }
+  .leader_information4 p, .leader_information p { width: 100%; }
+  .leader_information div { width: 100%; height: auto; margin: 0 auto; border-radius: 10px; background: transparent; }
+  .leader_information .leader_photo_box { float: none; width: 60%; height: auto; margin: 0 auto; border-radius: 10px 10px 0 0; }
+  .leader_information img { position: static; }
+  .leader_information .user_box { width: 60%; float: none; height: auto; padding: 10px 0; border-radius: 0 0 10px 10px; } }
+
+.travel_agency_information { grid-area: travel_agency_information; }
+
+section.CI_section_box { grid-area: cl_section_box; }
+
+section.CI_section_box li span { display: inline-block; vertical-align: top; }
+
+section.CI_section_box li span.red { display: inline; }
+
+/************************************* 行程介紹 */
+.attractions_box { margin-bottom: 30px; display: grid; grid-template-columns: 33% 33% 33%; grid-gap: 20px; }
+
+.attractions_box div h5 { padding-bottom: 10px; margin-bottom: 10px; color: #60371c; border-bottom: #60371c 1px dashed; }
+
+.attractions_box div img { width: 100%; margin: 10px 0; }
+
+@media (min-width: 30rem) and (max-width: 45rem) { .attractions_box { grid-template-columns: 49% 49%; } }
+
+@media (max-width: 30rem) { .attractions_box { grid-template-columns: auto; } }
+
+/************************************* 簡易行程 */
+section.meal_information { margin-bottom: 30px; position: relative; color: #555; background-color: #FFF8CA; border-radius: 10px; }
+
+section.meal_information ul { padding: 0; margin: 0; }
+
+section.meal_information li { width: 49%; display: inline-block; }
+
+section.meal_information span.food { font-weight: bold; color: #226e93; }
+
+section.meal_information span.small.red { font-weight: bold; color: #bd1111; }
+
+@media (min-width: 30rem) and (max-width: 45rem) { section.meal_information li { width: auto; display: block; }
+  section.meal_information span.small.red { display: block; } }
+
+@media (max-width: 30rem) { section.meal_information li { width: auto; display: block; }
+  section.meal_information span.small.red { display: block; } }
+
+section.meal_information:before { content: ""; width: 0px; height: 0px; margin-left: -15px; top: -28px; left: 50%; position: absolute; border-style: solid; border-width: 15px; border-color: transparent transparent #FFF8CA transparent; }
+
+/************************************* 貴賓分車, 貴賓分房 */
+.table_box { display: grid; grid-template-columns: 100%; grid-gap: 20px; }
+
+.table_box2 { display: grid; grid-template-columns: 50% 50%; grid-gap: 20px; }
+
+body table { margin: 0 auto 0 auto; }
+
+body table caption { color: #60371c; font-size: 1.25rem; line-height: 1.5; }
+
+@media (max-width: 30rem) { .table_box2 { grid-template-columns: auto; } }
+
+.page_link { display: none; }
+
+@media (max-width: 30rem) { .page_link { margin-bottom: 20px; text-align: center; display: block; }
+  .page_link ul { padding: 0; margin: 0; list-style-type: none; }
+  .page_link li { width: 49%; display: inline-block; text-align: center; }
+  .page_link a { padding: 10px 30px; display: block; color: #fff; background: #60371c; border-radius: 10px; }
+  .page_link a:hover { background: yellow; text-decoration: none; } }
+
+/************************************* 飯店介紹 */
+.hotel_1 { color: #fff; background: #854B8C; }
+
+.hotel_2 { color: #fff; background: #4E8A4C; }
+
+.HotelNotes { margin: 0 auto; text-align: center; }
+
+.HotelNotes ul { padding: 0; margin: 0; list-style-type: none; }
+
+.HotelNotes li { padding: 5px 10px; display: inline-block; font-size: 1.5rem; line-height: 1.33; text-align: center; color: #fff; border-radius: 5px; }
+
+.photo_box { display: grid; grid-column-gap: 10px; }
+
+.photo_box img { width: 100%; }
+
+.photo_box.one { grid-template-columns: auto; }
+
+.photo_box.two { grid-template-columns: 50% 50%; }
+
+.photo_box.three { grid-template-columns: 33.33% 33.33% 33.33%; }
+
+@media (min-width: 30rem) and (max-width: 45rem) { .photo_box.two, .photo_box.three { grid-template-columns: auto auto; grid-row-gap: 10px; } }
+
+@media (max-width: 30rem) { .photo_box { height: auto; }
+  .photo_box.two, .photo_box.three { grid-template-columns: auto; grid-row-gap: 10px; } }
+
+/************************************* 注意事項 */
+section.important { padding: 20px 20px; margin-bottom: 40px; background: transparent; border: #60371c 2px solid; border-radius: 5px; }
+
+section.important h5 { padding-bottom: 20px; margin-bottom: 20px; color: #226e93; font-size: 1.5rem; line-height: 1.33; text-align: center; font-weight: bold; border-bottom: #60371c 1px solid; }
+
+/************************************* 肉類製品勿入境(圖片) */
+img.no_meat { margin: 0 auto; display: block; text-align: center; }
+
+@media (min-width: 30rem) and (max-width: 45rem) { img.no_meat { width: 100%; } }
+
+@media (max-width: 30rem) { img.no_meat { width: 100%; } }
+
+/************************************* 翔順聯絡資訊 */
+article.add { text-align: center; }
+
+article.add img { display: inline-block; text-align: center; }
+
+article.add img.qr { width: 18%; }
+
+article.add ul { padding: 0; margin: 0 auto; display: block; text-align: center; }
+
+article.add li { width: 49%; display: inline-block; text-align: center; }
+
+@media (min-width: 30rem) and (max-width: 45rem) { article.add img.qr { width: 50%; }
+  article.add li { width: 100%; } }
+
+@media (max-width: 30rem) { article.add img.qr { width: 100%; }
+  article.add li { width: 100%; } }
+
+/* ========================================================================== Activity Page ========================================================================== */
+/* ========================================================================== Plug mixins ========================================================================== */
+.pt0 { padding-top: 0; }
+
+.pt5 { padding-top: 5px; }
+
+.pt10 { padding-top: 10px; }
+
+.pt15 { padding-top: 15px; }
+
+.pt20 { padding-top: 20px; }
+
+.pt25 { padding-top: 25px; }
+
+.pt30 { padding-top: 30px; }
+
+.pt35 { padding-top: 35px; }
+
+.pt40 { padding-top: 40px; }
+
+.pt45 { padding-top: 45px; }
+
+.pt50 { padding-top: 50px; }
+
+.pb0 { padding-bottom: 0; }
+
+.pb5 { padding-bottom: 5px; }
+
+.pb10 { padding-bottom: 10px; }
+
+.pb15 { padding-bottom: 15px; }
+
+.pb20 { padding-bottom: 20px; }
+
+.pb25 { padding-bottom: 25px; }
+
+.pb30 { padding-bottom: 30px; }
+
+.pb35 { padding-bottom: 35px; }
+
+.pb40 { padding-bottom: 40px; }
+
+.pb45 { padding-bottom: 45px; }
+
+.pb50 { padding-bottom: 50px; }
+
+.pl0 { padding-left: 0; }
+
+.pl5 { padding-left: 5px; }
+
+.pl10 { padding-left: 10px; }
+
+.pl15 { padding-left: 15px; }
+
+.pl20 { padding-left: 20px; }
+
+.pl25 { padding-left: 25px; }
+
+.pl30 { padding-left: 30px; }
+
+.pl35 { padding-left: 35px; }
+
+.pl40 { padding-left: 40px; }
+
+.pl45 { padding-left: 45px; }
+
+.pl50 { padding-left: 50px; }
+
+.pr0 { padding-right: 0; }
+
+.pr5 { padding-right: 5px; }
+
+.pr10 { padding-right: 10px; }
+
+.pr15 { padding-right: 15px; }
+
+.pr20 { padding-right: 20px; }
+
+.pr25 { padding-right: 25px; }
+
+.pr30 { padding-right: 30px; }
+
+.pr35 { padding-right: 35px; }
+
+.pr40 { padding-right: 40px; }
+
+.pr45 { padding-right: 45px; }
+
+.pr50 { padding-right: 50px; }
+
+.mt0 { margin-top: 0; }
+
+.mt5 { margin-top: 5px; }
+
+.mt10 { margin-top: 10px; }
+
+.mt15 { margin-top: 15px; }
+
+.mt20 { margin-top: 20px; }
+
+.mt25 { margin-top: 25px; }
+
+.mt30 { margin-top: 30px; }
+
+.mt35 { margin-top: 35px; }
+
+.mt40 { margin-top: 40px; }
+
+.mt45 { margin-top: 45px; }
+
+.mt50 { margin-top: 50px; }
+
+.mb0 { margin-bottom: 0; }
+
+.mb5 { margin-bottom: 5px; }
+
+.mb10 { margin-bottom: 10px; }
+
+.mb15 { margin-bottom: 15px; }
+
+.mb20 { margin-bottom: 20px; }
+
+.mb25 { margin-bottom: 25px; }
+
+.mb30 { margin-bottom: 30px; }
+
+.mb35 { margin-bottom: 35px; }
+
+.mb40 { margin-bottom: 40px; }
+
+.mb45 { margin-bottom: 45px; }
+
+.mb50 { margin-bottom: 50px; }
+
+.ml0 { margin-left: 0; }
+
+.ml5 { margin-left: 5px; }
+
+.ml10 { margin-left: 10px; }
+
+.ml15 { margin-left: 15px; }
+
+.ml20 { margin-left: 20px; }
+
+.ml25 { margin-left: 25px; }
+
+.ml30 { margin-left: 30px; }
+
+.ml35 { margin-left: 35px; }
+
+.ml40 { margin-left: 40px; }
+
+.ml45 { margin-left: 45px; }
+
+.ml50 { margin-left: 50px; }
+
+.mr0 { margin-right: 0; }
+
+.mr5 { margin-right: 5px; }
+
+.mr10 { margin-right: 10px; }
+
+.mr15 { margin-right: 15px; }
+
+.mr20 { margin-right: 20px; }
+
+.mr25 { margin-right: 25px; }
+
+.mr30 { margin-right: 30px; }
+
+.mr35 { margin-right: 35px; }
+
+.mr40 { margin-right: 40px; }
+
+.mr45 { margin-right: 45px; }
+
+.mr50 { margin-right: 50px; }
+
+/* ========================================================================== responsive mixins ========================================================================== */
+@media (min-width: 45rem) { table.responTable { width: 100%; margin: 0 auto 20px auto; border-top: #aaa 1px solid; border-left: #aaa 1px solid; text-rendering: optimizeLegibility; }
+  table.responTable caption { caption-side: top; }
+  table.responTable thead tr th, table.responTable thead tr td, table.responTable tbody tr th, table.responTable tbody tr td { color: #fff; padding: 5px; border-right: #aaa 1px solid; border-bottom: #aaa 1px solid; }
+  table.responTable thead tr th a, table.responTable thead tr td a, table.responTable tbody tr th a, table.responTable tbody tr td a { min-width: 26px; display: inline-block; *display: inline; *zoom: 1; text-decoration: underline; margin: 0 5px 0 0; cursor: pointer; }
+  table.responTable thead tr th { text-align: center; background: #60371c; }
+  table.responTable tbody tr td { color: #444; }
+  table.responTable tr.odd, table.responTable table.table_style tbody.odd tr:nth-child(2n+2), table.table_style tbody.odd table.responTable tr:nth-child(2n+2), table.responTable table.table_left_style tbody.odd tr:nth-child(2n+2), table.table_left_style tbody.odd table.responTable tr:nth-child(2n+2) { background: #d0d0d0; }
+  table.responTable tbody.odd tr:nth-child(2n+2) { background: #d0d0d0; } }
+
+@media (min-width: 30rem) and (max-width: 45rem) { table.responTable { width: 100%; margin: 0 auto 20px auto; border-top: #aaa 1px solid; border-left: #aaa 1px solid; text-rendering: optimizeLegibility; }
+  table.responTable caption { caption-side: top; }
+  table.responTable thead tr th, table.responTable thead tr td, table.responTable tbody tr th, table.responTable tbody tr td { color: #fff; padding: 5px; border-right: #aaa 1px solid; border-bottom: #aaa 1px solid; }
+  table.responTable thead tr th a, table.responTable thead tr td a, table.responTable tbody tr th a, table.responTable tbody tr td a { min-width: 26px; display: inline-block; *display: inline; *zoom: 1; text-decoration: underline; margin: 0 5px 0 0; cursor: pointer; }
+  table.responTable thead tr th { text-align: center; background: #60371c; }
+  table.responTable tbody tr td { color: #444; }
+  table.responTable tr.odd, table.responTable table.table_style tbody.odd tr:nth-child(2n+2), table.table_style tbody.odd table.responTable tr:nth-child(2n+2), table.responTable table.table_left_style tbody.odd tr:nth-child(2n+2), table.table_left_style tbody.odd table.responTable tr:nth-child(2n+2) { background: #d0d0d0; }
+  table.responTable tbody.odd tr:nth-child(2n+2) { background: #d0d0d0; } }
+
+@media (max-width: 30rem) { table.responTable { display: block; border: none; }
+  table.responTable caption { caption-side: top; }
+  table.responTable thead { display: none; }
+  table.responTable tbody tr { position: relative; display: block; margin: 0 0 10px 0; }
+  table.responTable tbody tr td { color: #444; position: relative; margin-bottom: 0; background: #ffffff; display: inline-block; width: 100%; padding: 0; vertical-align: middle; border-top: #aaa 1px solid; border-right: #aaa 1px solid; border-left: #aaa 1px solid; box-sizing: border-box; }
+  table.responTable tbody tr td:last-child { border-bottom: #aaa 1px solid; }
+  table.responTable tbody tr td div { display: table-cell; padding: 5px; text-align: left; border-left: #aaa 1px solid; }
+  table.responTable tbody tr td div a { display: block; text-decoration: underline; margin: 0 0 5px 0; }
+  table.responTable tbody tr td:first-child { /* background: $t_bg_color; */ }
+  table.responTable tbody tr td:before { color: #fff; background: #60371c; content: attr(data-th); display: table-cell; left: 0; width: 120px; margin: 0 5px 0 0; padding: 0 5px; /* border-right: $t_color $t_width $t_style; */ vertical-align: middle; box-sizing: border-box; }
+  table.responTable tbody tr:not(:last-child) { border-right: none; border-bottom: none; } }
