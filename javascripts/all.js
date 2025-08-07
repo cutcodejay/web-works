@@ -89,11 +89,8 @@ document.querySelectorAll('ul.Ul__Nav--hover > li').forEach(item => {
 
 // ================ head bar 滾動樣式替換
 document.addEventListener('DOMContentLoaded', () => {
-  window.onscroll = () => myFunction();
-
   const header = document.getElementById('myHeader');
   const sticky = header.offsetTop;
-
   function myFunction() {
     if (window.pageYOffset > sticky) {
       header.classList.add('sticky');
@@ -101,6 +98,10 @@ document.addEventListener('DOMContentLoaded', () => {
       header.classList.remove('sticky');
     }
   }
+  // 初始檢查一次（頁面載入時就判斷是否 sticky）
+  myFunction();
+  // 當滾動時再檢查
+  window.onscroll = () => myFunction();
 });
 
 // ================ 按鈕往下滾動
