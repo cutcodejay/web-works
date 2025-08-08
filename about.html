@@ -1,295 +1,357 @@
 <!DOCTYPE html>
 <html class='no-js' lang='zh-Hant-TW'>
-
 <head>
-  <meta charset='utf-8'>
-  <meta content='IE=edge' http-equiv='X-UA-Compatible'>
-  <meta content='width=device-width, initial-scale=1.0' name='viewport'>
-  <title>Jay 的前端網站網頁作品集 Jay&#39;s Web Design &amp; Front-End Portfolio - 關於我們</title>
-  <meta content='' name='description'>
-  <meta content='' name='keywords'>
-  <!-- / === javascripts ====================================================== -->
+<meta charset='utf-8'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<title>Jay 的前端網站網頁作品集 Jay&#39;s Web Design &amp; Front-End Portfolio - 關於我們</title>
+<meta content='Jay Wang 的前端作品集：專注於 RWD 響應式切版、互動動畫整合與前端最佳化，收錄商業專案與個人練習。' name='description'>
+<meta content='' name='keywords'>
+<meta content='website' property='og:type'>
+<meta content='Jay Wang 前端作品集' property='og:title'>
+<meta content='RWD、切版、互動動畫整合。' property='og:description'>
+<meta content='https://cutcodejay.github.io/web-works/images/og-cover.jpg' property='og:image'>
+<meta content='https://cutcodejay.github.io/web-works/' property='og:url'>
+<meta content='summary_large_image' name='twitter:card'>
 
-  <!-- / === All Css ====================================================== -->
-  <link href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' rel='stylesheet'
-    type='text/css'>
-  <link href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet' type='text/css'>
-  <link crossorigin='anonymous' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css'
-    rel='stylesheet'>
+<script type='application/ld+json'>
+<![CDATA[
+    {
+      "@context":"https://schema.org",
+      "@type":"Person",
+      "name":"Jay Wang",
+      "jobTitle":"Front-end Developer",
+      "url":"https://cutcodejay.github.io/web-works/",
+      "image":"https://cutcodejay.github.io/web-works/images/jay.webp",
+      "sameAs":[
+        "https://github.com/cutcodejay",
+        "https://www.linkedin.com/in/jaywangxd"
+      ]
+    }
+]]>
+</script>
+<script type='application/ld+json'>
+<![CDATA[
+    {
+      "@context":"https://schema.org",
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {
+          "@type":"ListItem",
+          "position":1,
+          "name":"首頁",
+          "item":"https://你的網域/"
+        },
+        {
+          "@type":"ListItem",
+          "position":2,
+          "name":"關於Jay",
+          "item":"https://cutcodejay.github.io/web-works/about.html"
+        },
+        {
+          "@type":"ListItem",
+          "position":3,
+          "name":"AMHA",
+          "item":"https://cutcodejay.github.io/web-works/project-AMHA.html"
+        },
+        {
+          "@type":"ListItem",
+          "position":4,
+          "name":"Dr. 美胸",
+          "item":"https://cutcodejay.github.io/web-works/project-dr.html"
+        },
+        {
+          "@type":"ListItem",
+          "position":5,
+          "name":"雲飛健康寶盒",
+          "item":"https://cutcodejay.github.io/web-works/project-YunfeisChoice.html"
+        },
+        {
+          "@type":"ListItem",
+          "position":6,
+          "name":"馬來西亞旅遊線上手冊",
+          "item":"https://cutcodejay.github.io/web-works/project-Malaysia.html"
+        },
+        {
+          "@type":"ListItem",
+          "position":7,
+          "name":"手機訂房系統",
+          "item":"https://cutcodejay.github.io/web-works/project-MobileBooking.html"
+        },
+        {
+          "@type":"ListItem",
+          "position":8,
+          "name":"AMHA後台線上系統",
+          "item":"https://cutcodejay.github.io/web-works/project-AMHASystem.html"
+        },
+        {
+          "@type":"ListItem",
+          "position":9,
+          "name":"企業後台ERP系統",
+          "item":"https://cutcodejay.github.io/web-works/project-ERPSystem.html"
+        },
+        {
+          "@type":"ListItem",
+          "position":10,
+          "name":"旅宿業後台系統",
+          "item":"https://cutcodejay.github.io/web-works/project-GuesthouseAdminSystem.html"
+        },
+      ]
+    }
+]]>
+</script>
 
-  <link href='css/all.css' rel='stylesheet' type='text/css'>
+<!-- / === javascripts ====================================================== -->
+
+<!-- / === All Css ====================================================== -->
+<link href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' rel='stylesheet' type='text/css'>
+<link href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet' type='text/css'>
+<link crossorigin='anonymous' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' rel='stylesheet'>
+
+<link href='css/all.css' rel='stylesheet' type='text/css'>
 </head>
-
 <body>
-  <!-- / ========================== Container_start ========================== -->
-  <div id='container'>
-    <!-- / ========================== Header_start ========================== -->
-    <header class='web__header' id='myHeader'>
-      <div class='head_box'>
-        <a class='logo' href='./index.html'>
-          <h3>
-            Jay 作品集
-            <div class='small'>Jay's Creative Portfolio</div>
-          </h3>
-        </a>
-        <div class='nav_box'>
-          <button class='opened-menu' type='button'>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <div class='overlay'></div>
-          <nav class='nav_bar'>
-            <button class='closed-menu' type='button'>
-              <img alt='closed' class='closed-icon svg' src='images/closed.svg'>
-            </button>
-            <ul class='menu'>
-              <li class='menu-item'>
-                <a href='index.html'>首頁</a>
-              </li>
-              <li class='menu-item'>
-                <a href='about.html'>關於Jay</a>
-              </li>
-              <li class='menu-item'>
-                <button class='btn' data-bs-placement='top' data-bs-toggle='tooltip' data-email='jaywangxd@gmail.com'
-                  onclick='copyEmail(this)' title='點擊複製 Email &lt;br&gt; Click to copy Email' type='button'>
-                  <i class='fa-solid fa-envelope'></i>
-                </button>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+<!-- / ========================== Container_start ========================== -->
+<div id='container'>
+<!-- / ========================== Header_start ========================== -->
+<header class='web__header' id='myHeader'>
+<div class='head_box'>
+<a class='logo' href='./index.html'>
+<h3>
+Jay 作品集
+<div class='small'>Jay's Creative Portfolio</div>
+</h3>
+</a>
+<div class='nav_box'>
+<button class='opened-menu' type='button'>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</button>
+<div class='overlay'></div>
+<nav class='nav_bar'>
+<button class='closed-menu' type='button'>
+<img alt='closed' class='closed-icon svg' src='images/closed.svg'>
+</button>
+<ul class='menu'>
+<li class='menu-item'>
+<a href='index.html'>首頁</a>
+</li>
+<li class='menu-item'>
+<a href='about.html'>關於Jay</a>
+</li>
+<li class='menu-item'>
+<button class='btn' data-bs-placement='top' data-bs-toggle='tooltip' data-email='jaywangxd@gmail.com' onclick='copyEmail(this)' title='點擊複製 Email &lt;br&gt; Click to copy Email' type='button'>
+<i class='fa-solid fa-envelope'></i>
+</button>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</header>
 
-    <!-- / ========================== Header_end ========================== -->
-    <!-- / ========================== Content_start ========================== -->
-    <div class='content'>
-      <!-- / ========================== Main_start ========================== -->
-      <main class='about'>
-        <h2 class='titleBar'>
-          關於我
-          <span class='en'>About Me</span>
-        </h2>
-        <section class='profile'>
-          <h4>
-            <i class='fa-solid fa-user-tie'></i>
-            個人簡介 / Personal Introduction
-          </h4>
-          <div class='Layout3'>
-            <img alt='Jay' class='avatar' src='images/jay.jpg'>
-            <div class='text'>
-              <p class='intro'>
-                我是 Jay，來自台灣，擁有超過 20 年以上的前端網站網頁切版與設計經驗。
-                專精於 HTML、CSS 與 RWD 響應式網頁技術，並熱衷於提升 UI/UX 設計與使用者體驗。
-              </p>
-              <p class='intro'>
-                在我的職涯中，曾參與多個專案從無到有的規劃與製作，具備良好的跨部門溝通與協作能力。
-                我相信好的設計不只美觀，更應有效且有溫度，因此我致力於打造順暢且友善的使用者介面。
-              </p>
-            </div>
-            <div class='text_en'>
-              <p class='intro'>
-                I'm Jay from Taiwan, with over 20 years of experience in front-end web development and layout design.
-                Skilled in HTML, CSS, and responsive web design (RWD), I'm passionate about improving UI/UX design and
-                user experience.
-              </p>
-              <p class='intro'>
-                Throughout my career, I've been involved in planning and executing various projects from scratch, with
-                strong cross-functional communication and collaboration skills.
-                I believe good design should not only look beautiful but also be functional and empathetic. I strive to
-                create smooth and user-friendly interfaces.
-              </p>
-            </div>
-          </div>
-        </section>
-        <section class='skills'>
-          <h4>
-            <i class='fa-solid fa-medal'></i>
-            專業技能 / Professional Skills
-          </h4>
-          <h5>設計與 UI/UX / Design & UI/UX</h5>
-          <div class='Layout2'>
-            <ul class='skill-list'>
-              <li>
-                <div class='title'>影像處理 :</div>
-                <div class='text'>Adobe Photoshop, Adobe Illustrator</div>
-              </li>
-              <li>
-                <div class='title'>UI/UX 設計工具 :</div>
-                <div class='text'>Figma, Zeplin</div>
-              </li>
-              <li>
-                <div class='title'>設計能力 :</div>
-                <div class='text'>使用者體驗優化 (UI/UX)</div>
-              </li>
-            </ul>
-            <ul class='skill-list'>
-              <li class='en'>
-                <div class='title'>Image Editing :</div>
-                <div class='text'>Adobe Photoshop, Adobe Illustrator</div>
-              </li>
-              <li class='en'>
-                <div class='title'>UI/UX Design Tools :</div>
-                <div class='text'>Figma, Zeplin</div>
-              </li>
-              <li class='en'>
-                <div class='title'>Design Capabilities :</div>
-                <div class='text'>User Experience Optimization (UI/UX)</div>
-              </li>
-            </ul>
-          </div>
-          <h5>前端網頁技術 / Front-End Web Development</h5>
-          <div class='Layout2'>
-            <ul class='skill-list'>
-              <li>
-                <div class='title'>網頁技術 :</div>
-                <div class='text'>HTML5, CSS3, SCSS, Bootstrap, RWD (響應式設計)</div>
-              </li>
-              <li>
-                <div class='title'>技術處理 :</div>
-                <div class='text'>網頁標準化、瀏覽器相容性處理</div>
-              </li>
-              <li>
-                <div class='title'>專案應用 :</div>
-                <div class='text'>網頁切版、套版、特效技術, 後台介面與複雜表單設計, 無障礙網頁製作, SEO 網頁優化設定, Google/FB API 設定, 大型網站維護管理</div>
-              </li>
-            </ul>
-            <ul class='skill-list'>
-              <li class='en'>
-                <div class='title'>Web Technologies :</div>
-                <div class='text'>HTML5, CSS3, SCSS, Bootstrap, RWD (Responsive Web Design)</div>
-              </li>
-              <li class='en'>
-                <div class='title'>Technical Handling :</div>
-                <div class='text'>Web Standardization, Cross-Browser Compatibility</div>
-              </li>
-              <li class='en'>
-                <div class='title'>Project Applications :</div>
-                <div class='text'>Web slicing/layout, theme integration, animation effects, backend interface and
-                  complex form design, accessible web development, SEO optimization, Google/Facebook API integration.
-                </div>
-              </li>
-            </ul>
-          </div>
-          <h5>程式開發 (JavaScript) / Programming (JavaScript)</h5>
-          <ul class='skill-list'>
-            <li>
-              <div class='title'>JavaScript :</div>
-              <div class='text'>ES6, jQuery</div>
-            </li>
-            <li>
-              <div class='title'>框架 Frameworks :</div>
-              <div class='text'>Vue3 (元件 components、模版應用 templates), Nuxt</div>
-            </li>
-          </ul>
-        </section>
-        <section class='experience'>
-          <h4>
-            <i class='fa-solid fa-briefcase'></i>
-            工作經歷摘要 / Career Summary
-          </h4>
-          <div class='text'>
-            <p>我自 2005 年至今累積超過 20 年前端開發經驗，服務過新媒體、設計公司與品牌端，參與過各類專案頁、活動頁與政府形象網站的建置。</p>
-            <p>我擅長從規劃、執行到上線的完整開發流程，並注重細節、效能與 UI/UX 的兼顧，能成為團隊中穩定可靠的執行者。</p>
-          </div>
-          <div class='text'>
-            <p class='en'>ince 2005, I’ve accumulated over 20 years of front-end layout experience, working with digital
-              media, design studios, and brand-side companies. I have contributed to various project pages, campaign
-              microsites, and government image websites.</p>
-            <p class='en'>I specialize in end-to-end project development—from planning to deployment—with attention to
-              detail, performance, and UI/UX. I’m a dependable and consistent executor in any team.</p>
-          </div>
-        </section>
-        <section class='bio'>
-          <h4>
-            <i class='fa-solid fa-image-portrait'></i>
-            自傳 / Personal Statement
-          </h4>
-          <p>網頁設計已從興趣轉變為我專職的事業。二十餘年來，我不斷專研技術與設計，累積了豐富的實戰經驗，深刻了解市場需求與使用者行為。我秉持著持續學習的精神，以確保我的服務與時俱進，保持競爭力。</p>
-          <p>我深信，一個成功的網站是團隊合作的結晶，而網頁設計師在其中扮演著至關重要的溝通橋樑。我擅長整合前端開發、UI/UX 設計和客戶需求，確保專案從概念發想到最終上線的每個環節都能順利執行。</p>
-          <p>
-            在我的服務中，我不僅專注於視覺設計與程式碼實現，更重視網站的標準性、相容性、流通性與使用者體驗。我能協助客戶處理網站優化與行銷策略，例如SEO、社群媒體整合等，確保網站能在激烈的網路環境中脫穎而出，有效觸及目標受眾。
-          </p>
-          <p>儘管市場瞬息萬變，但我相信人類的創意與設計思維是機器難以取代的。憑藉多年的歷練、紮實的能力和強大的學習力，我能為您提供量身打造的專業網頁解決方案。</p>
-          <p>我期待能有機會與您合作，運用我的專業為您的品牌或事業打造一個完善且具競爭力的網站。</p>
-          <p class='en'>Web design has evolved from a passion into my full-time profession. For over two decades, I have
-            continuously refined my technical skills and design sensibility, gaining extensive hands-on experience and a
-            deep understanding of market needs and user behavior. I uphold a spirit of continuous learning to ensure my
-            services remain current and competitive.</p>
-          <p class='en'>I firmly believe that a successful website is the result of teamwork, and the web designer plays
-            a key role as a communication bridge between parties. I excel at integrating front-end development, UI/UX
-            design, and client requirements to ensure every phase—from concept to launch—runs smoothly.</p>
-          <p class='en'>My services go beyond visual design and coding—I focus on web standards, compatibility,
-            accessibility, and user experience. I help clients with website optimization and marketing strategies—such
-            as SEO and social media integration—to ensure their sites stand out and reach target audiences effectively.
-          </p>
-          <p class='en'>Despite rapid market changes, I believe human creativity and design thinking remain
-            irreplaceable by machines. With years of experience, solid skills, and strong learning ability, I can
-            deliver custom professional web solutions tailored to your needs.</p>
-          <p class='en'>I look forward to the opportunity to collaborate and use my expertise to build a complete and
-            competitive website for your brand or business.</p>
-        </section>
-      </main>
-      <!-- / ========================== Main_end ========================== -->
-    </div>
-    <!-- / ========================== Content_end ========================== -->
+<!-- / ========================== Header_end ========================== -->
+<!-- / ========================== Content_start ========================== -->
+<div class='content'>
+<!-- / ========================== Main_start ========================== -->
+<main class='about'>
+<h2 class='titleBar'>
+關於我
+<span class='en' lang='en'>About Me</span>
+</h2>
+<section class='profile'>
+<h4>
+<i class='fa-solid fa-user-tie'></i>
+個人簡介 /
+<span lang='en'>Personal Introduction</span>
+</h4>
+<div class='Layout3'>
+<img alt='Jay Wang 個人頭像' class='avatar' oading='lazy' src='images/jay.webp'>
+<div class='text'>
+<p class='intro'>我是 Jay，來自台灣，擁有超過 20 年的前端網站網頁切版與設計經驗。專精於 HTML、CSS 與 RWD 響應式網頁技術，並熱衷於提升 UI/UX 設計與使用者體驗。</p>
+<p class='intro'>在我的職涯中，曾參與多個專案從無到有的規劃與製作，具備良好的跨部門溝通與協作能力。我相信好的設計不只美觀，更應有效且有溫度，因此我致力於打造順暢且友善的使用者介面。</p>
+</div>
+<div class='text_en' lang='en'>
+<p class='intro'>I'm Jay from Taiwan, with over 20 years of experience in front-end web layout and design. I specialize in HTML, CSS, and responsive web design (RWD), and I am passionate about enhancing UI/UX design and the overall user experience.</p>
+<p class='intro'>Throughout my career, I have participated in numerous projects from concept to completion, demonstrating strong cross-department communication and collaboration skills. I believe that great design is not only visually appealing but also functional and human-centered, which is why I strive to create smooth and user-friendly interfaces.</p>
+</div>
+</div>
+</section>
+<section class='skills'>
+<h4>
+<i class='fa-solid fa-medal'></i>
+專業技能 /
+<span lang='en'>Professional Skills</span>
+</h4>
+<h5>
+設計與 UI/UX /
+<span lang='en'>Design & UI/UX</span>
+</h5>
+<div class='Layout2'>
+<ul class='skill-list'>
+<li>
+<div class='title'>影像處理 :</div>
+<div class='text'>Adobe Photoshop, Adobe Illustrator</div>
+</li>
+<li>
+<div class='title'>UI/UX 設計工具 :</div>
+<div class='text'>Figma, Zeplin</div>
+</li>
+<li>
+<div class='title'>設計能力 :</div>
+<div class='text'>使用者體驗優化 (UI/UX)</div>
+</li>
+</ul>
+<ul class='skill-list' lang='en'>
+<li class='en'>
+<div class='title'>Image Editing :</div>
+<div class='text'>Adobe Photoshop, Adobe Illustrator</div>
+</li>
+<li class='en'>
+<div class='title'>UI/UX Design Tools :</div>
+<div class='text'>Figma, Zeplin</div>
+</li>
+<li class='en'>
+<div class='title'>Design Capabilities :</div>
+<div class='text'>User Experience Optimization (UI/UX)</div>
+</li>
+</ul>
+</div>
+<h5>
+前端網頁技術 /
+<span lang='en'>Front-End Web Development</span>
+</h5>
+<div class='Layout2'>
+<ul class='skill-list'>
+<li>
+<div class='title'>網頁技術 :</div>
+<div class='text'>HTML5, CSS3, SCSS, Bootstrap, RWD (響應式設計)</div>
+</li>
+<li>
+<div class='title'>技術處理 :</div>
+<div class='text'>網頁標準化、瀏覽器相容性處理</div>
+</li>
+<li>
+<div class='title'>專案應用 :</div>
+<div class='text'>網頁切版、套版、特效技術, 後台介面與複雜表單設計, 無障礙網頁製作, SEO 網頁優化設定, Google/FB API 設定, 大型網站維護管理</div>
+</li>
+</ul>
+<ul class='skill-list' lang='en'>
+<li class='en'>
+<div class='title'>Web Technologies :</div>
+<div class='text'>HTML5, CSS3, SCSS, Bootstrap, RWD (Responsive Web Design)</div>
+</li>
+<li class='en'>
+<div class='title'>Technical Handling :</div>
+<div class='text'>Web Standardization, Cross-Browser Compatibility</div>
+</li>
+<li class='en'>
+<div class='title'>Project Applications :</div>
+<div class='text'>Web slicing/layout, theme integration, animation effects, backend interface and complex form design, accessible web development, SEO optimization, Google/Facebook API integration.</div>
+</li>
+</ul>
+</div>
+<h5>
+程式開發 (JavaScript) /
+<span lang='en'>Programming (JavaScript)</span>
+</h5>
+<ul class='skill-list'>
+<li>
+<div class='title'>JavaScript :</div>
+<div class='text'>ES6, jQuery</div>
+</li>
+<li>
+<div class='title'>框架 Frameworks :</div>
+<div class='text'>Vue3 (元件 components、模版應用 templates), Nuxt</div>
+</li>
+</ul>
+</section>
+<section class='experience'>
+<h4>
+<i class='fa-solid fa-briefcase'></i>
+工作經歷摘要 / Career Summary
+</h4>
+<div class='text'>
+<p>我自 2005 年至今累積超過 20 年前端開發經驗，服務過新媒體、設計公司與品牌端，參與過各類專案頁、活動頁與政府形象網站的建置。</p>
+<p>我擅長從規劃、執行到上線的完整開發流程，並注重細節、效能與 UI/UX 的兼顧，能成為團隊中穩定可靠的執行者。</p>
+</div>
+<div class='text' lang='en'>
+<p class='en'>Since 2005, I’ve accumulated over 20 years of front-end layout experience, working with digital media, design studios, and brand-side companies. I have contributed to various project pages, campaign microsites, and government image websites.</p>
+<p class='en'>I specialize in end-to-end project development—from planning to deployment—with attention to detail, performance, and UI/UX. I’m a dependable and consistent executor in any team.</p>
+</div>
+</section>
+<section class='bio'>
+<h4>
+<i class='fa-solid fa-image-portrait'></i>
+自傳 /
+<span lang='en'>Personal Statement</span>
+</h4>
+<p>網頁設計已從興趣轉變為我專職的事業。二十餘年來，我不斷專研技術與設計，累積了豐富的實戰經驗，深刻了解市場需求與使用者行為。我秉持著持續學習的精神，以確保我的服務與時俱進，保持競爭力。</p>
+<p>我深信，一個成功的網站是團隊合作的結晶，而網頁設計師在其中扮演著至關重要的溝通橋樑。我擅長整合前端開發、UI/UX 設計和客戶需求，確保專案從概念發想到最終上線的每個環節都能順利執行。</p>
+<p>在我的服務中，我不僅專注於視覺設計與程式碼實現，更重視網站的標準性、相容性、流通性與使用者體驗。我能協助客戶處理網站優化與行銷策略，例如SEO、社群媒體整合等，確保網站能在激烈的網路環境中脫穎而出，有效觸及目標受眾。</p>
+<p>儘管市場瞬息萬變，但我相信人類的創意與設計思維是機器難以取代的。憑藉多年的歷練、紮實的能力和強大的學習力，我能為您提供量身打造的專業網頁解決方案。</p>
+<p>我期待能有機會與您合作，運用我的專業為您的品牌或事業打造一個完善且具競爭力的網站。</p>
+<p class='en' lang='en'>Web design has evolved from a passion into my full-time profession. For over two decades, I have continuously refined my technical skills and design sensibility, gaining extensive hands-on experience and a deep understanding of market needs and user behavior. I uphold a spirit of continuous learning to ensure my services remain current and competitive.</p>
+<p class='en' lang='en'>I firmly believe that a successful website is the result of teamwork, and the web designer plays a key role as a communication bridge between parties. I excel at integrating front-end development, UI/UX design, and client requirements to ensure every phase—from concept to launch—runs smoothly.</p>
+<p class='en' lang='en'>My services go beyond visual design and coding—I focus on web standards, compatibility, accessibility, and user experience. I help clients with website optimization and marketing strategies—such as SEO and social media integration—to ensure their sites stand out and reach target audiences effectively.</p>
+<p class='en' lang='en'>Despite rapid market changes, I believe human creativity and design thinking remain irreplaceable by machines. With years of experience, solid skills, and strong learning ability, I can deliver custom professional web solutions tailored to your needs.</p>
+<p class='en' lang='en'>I look forward to the opportunity to collaborate and use my expertise to build a complete and competitive website for your brand or business.</p>
+</section>
+</main>
+<!-- / ========================== Main_end ========================== -->
+</div>
+<!-- / ========================== Content_end ========================== -->
 
-    <!-- / ========================== Footer_start ========================== -->
-    <footer class='web__footer'>
-      <div class='foot_box'>
-        <address>
-          <div class='itemLink'>
-            <i class='fa-solid fa-envelope'></i>
-            <a href='mailto:jaywangxd@gmail.com?subject=問題諮詢'>jaywangxd@gmail.com</a>
-          </div>
-        </address>
-        <div class='copyright_box'>
-          Copyright &copy;
-          <span id='current-year'></span>
-          Jay Wang. All Rights Reserved.
-        </div>
-      </div>
-      <div class='accordion project-accordion'>
-        <div class='accordion-item'>
-          <div class='accordion-header'>
-            免責聲明 Disclaimer
-            <span class='nav-more'></span>
-          </div>
-          <div class='accordion-content'>
-            <p>
-              本網站作品集所展示之網站畫面與內容，僅為本人過往參與之專案成果，所有原始設計與版權皆屬於對應原公司或業主所有。本人僅用於個人作品集展示用途，以呈現本人的參與經歷與技術能力。若有涉及原公司機密資料，已盡力遮蔽或簡化處理。此網站僅供個人展示參考，任何未經授權的擷取、重製、使用等行為，其法律責任由行為人自負，與本人無涉。如有作品侵害貴公司之利益，請來信告知，本人將儘速處理。
-            </p>
-            <p class='en'>The website content and visuals displayed in this portfolio represent projects I have
-              participated in during my past work experience. All original designs and copyrights belong to the
-              respective companies or owners. This site is intended solely for personal portfolio display purposes, to
-              demonstrate my professional experience and technical skills. Any confidential information related to the
-              original companies has been blurred or simplified to the best of my ability. This site is for personal
-              reference and display only. Any unauthorized copying, reproduction, or use of the content is the sole
-              responsibility of the individual involved and is not associated with me in any way.</p>
-            <p class='en'>If any of the showcased works are found to infringe upon the interests of your company, please
-              contact me, and I will address the matter as soon as possible.</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <button class='toTop-arrow' id='BackTop' type='button'>
-      <img alt='' class='svg' src='images/circle-up.svg'>
-      Back to Top
-    </button>
+<!-- / ========================== Footer_start ========================== -->
+<footer class='web__footer'>
+<div class='foot_box'>
+<address>
+<div class='itemLink'>
+<i class='fa-solid fa-envelope'></i>
+<a href='mailto:jaywangxd@gmail.com?subject=問題諮詢'>jaywangxd@gmail.com</a>
+</div>
+<div class='itemLink'>
+<i class='fa-brands fa-linkedin'></i>
+<a href='http://www.linkedin.com/in/jaywangxd' target='_blank'>Jay Wang</a>
+</div>
+</address>
+<div class='copyright_box'>
+Copyright &copy;
+<span id='current-year'></span>
+Jay Wang. All Rights Reserved.
+</div>
+</div>
+<div class='accordion project-accordion'>
+<div class='accordion-item'>
+<div class='accordion-header'>
+免責聲明 Disclaimer
+<span class='nav-more'></span>
+</div>
+<div class='accordion-content'>
+<p>本網站作品集所展示之網站畫面與內容，僅為本人過往參與之專案成果，所有原始設計與版權皆屬於對應原公司或業主所有。本人僅用於個人作品集展示用途，以呈現本人的參與經歷與技術能力。若有涉及原公司機密資料，已盡力遮蔽或簡化處理。此網站僅供個人展示參考，任何未經授權的擷取、重製、使用等行為，其法律責任由行為人自負，與本人無涉。如有作品侵害貴公司之利益，請來信告知，本人將儘速處理。</p>
+<p class='en'>The website content and visuals displayed in this portfolio represent projects I have participated in during my past work experience. All original designs and copyrights belong to the respective companies or owners. This site is intended solely for personal portfolio display purposes, to demonstrate my professional experience and technical skills. Any confidential information related to the original companies has been blurred or simplified to the best of my ability. This site is for personal reference and display only. Any unauthorized copying, reproduction, or use of the content is the sole responsibility of the individual involved and is not associated with me in any way.</p>
+<p class='en'>If any of the showcased works are found to infringe upon the interests of your company, please contact me, and I will address the matter as soon as possible.</p>
+</div>
+</div>
+</div>
+</footer>
+<button class='toTop-arrow' id='BackTop' type='button'>
+<img alt='' class='svg' src='images/circle-up.svg'>
+Back to Top
+</button>
 
-    <!-- / ========================== Footer_end ========================== -->
-  </div>
-  <!-- / ========================== Container_end ========================== -->
-  <!-- / === javascripts ====================================================== -->
-  <script src='javascripts/rwd_nav.js'></script>
-  <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js'></script>
-  <script src='javascripts/js_accordion.js'></script>
-  <script src='javascripts/SVGimgtoSVG.js'></script>
-  <script src='javascripts/all.js'></script>
+<!-- / ========================== Footer_end ========================== -->
+</div>
+<!-- / ========================== Container_end ========================== -->
+<!-- / === javascripts ====================================================== -->
+<script src='javascripts/rwd_nav.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js'></script>
+<script src='javascripts/js_accordion.js'></script>
+<script src='javascripts/SVGimgtoSVG.js'></script>
+<script src='javascripts/all.js'></script>
 
 </body>
-
 </html>

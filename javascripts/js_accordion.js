@@ -1,1 +1,55 @@
-function _0x1f66(_0x210be3,_0x128f26){var _0x2029c0=_0x2029();return _0x1f66=function(_0x1f66bd,_0xcf4664){_0x1f66bd=_0x1f66bd-0xde;var _0x3b4988=_0x2029c0[_0x1f66bd];return _0x3b4988;},_0x1f66(_0x210be3,_0x128f26);}var _0x6a0355=_0x1f66;function _0x2029(){var _0x158e39=['528WveZYb','152567eFrFuh','classList|active|accordionItems|const|accordion|forEach|remove|document|querySelectorAll|item|querySelector|header||addEventListener||click|contains|add','split','7MxYQiA','toString','7388253wAbNCo','1478988CmXblI','\x5cw+','2082978mKPYna','3603592izyfXE','14034570gFYlmF','6005RNrdqb','replace','2tclZbO','3\x202=7.8(\x22.4-9\x22);2.5(c=>{3\x20e=c.a(\x22.4-b\x22);e.d(\x22f\x22,()=>{c.0.g(\x221\x22)?c.0.6(\x221\x22):(2.5(c=>{c.0.6(\x221\x22)}),c.0.h(\x221\x22))})});'];_0x2029=function(){return _0x158e39;};return _0x2029();}(function(_0x2206ca,_0x13632d){var _0x13b63d=_0x1f66,_0x4bd85a=_0x2206ca();while(!![]){try{var _0x2b7dc8=-parseInt(_0x13b63d(0xe4))/0x1*(-parseInt(_0x13b63d(0xe1))/0x2)+parseInt(_0x13b63d(0xec))/0x3+-parseInt(_0x13b63d(0xea))/0x4+parseInt(_0x13b63d(0xdf))/0x5*(-parseInt(_0x13b63d(0xe3))/0x6)+parseInt(_0x13b63d(0xe7))/0x7*(-parseInt(_0x13b63d(0xed))/0x8)+-parseInt(_0x13b63d(0xe9))/0x9+parseInt(_0x13b63d(0xde))/0xa;if(_0x2b7dc8===_0x13632d)break;else _0x4bd85a['push'](_0x4bd85a['shift']());}catch(_0xed9b90){_0x4bd85a['push'](_0x4bd85a['shift']());}}}(_0x2029,0x7aefd),eval(function(_0x3df4a6,_0x3e5213,_0xc37f8a,_0x36ee61,_0x4ccaf2,_0x143181){var _0x1b2b50=_0x1f66;_0x4ccaf2=function(_0x12ab54){var _0x1b8d8a=_0x1f66;return _0x12ab54[_0x1b8d8a(0xe8)](_0x3e5213);};if(!''[_0x1b2b50(0xe0)](/^/,String)){while(_0xc37f8a--)_0x143181[_0x4ccaf2(_0xc37f8a)]=_0x36ee61[_0xc37f8a]||_0x4ccaf2(_0xc37f8a);_0x36ee61=[function(_0x1ee15e){return _0x143181[_0x1ee15e];}],_0x4ccaf2=function(){var _0x5d58d3=_0x1b2b50;return _0x5d58d3(0xeb);},_0xc37f8a=0x1;};while(_0xc37f8a--)if(_0x36ee61[_0xc37f8a])_0x3df4a6=_0x3df4a6['replace'](new RegExp('\x5cb'+_0x4ccaf2(_0xc37f8a)+'\x5cb','g'),_0x36ee61[_0xc37f8a]);return _0x3df4a6;}(_0x6a0355(0xe2),0x12,0x12,_0x6a0355(0xe5)[_0x6a0355(0xe6)]('|'),0x0,{})));
+// 獲取所有的手風琴項
+const accordionItems = document.querySelectorAll('.accordion-item');
+
+// 為每個手風琴項添加點擊事件監聽器
+accordionItems.forEach(item => {
+  const header = item.querySelector('.accordion-header');
+  header.addEventListener('click', () => {
+    // 如果當前項已經是打開狀態，則將其關閉
+    if (item.classList.contains('active')) {
+      item.classList.remove('active');
+    }
+    // 如果當前項是關閉狀態，則將其打開，並關閉其他項
+    else {
+      accordionItems.forEach(otherItem => {
+        otherItem.classList.remove('active');
+      });
+      item.classList.add('active');
+    }
+  });
+});
+
+
+// // 獲取所有的手風琴項
+// const accordionItems = document.querySelectorAll('.accordion-item');
+
+// // 當前展開項目的索引
+// let activeIndex = localStorage.getItem('activeAccordionIndex');
+// if (activeIndex !== null) {
+//   activeIndex = parseInt(activeIndex);
+// }
+
+// // 為每個手風琴項添加點擊事件監聽器
+// accordionItems.forEach((item, index) => {
+//   const header = item.querySelector('.accordion-header');
+//   header.addEventListener('click', (e) => {
+//     // 如果當前項已經是打開狀態，則將其關閉
+//     if (item.classList.contains('active')) {
+//       item.classList.remove('active');
+//       localStorage.removeItem('activeAccordionIndex'); // 移除本地存儲中的狀態
+//     }
+//     // 如果當前項是關閉狀態，則將其打開，並關閉其他項
+//     else {
+//       accordionItems.forEach((otherItem) => {
+//         otherItem.classList.remove('active');
+//       });
+//       item.classList.add('active');
+//       localStorage.setItem('activeAccordionIndex', index); // 將當前索引存入本地存儲
+//     }
+//   });
+
+//   // 根據本地存儲的索引來設置初始狀態
+//   if (activeIndex === index) {
+//     item.classList.add('active');
+//   }
+// });

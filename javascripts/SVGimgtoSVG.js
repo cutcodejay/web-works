@@ -1,1 +1,41 @@
-var _0x23e847=_0xe6f0;function _0xe6f0(_0x534ca8,_0x171552){var _0x532ad8=_0x532a();return _0xe6f0=function(_0xe6f0d2,_0x1e9376){_0xe6f0d2=_0xe6f0d2-0x1b6;var _0xe8a852=_0x532ad8[_0xe6f0d2];return _0xe8a852;},_0xe6f0(_0x534ca8,_0x171552);}(function(_0x22b1d5,_0x15dc47){var _0x3ec98e=_0xe6f0,_0x36cc31=_0x22b1d5();while(!![]){try{var _0x16eb44=parseInt(_0x3ec98e(0x1c7))/0x1*(-parseInt(_0x3ec98e(0x1b7))/0x2)+parseInt(_0x3ec98e(0x1bb))/0x3+parseInt(_0x3ec98e(0x1b8))/0x4*(-parseInt(_0x3ec98e(0x1c5))/0x5)+-parseInt(_0x3ec98e(0x1bd))/0x6*(parseInt(_0x3ec98e(0x1c6))/0x7)+-parseInt(_0x3ec98e(0x1b9))/0x8+parseInt(_0x3ec98e(0x1bf))/0x9+-parseInt(_0x3ec98e(0x1c0))/0xa*(-parseInt(_0x3ec98e(0x1c4))/0xb);if(_0x16eb44===_0x15dc47)break;else _0x36cc31['push'](_0x36cc31['shift']());}catch(_0x49423a){_0x36cc31['push'](_0x36cc31['shift']());}}}(_0x532a,0xa2695),eval(function(_0xe729da,_0x2c6c38,_0x128fd3,_0x14f7c3,_0x42f6fa,_0x554fa7){var _0x45b0d0=_0xe6f0;_0x42f6fa=function(_0x369581){var _0x5ef56d=_0xe6f0;return(_0x369581<_0x2c6c38?'':_0x42f6fa(parseInt(_0x369581/_0x2c6c38)))+((_0x369581=_0x369581%_0x2c6c38)>0x23?String[_0x5ef56d(0x1b6)](_0x369581+0x1d):_0x369581[_0x5ef56d(0x1c1)](0x24));};if(!''[_0x45b0d0(0x1c3)](/^/,String)){while(_0x128fd3--)_0x554fa7[_0x42f6fa(_0x128fd3)]=_0x14f7c3[_0x128fd3]||_0x42f6fa(_0x128fd3);_0x14f7c3=[function(_0x1e1c38){return _0x554fa7[_0x1e1c38];}],_0x42f6fa=function(){var _0x2af53=_0x45b0d0;return _0x2af53(0x1be);},_0x128fd3=0x1;};while(_0x128fd3--)if(_0x14f7c3[_0x128fd3])_0xe729da=_0xe729da['replace'](new RegExp('\x5cb'+_0x42f6fa(_0x128fd3)+'\x5cb','g'),_0x14f7c3[_0x128fd3]);return _0xe729da;}(_0x23e847(0x1c2),0x28,0x28,_0x23e847(0x1ba)[_0x23e847(0x1bc)]('|'),0x0,{})));function _0x532a(){var _0x93182=['4595YUpSMy','7jPIjNA','9IKZllX','fromCharCode','13894FHnsZJ','5588SwAULJ','725136vCvquz','|getAttribute|svg|function|setAttribute|var|id|then|text|void||viewBox|height|width||document|querySelectorAll|img||forEach|className|src|fetch||return|new|DOMParser|||||parseFromString|xml|getElementsByTagName|class|replaced|removeAttribute|xmlns|parentNode|replaceChild','3800484YsZKkf','split','6366942LAXfbL','\x5cw+','1058697CdmAxT','84310lkxvHO','toString','f.g(\x22h.2\x22).j(3(t){5\x20e=t.6,r=t.k,i=t.l;m(i).7(3(t){o\x20t.8()}).7(3(i){5\x20n,s,u=(p\x20q).v(i,\x228/w\x22).x(\x222\x22)[0];9\x200!==e&&u.4(\x226\x22,e),9\x200!==r&&u.4(\x22y\x22,r+\x22\x20z-2\x22),u.A(\x22B:a\x22),!u.1(\x22b\x22)&&u.1(\x22c\x22)&&u.1(\x22d\x22)&&u.4(\x22b\x22,\x220\x200\x20\x22+u.1(\x22c\x22)+\x22\x20\x22+u.1(\x22d\x22)),t.C.D(u,t)})});','replace','2321wyySbf'];_0x532a=function(){return _0x93182;};return _0x532a();}
+/*
+ * Replace all SVG images with inline SVG
+ */
+document.querySelectorAll('img.svg').forEach(function(img){
+    var imgID = img.id;
+    var imgClass = img.className;
+    var imgURL = img.src;
+
+    fetch(imgURL).then(function(response) {
+        return response.text();
+    }).then(function(text){
+
+        var parser = new DOMParser();
+        var xmlDoc = parser.parseFromString(text, "text/xml");
+
+        // Get the SVG tag, ignore the rest
+        var svg = xmlDoc.getElementsByTagName('svg')[0];
+
+        // Add replaced image's ID to the new SVG
+        if(typeof imgID !== 'undefined') {
+            svg.setAttribute('id', imgID);
+        }
+        // Add replaced image's classes to the new SVG
+        if(typeof imgClass !== 'undefined') {
+            svg.setAttribute('class', imgClass+' replaced-svg');
+        }
+
+        // Remove any invalid XML tags as per http://validator.w3.org
+        svg.removeAttribute('xmlns:a');
+
+        // Check if the viewport is set, if the viewport is not set the SVG wont't scale.
+        if(!svg.getAttribute('viewBox') && svg.getAttribute('height') && svg.getAttribute('width')) {
+            svg.setAttribute('viewBox', '0 0 ' + svg.getAttribute('height') + ' ' + svg.getAttribute('width'))
+        }
+
+        // Replace image with new SVG
+        img.parentNode.replaceChild(svg, img);
+
+    });
+
+});

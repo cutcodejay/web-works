@@ -3468,11 +3468,14 @@ ul li span {
   display: block;
   text-decoration: none;
 }
+.project-card picture.card__thumb {
+  display: block;
+}
 .project-card img {
   width: 100%;
   border-radius: 5px 5px 0 0;
 }
-.project-card .title {
+.project-card .card__title {
   min-height: 100px;
   padding: 0.5rem 1rem;
   margin-bottom: 0;
@@ -3482,21 +3485,40 @@ ul li span {
   justify-content: center;
   background-color: #B8C39F;
 }
-.project-card .title h4, .project-card .title h6 {
+.project-card .card__title h4, .project-card .card__title h6 {
   margin-bottom: 0;
   text-align: center;
 }
-.project-card .text {
+.project-card .card__body {
   padding: 1rem;
   background-color: #fff;
   border-radius: 0 0 5px 5px;
 }
-.project-card .text p {
+.project-card .card__text p {
   margin-bottom: 0.5rem;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
+}
+.project-card ul.card__tags {
+  padding: 0.2rem 0.5rem 0.5rem;
+  margin-bottom: 0;
+  background-color: #e9ecef;
+  border-radius: 4px;
+}
+.project-card ul.card__tags li {
+  margin-bottom: 0;
+  display: inline-block;
+  font-size: 0.85rem;
+  line-height: 1em;
+}
+.project-card ul.card__tags li:after {
+  content: "‧";
+  display: inline-block;
+}
+.project-card ul.card__tags li:last-child:after {
+  content: none;
 }
 
 /* =============================================================== */
@@ -3504,7 +3526,6 @@ ul li span {
 /* =============================================================== */
 .titleBar {
   padding: 0.5rem 1rem;
-  margin-bottom: 3rem;
   color: #343a40;
 }
 .titleBar .small {
@@ -3527,8 +3548,8 @@ ul li span {
   grid-template-columns: 200px 1fr 1fr;
 }
 .about .profile .Layout2, .about .skills .Layout2, .about .experience .Layout2, .about .bio .Layout2 {
-  -ms-grid-columns: (auto)[2];
-  grid-template-columns: repeat(2, auto);
+  -ms-grid-columns: 480px 1fr;
+  grid-template-columns: 480px 1fr;
 }
 .about .profile h4, .about .skills h4, .about .experience h4, .about .bio h4 {
   padding-bottom: 1rem;
@@ -3618,7 +3639,7 @@ ul li span {
 /* =============================================================== */
 /* project-detail
 /* =============================================================== */
-.project-detail .overview {
+article.project__detail .project__overview {
   padding-bottom: 2rem;
   margin-bottom: 2rem;
   display: -ms-grid;
@@ -3628,33 +3649,80 @@ ul li span {
   grid-template-columns: 1fr 1fr;
   border-bottom: #B8C39F 2px solid;
 }
-.project-detail .overview img {
+article.project__detail .project__overview img {
   width: 100%;
   margin-bottom: 1rem;
   border-radius: 0.5rem;
 }
-.project-detail .overview a.btn {
+article.project__detail .project__overview a.btn {
   background-color: #AAA939;
   border-color: #378B2E;
 }
-.project-detail .overview a.btn:hover {
+article.project__detail .project__overview a.btn:hover {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
 }
+article.project__detail .project__meta dl.meta {
+  display: -ms-grid;
+  display: grid;
+  gap: 0.5rem 0;
+  -ms-grid-columns: -webkit-max-content 1fr;
+  -ms-grid-columns: max-content 1fr;
+  grid-template-columns: -webkit-max-content 1fr;
+  grid-template-columns: max-content 1fr;
+}
+article.project__detail .project__meta dl.meta dt, article.project__detail .project__meta dl.meta dd {
+  margin: 0;
+}
+article.project__detail .project__meta dl.meta dt {
+  font-weight: 600;
+}
+article.project__detail .project__meta span {
+  margin-bottom: 0;
+  display: inline-block;
+}
+article.project__detail .project__meta span:after {
+  content: "‧";
+  display: inline-block;
+}
+article.project__detail .project__meta span:last-child:after {
+  content: none;
+}
 @media screen and (max-width: 576px) {
-  .project-detail .overview {
+  article.project__detail .project__overview {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     display: block;
   }
-  .project-detail .overview img {
+  article.project__detail .project__overview img {
     width: 100%;
     margin-bottom: 2rem;
   }
-  .project-detail .overview a.btn {
+  article.project__detail .project__overview a.btn {
     width: 100%;
   }
+}
+
+.project__system-design ul {
+  padding: 0;
+}
+.project__system-design li {
+  display: flex;
+  gap: 0 0.4rem;
+  align-items: center;
+}
+.project__system-design li > span.title {
+  float: left;
+  color: #495057;
+  white-space: nowrap;
+}
+.project__system-design li span.main_color, .project__system-design li span.minor_color, .project__system-design li span.secondary_color {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border: #6c757d 1px solid;
+  border-radius: 4px;
 }
 
 /***************************************************************************/
