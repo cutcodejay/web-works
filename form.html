@@ -130,8 +130,8 @@
 </a>
 <div class='nav_box'>
 <div class='lang desktop'>
-<a href='/project-yunfeisChoice.html'>繁體中文</a>
-<a href='/project-yunfeisChoice-en.html'>English</a>
+<a href='/form.html'>繁體中文</a>
+<a href='/form-en.html'>English</a>
 </div>
 <button class='opened-menu' type='button'>
 <span></span>
@@ -144,8 +144,8 @@
 <img alt='closed' class='closed-icon svg' src='images/closed.svg'>
 </button>
 <div class='lang mobile'>
-<a href='/project-yunfeisChoice.html'>繁體中文</a>
-<a href='/project-yunfeisChoice-en.html'>English</a>
+<a href='/form.html'>繁體中文</a>
+<a href='/form-en.html'>English</a>
 </div>
 <ul class='menu'>
 <li class='menu-item'>
@@ -169,86 +169,97 @@
 </header>
 
 <!-- / ========================== Header_end ========================== -->
-<!-- ========================== Content_start ========================== -->
+<!-- / ========================== Content_start ========================== -->
 <div class='content'>
-<!-- ========================== Main_start ========================== -->
-<main>
-<article class='project__detail'>
-<header class='titleBar'>
-<h1>
-<span class='name'>作品名稱 Project Name：</span>
-<span class='title'>雲飛健康寶盒</span>
-</h1>
-</header>
-<section class='project__overview'>
-<img alt='雲飛健康寶盒' src='/yunfeis-choice/yunfeis-choice.jpg'>
-<div class='text'>
-<h4>
-<i class='fa-solid fa-pen-nib'></i>
-專案介紹 Project Overview
-</h4>
-<p>網站前端靜態作品包，內容包含單頁式網站的 HTML 架構、CSS 樣式與完整圖片素材，展現商品視覺導向頁面的切版與互動動畫整合能力。設計素材由原設計方提供，本人負責靜態切版與前端動畫效果製作，適用於品牌形象頁等案例展示。</p>
-<a class='btn' href='/yunfeis-choice/yunfeis-choice.html' target='_blank'>
-瀏覽作品
-</a>
+<!-- / ========================== Main_start ========================== -->
+<main class='form'>
+<div class='titleBar'>
+<h2>與我聯繫</h2>
 </div>
-</section>
-<div class='Layout2'>
-<section class='project__meta'>
-<h4>
-<i class='fa-solid fa-clipboard-list'></i>
-專案摘要 Project Summary
-</h4>
-<dl class='meta'>
-<dt>用途：</dt>
-<dd>產品活動網頁</dd>
-<dt>時程：</dt>
-<dd>4天</dd>
-<dt>角色：</dt>
-<dd>前端切版 ( 1 人 )</dd>
-<dt>技術：</dt>
-<dd>
-<span>HTML</span>
-<span>CSS</span>
-<span>RWD</span>
-<span>Animation</span>
-<span>AOS</span>
-<span>Bootstrap</span>
-<span>JavaScript</span>
-</dd>
-<dt>任務：</dt>
-<dd>1 個響應式頁面、Design System</dd>
-</dl>
-</section>
-<section class='project__system-design'>
-<h4>
-<i class='fa-solid fa-palette'></i>
-設計系統 Design System
-</h4>
-<h5>顏色與字體</h5>
-<ul>
-<li>
-主色：
-<span class='main_color' style='background-color: #89B828;'></span>
- #89B828
-</li>
-<li>
-輔色：
-<span class='minor_color' style='background-color: #6B4431;'></span>
- #6B4431
-</li>
-<li>
-次要色：
-微軟正黑體 Microsoft Jhenghei、明瞭體 Meiryo
-</li>
-</ul>
-</section>
+<div class='formContent'>
+<form action='https://formspree.io/f/xnnzkzyp' class='contact-form' data-msg-failure='送出失敗，請稍後再試。' data-msg-network='網路異常，請稍後再試。' data-msg-required='請確認必填欄位是否已正確填寫。' data-msg-success='已送出！我們會盡快與您聯絡。' data-subject-prefix='網站詢問' data-visitor='訪客' id='contactForm' method='POST' novalidate>
+<input aria-hidden='true' autocomplete='off' name='_gotcha' style='position:absolute;left:-9999px' tabindex='-1' type='text'>
+<div class='form__item'>
+<label class='form-label' for='name'>
+<i class='fa-solid fa-pen-to-square warning'></i>
+姓名
+</label>
+<input autocomplete='name' class='form-control' id='name' minlength='2' name='name' placeholder='請輸入您的姓名' required type='text'>
 </div>
-</article>
+<div class='form__item'>
+<label class='form-label' for='email'>
+<i class='fa-solid fa-pen-to-square warning'></i>
+聯絡 Email
+</label>
+<input autocomplete='email' class='form-control' id='email' inputmode='email' name='email' placeholder='請輸入您的聯絡 Email' required type='email'>
+</div>
+<div class='form__item'>
+<label class='form-label' for='subject'>主旨</label>
+<input class='form-control' id='subject' maxlength='120' name='subject' placeholder='請簡短說明主旨' type='text'>
+</div>
+<div class='form__item'>
+<label class='form-label' for='message'>
+<i class='fa-solid fa-pen-to-square warning'></i>
+訊息內容
+</label>
+<textarea class='form-control' id='message' minlength='10' name='message' placeholder='請輸入您想詢問的內容' required rows='5'></textarea>
+</div>
+<div class='form__item'>
+<label class='form-label' for='phone'>聯絡電話（選填）</label>
+<input autocomplete='tel' class='form-control' id='phone' inputmode='tel' name='phone' placeholder='例如：0912-345-678' type='tel'>
+</div>
+<div aria-live='polite' class='alert d-none' id='formAlert' role='alert'></div>
+<div class='button_box'>
+<button class='btn' type='submit'>送出</button>
+</div>
+</form>
+</div>
 </main>
-<!-- / ========================== Main_end ========================== -->
+<!-- ========================== Main_end ========================== -->
 </div>
-<!-- / ========================== Content_end ========================== -->
+<!-- ========================== Content_end ========================== -->
+<script>
+  (function () {
+  	var form = document.getElementById('contactForm');
+  	if (!form) return;
+  	var alertBox = document.getElementById('formAlert');
+  
+  	function t(key, fallback) {
+  		return (form.dataset[key] || fallback || '').trim();
+  	}
+  	function showAlert(type, msg) {
+  		alertBox.className = 'alert alert-' + type;
+  		alertBox.textContent = msg;
+  		alertBox.classList.remove('d-none');
+  	}
+  
+  	form.addEventListener('submit', function (e) {
+  		e.preventDefault();
+  		if (!form.checkValidity()) {
+  			showAlert('warning', t('msgRequired', '請確認必填欄位是否已正確填寫。'));
+  			return;
+  		}
+  		var data = new FormData(form);
+  		var subjectPrefix = t('subjectPrefix', '網站詢問');
+  		var visitor = t('visitor', '訪客');
+  		var finalSubject = (form.subject && form.subject.value ? form.subject.value : subjectPrefix) + ' - ' + (form.name && form.name.value ? form.name.value : visitor);
+  		data.append('_subject', finalSubject);
+  
+  		fetch(form.action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } })
+  			.then(function (resp) {
+  				if (resp.ok) {
+  					form.reset();
+  					showAlert('success', t('msgSuccess', '已送出！我們會盡快與您聯絡。'));
+  				} else {
+  					showAlert('danger', t('msgFailure', '送出失敗，請稍後再試。'));
+  				}
+  			})
+  			.catch(function () {
+  				showAlert('danger', t('msgNetwork', '網路異常，請稍後再試。'));
+  			});
+  	});
+  })();
+</script>
 
 <!-- / ========================== Footer_start ========================== -->
 <footer class='web__footer'>
