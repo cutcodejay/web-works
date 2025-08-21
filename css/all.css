@@ -2991,12 +2991,9 @@ header.web__header.sticky .opened-menu span {
   padding: 0;
   margin: 0;
   text-align: center;
-  display: -ms-grid;
-  display: grid;
+  display: flex;
   align-items: center;
   gap: 0 1.5rem;
-  -ms-grid-columns: (auto)[4];
-  grid-template-columns: repeat(4, auto);
 }
 .menu > .menu-item {
   position: relative;
