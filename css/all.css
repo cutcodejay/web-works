@@ -2672,7 +2672,7 @@ footer.web__footer::after {
   clear: both;
   content: "";
 }
-footer.web__footer .foot_box {
+footer.web__footer .footer__content {
   width: 1200px;
   margin: 0 auto;
 }
@@ -2682,7 +2682,7 @@ footer.web__footer address {
   gap: 0 1rem;
   justify-content: center;
 }
-footer.web__footer address .itemLink {
+footer.web__footer address .footer__link-item {
   display: inline-flex;
   gap: 0 0.3rem;
   justify-content: center;
@@ -2700,25 +2700,25 @@ footer.web__footer p, footer.web__footer .copyright_box {
   color: #fff;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  footer.web__footer .foot_box {
+  footer.web__footer .footer__content {
     width: 100%;
   }
   footer.web__footer address {
     display: block;
   }
-  footer.web__footer address .itemLink {
+  footer.web__footer address .footer__link-item {
     width: 100%;
     margin-bottom: 1rem;
   }
 }
 @media screen and (max-width: 767px) {
-  footer.web__footer .foot_box {
+  footer.web__footer .footer__content {
     width: 100%;
   }
   footer.web__footer address {
     display: block;
   }
-  footer.web__footer address .itemLink {
+  footer.web__footer address .footer__link-item {
     width: 100%;
     margin-bottom: 1rem;
   }
@@ -2738,7 +2738,7 @@ footer.web__footer p, footer.web__footer .copyright_box {
   visibility: hidden;
 }
 
-.toTop-arrow {
+.btn--to-top {
   padding: 2px 5px 5px;
   margin: 0;
   position: fixed;
@@ -2752,12 +2752,12 @@ footer.web__footer p, footer.web__footer .copyright_box {
   display: none;
   border-radius: 10px;
 }
-.toTop-arrow svg, .toTop-arrow img {
+.btn--to-top svg, .btn--to-top img {
   height: 30px;
   margin: 0 auto 5px;
   display: block;
 }
-.toTop-arrow svg path, .toTop-arrow img path {
+.btn--to-top svg path, .btn--to-top img path {
   fill: #fff;
 }
 
@@ -3821,13 +3821,21 @@ ul li span {
   align-content: center;
 }
 .about .skill-list li .title {
-  color: #154D71;
-  font-weight: 500;
+  min-width: 190px;
+  padding: 0.2rem 0.5rem;
+  color: #fff;
+  background-color: #154D71;
+  font-weight: 400;
   white-space: nowrap;
+  border-radius: 5px 0 0 5px;
 }
 .about .skill-list li .text {
-  color: #fff;
+  width: 100%;
+  padding: 0.2rem 0.5rem;
+  color: #154D71;
+  background-color: #fff;
   word-wrap: break-word;
+  border-radius: 0 5px 5px 0;
 }
 .about .skills, .about .bio {
   margin-left: auto;
