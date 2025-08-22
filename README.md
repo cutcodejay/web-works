@@ -8,10 +8,9 @@ I’m Jay, with over 20 years of experience in front-end layout slicing and web 
 <br>
 
 ## 專長項目 / Areas of Expertise：
-- 網站、網頁設計 ● Website & Web Page Design
-- 網站與網頁版面切版與製作 ● Web Layout Slicing and Development
-- 網頁版面錯位與破版修正 ● Web Layout Troubleshooting & Responsive Fixes
-- 前端框架版面切版與整合套用 ● Front-End Framework Layout Slicing & Integration
+- 修正網頁版面錯位與破版問題 ● Fixed layout misalignment and broken page issues
+- 切版與整合網站／網頁／前端框架 ● Sliced and integrated websites, web pages, and front-end frameworks
+- 網站與網頁設計與製作 ● Designed and developed websites and web pages
 
 <br>
 
