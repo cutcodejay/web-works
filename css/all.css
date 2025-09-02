@@ -2811,7 +2811,7 @@ header.web__header.sticky {
           box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 header.web__header.sticky .logoImg svg.straight, header.web__header.sticky .logoImg img.straight {
-  top: -124px;
+  top: -135px;
 }
 header.web__header.sticky .logoImg svg.horizontal, header.web__header.sticky .logoImg img.horizontal {
   top: -9px;
