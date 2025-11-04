@@ -54,8 +54,8 @@
         </a>
         <div class='nav_box'>
           <div class='lang desktop'>
-            <a href='project-ebookCompany.html'>繁體中文</a>
-            <a href='project-ebookCompany-en.html'>English</a>
+            <a href='layoutExplanation.html'>繁體中文</a>
+            <a href='layoutExplanation-en.html'>English</a>
           </div>
           <button class='opened-menu' type='button'>
             <span></span>
@@ -68,8 +68,8 @@
               <img alt='closed' class='closed-icon svg' src='images/closed.svg'>
             </button>
             <div class='lang mobile'>
-              <a href='project-ebookCompany.html'>繁體中文</a>
-              <a href='project-ebookCompany-en.html'>English</a>
+              <a href='layoutExplanation.html'>繁體中文</a>
+              <a href='layoutExplanation-en.html'>English</a>
             </div>
             <ul class='menu'>
               <li class='menu-item'>
@@ -103,87 +103,65 @@
     </header>
 
     <!-- / ========================== Header_end ========================== -->
-    <!-- ========================== Content_start ========================== -->
+    <!-- / ========================== Content_start ========================== -->
     <div class='content'>
-      <!-- ========================== Main_start ========================== -->
-      <main>
-        <article class='project__detail'>
-          <header class='titleBar'>
-            <h1>
-              <span class='name'>作品名稱 Project Name：</span>
-              <span class='title'>馬來西亞旅遊線上手冊</span>
-            </h1>
-          </header>
-          <section class='project__overview'>
-            <img alt='馬來西亞旅遊線上手冊' src='ebook_company/ebook_company.jpg'>
-            <div class='text'>
-              <h4>
-                <i class='fa-solid fa-pen-nib'></i>
-                專案介紹 Project Overview
-              </h4>
-              <p>此線上手冊以靜態網頁形式製作，具備 RWD 響應式設計，適應各種裝置瀏覽。內容製作技術包含 HTML 架構、CSS
-                樣式設計與完整圖片素材整合，展現視覺導向商品頁面的切版能力。設計素材由原設計方提供，本人負責靜態切版與前端動畫效果製作，適用於品牌形象網站、行銷導向頁面等展示類型專案。</p>
-              <a class='btn' href='ebook_company/ebook_20200211.html' target='_blank'>
-                瀏覽作品
-              </a>
-            </div>
-          </section>
-          <div class='Layout2'>
-            <section class='project__meta'>
-              <h4>
-                <i class='fa-solid fa-clipboard-list'></i>
-                專案摘要 Project Summary
-              </h4>
-              <dl class='meta'>
-                <dt>用途：</dt>
-                <dd>旅遊行程資訊網頁</dd>
-                <dt>時程：</dt>
-                <dd>4天</dd>
-                <dt>角色：</dt>
-                <dd>前端設計切版 ( 1 人 )</dd>
-                <dt>技術：</dt>
-                <dd>
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>RWD</span>
-                  <span>Bootstrap</span>
-                  <span>FontAwesome</span>
-                  <span>JavaScript</span>
-                </dd>
-                <dt>任務：</dt>
-                <dd>1 個響應式頁面、Design System</dd>
-              </dl>
-            </section>
-            <section class='project__system-design'>
-              <h4>
-                <i class='fa-solid fa-palette'></i>
-                設計系統 Design System
-              </h4>
-              <h5>顏色與字體</h5>
-              <ul>
-                <li>
-                  主色：
-                  <span class='main_color' style='background-color: #60371c;'></span>
-                  #60371c
-                </li>
-                <li>
-                  輔色：
-                  <span class='minor_color' style='background-color: #226e93;'></span>
-                  #226e93
-                </li>
-                <li>
-                  次要色：
-                  <span class='secondary_color' style='background-color: #e78341;'></span>
-                  #e78341
-                </li>
-                <li>
-                  字體：
-                  San Francisco、Segoe UI、Roboto、Noto Sans
-                </li>
-              </ul>
-            </section>
+      <!-- / ========================== Main_start ========================== -->
+      <main class='layoutexplanation'>
+        <div class='titleBar'>
+          <h2>網頁切版說明</h2>
+        </div>
+        <div class='LEContent'>
+          <h4>切版前端設定說明</h4>
+          <div class='item'>
+            <h5>字型設定</h5>
+            <ul>
+              <li>繁體字型：Google Noto Sans TC (思原黑體), Google Noto Serif TC (思原明體)</li>
+              <li>英文字型：Roboto (無襯線)</li>
+              <li>如果有多語系的設定，會依 Google 的雲端字型來設定處理。</li>
+            </ul>
           </div>
-        </article>
+          <div class='item'>
+            <h5>Ui 設定</h5>
+            <ul>
+              <li>主要用於表單的設定樣式，本人會用 Bootstrap Css 加上 個人一些修飾設定，如果有其他喜好在請告知，謝謝。</li>
+            </ul>
+          </div>
+          <div class='item'>
+            <h5>Web Framework 設定</h5>
+            <ul>
+              <li>會預設安裝 Bootstrap 來處理網頁前端程式，例如輪撥圖片或彈出視窗，以利後續切版處理。（不會用 Bootstrap 開發網頁框架架構）。</li>
+            </ul>
+          </div>
+          <div class='item'>
+            <h5>Vue3 + Vite / Nuxt</h5>
+            <ul>
+              <li>前端框架切版的 npm 安裝僅會採最低限度的設定，因本人僅負責切版部分，如需進階前端開發請由專業前端工程師負責。</li>
+            </ul>
+          </div>
+        </div>
+        <div class='LEContent'>
+          <h4>切版後續測試說明</h4>
+          <div class='item'>
+            <h5>Desktop 桌機測試</h5>
+            <p>筆電解析度日漸提升，若筆電廠商將整體字體放大，可能造成平面稿與實際頁面不符。請將顯示設定縮放比例調整為 100%，解析度建議為 1920x1080。</p>
+          </div>
+          <div class='item'>
+            <h5>Tablet 平板測試</h5>
+            <p>平板尺寸及比例差異極大，請以市場主流機種測試，避免小眾平板造成顯示誤差。</p>
+          </div>
+          <div class='item'>
+            <h5>Mobile 手機測試</h5>
+            <p>請提供可接受的最低解析度，以利設定手機斷點並確保切版測試完整。</p>
+          </div>
+        </div>
+        <section class='Note'>
+          <h4>特別註解說明</h4>
+          <p>1. 本人設定的 RWD 斷點為：</p>
+          <p>Desktop：min-width 1190px</p>
+          <p>Tablet：min-width 576px ～ max-width 1190px</p>
+          <p>Mobile：max-width 576px</p>
+          <p>2. 如需完整開發檔案，可提供 HAML、JS、部分 Dart SCSS。因涉及多年整理心血，無法公開完整 Dart SCSS，敬請見諒。</p>
+        </section>
       </main>
       <!-- / ========================== Main_end ========================== -->
     </div>

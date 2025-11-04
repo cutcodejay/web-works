@@ -56,8 +56,8 @@
         </a>
         <div class='nav_box'>
           <div class='lang desktop'>
-            <a href='about.html'>繁體中文</a>
-            <a href='about-en.html'>English</a>
+            <a href='layoutExplanation.html'>繁體中文</a>
+            <a href='layoutExplanation-en.html'>English</a>
           </div>
           <button class='opened-menu' type='button'>
             <span></span>
@@ -70,8 +70,8 @@
               <img alt='closed' class='closed-icon svg' src='images/closed.svg'>
             </button>
             <div class='lang mobile'>
-              <a href='about.html'>繁體中文</a>
-              <a href='about-en.html'>English</a>
+              <a href='layoutExplanation.html'>繁體中文</a>
+              <a href='layoutExplanation-en.html'>English</a>
             </div>
             <ul class='menu'>
               <li class='menu-item'>
@@ -108,137 +108,70 @@
     <!-- / ========================== Content_start ========================== -->
     <div class='content'>
       <!-- / ========================== Main_start ========================== -->
-      <main class='about'>
+      <main class='layoutexplanation'>
         <div class='titleBar'>
-          <h2>About Me</h2>
+          <h2>Web Layout Explanation</h2>
         </div>
-        <div class='profile_bg'>
-          <section class='profile'>
-            <div class='Layout2 personal'>
-              <img alt='Jay Wang 個人頭像' class='avatar' oading='lazy' src='images/jay.webp'>
-              <div class='text_en'>
-                <h4>
-                  <i class='fa-solid fa-user-tie'></i>
-                  Personal Introduction
-                </h4>
-                <p class='intro'>I&#39;m Jay from Taiwan, with about 20 years of experience in front-end web layout
-                  correction, slicing, and design. I specialize in HTML, CSS, and responsive web design (RWD), and
-                  I&#39;m passionate about enhancing UI/UX design and improving user experience.</p>
-                <p class='intro'>Throughout my career, I have participated in numerous projects from concept to
-                  completion, demonstrating strong cross-department communication and collaboration skills. I believe
-                  that great design is not only visually appealing but also functional and human-centered, which is why
-                  I strive to create smooth and user-friendly interfaces.</p>
-              </div>
-            </div>
-          </section>
-        </div>
-        <div class='skills_bg'>
-          <section class='skills'>
-            <h4>
-              <i class='fa-solid fa-medal'></i>
-              Professional Skills
-            </h4>
-            <div class='Layout2'>
-              <div class='skill-list'>
-                <h5>Design &amp; UI/UX</h5>
-                <ul>
-                  <li>
-                    <div class='title'>Image Editing :</div>
-                    <div class='text'>Adobe Photoshop, Adobe Illustrator</div>
-                  </li>
-                  <li>
-                    <div class='title'>UI/UX Design Tools :</div>
-                    <div class='text'>Figma, Zeplin</div>
-                  </li>
-                  <li>
-                    <div class='title'>Design Capabilities :</div>
-                    <div class='text'>User Experience Optimization (UI/UX)</div>
-                  </li>
-                </ul>
-              </div>
-              <div class='skill-list'>
-                <h5>Front-End Web Development</h5>
-                <ul>
-                  <li>
-                    <div class='title'>Web Technologies :</div>
-                    <div class='text'>HTML5, CSS3, Dart SCSS, Bootstrap, RWD (Responsive Web Design)</div>
-                  </li>
-                  <li>
-                    <div class='title'>Technical Handling :</div>
-                    <div class='text'>Web Standardization, Cross-Browser Compatibility</div>
-                  </li>
-                  <li>
-                    <div class='title'>Project Applications :</div>
-                    <div class='text'>Web slicing/layout, theme integration, animation effects, backend interface and
-                      complex form design, accessible web development, SEO optimization, Google/Facebook API
-                      integration.</div>
-                  </li>
-                </ul>
-              </div>
-              <div class='skill-list'>
-                <h5>Programming (JavaScript)</h5>
-                <ul>
-                  <li>
-                    <div class='title'>JavaScript :</div>
-                    <div class='text'>ES6, jQuery</div>
-                  </li>
-                  <li>
-                    <div class='title'>Frameworks :</div>
-                    <div class='text'>Vue3 (components、templates), Nuxt</div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-        </div>
-        <div class='experience_bg'>
-          <div class='Layout2 w1200'>
-            <img alt=''
-              src='https://images.unsplash.com/photo-1693564664336-3ab0f79f2302?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>
-            <section class='experience'>
-              <h4>
-                <i class='fa-solid fa-briefcase'></i>
-                Career Summary
-              </h4>
-              <div class='text_en'>
-                <p class='en'>Since 2005, I have accumulated around 20 years of front-end development experience. I have
-                  worked with the travel industry, airlines, and design &amp; development firms, contributing to various
-                  project pages, campaign sites, and government branding websites.</p>
-                <p class='en'>I specialize in end-to-end project development—from planning to deployment—with attention
-                  to detail, performance, and UI/UX. I’m a dependable and consistent executor in any team.</p>
-              </div>
-            </section>
+        <div class='LEContent'>
+          <h4>Front-End Setup Overview</h4>
+          <div class='item'>
+            <h5>Font Settings</h5>
+            <ul>
+              <li>Traditional Chinese fonts: Google Noto Sans TC and Google Noto Serif TC.</li>
+              <li>English fonts: Roboto (sans-serif).</li>
+              <li>For multilingual setups, fonts will be configured using Google Fonts for optimal compatibility.</li>
+            </ul>
+          </div>
+          <div class='item'>
+            <h5>UI Settings</h5>
+            <ul>
+              <li>Mainly used for form styling. Bootstrap CSS will be applied with my own adjustments. Please inform me
+                if you have specific styling preferences, thank you.</li>
+            </ul>
+          </div>
+          <div class='item'>
+            <h5>Web Framework Settings</h5>
+            <ul>
+              <li>Bootstrap will be installed by default to handle front-end interactions such as carousels or modals,
+                making slicing smoother. (Bootstrap will not be used as a full development framework.)</li>
+            </ul>
+          </div>
+          <div class='item'>
+            <h5>Vue3 + Vite / Nuxt</h5>
+            <ul>
+              <li>Only minimal npm installations are applied for slicing purposes. Since I only handle layout
+                conversion, advanced front-end development should be done by a dedicated developer.</li>
+            </ul>
           </div>
         </div>
-        <div class='bio_bg'>
-          <div class='Layout2 w1200 right'>
-            <img alt=''
-              src='https://images.unsplash.com/photo-1613381230607-7aae53a7ca7a?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>
-            <section class='bio'>
-              <h4>
-                <i class='fa-solid fa-image-portrait'></i>
-                Personal Statement
-              </h4>
-              <p class='en'>Web design has evolved from a passion into my full-time profession. For over two decades, I
-                have continuously refined my technical skills and design sensibility, gaining extensive hands-on
-                experience and a deep understanding of market needs and user behavior. I uphold a spirit of continuous
-                learning to ensure my services remain current and competitive.</p>
-              <p class='en'>I firmly believe that a successful website is the result of teamwork, and the web designer
-                plays a key role as a communication bridge between parties. I excel at integrating front-end
-                development, UI/UX design, and client requirements to ensure every phase—from concept to launch—runs
-                smoothly.</p>
-              <p class='en'>My services go beyond visual design and coding—I focus on web standards, compatibility,
-                accessibility, and user experience. I help clients with website optimization and marketing
-                strategies—such as SEO and social media integration—to ensure their sites stand out and reach target
-                audiences effectively.</p>
-              <p class='en'>Despite rapid market changes, I believe human creativity and design thinking remain
-                irreplaceable by machines. With years of experience, solid skills, and strong learning ability, I can
-                deliver custom professional web solutions tailored to your needs.</p>
-              <p class='en'>I look forward to the opportunity to collaborate and use my expertise to build a complete
-                and competitive website for your brand or business.</p>
-            </section>
+        <div class='LEContent'>
+          <h4>Post-Slicing Testing Guidelines</h4>
+          <div class='item'>
+            <h5>Desktop Testing</h5>
+            <p>As laptop screen resolutions increase, manufacturers often scale up system fonts, which can cause
+              discrepancies between mockups and the final layout. Please set display scaling to 100% and resolution to
+              1920x1080 for best consistency.</p>
+          </div>
+          <div class='item'>
+            <h5>Tablet Testing</h5>
+            <p>Tablet devices vary greatly in size and ratio. Please test using mainstream devices to avoid layout
+              inconsistencies caused by niche models.</p>
+          </div>
+          <div class='item'>
+            <h5>Mobile Testing</h5>
+            <p>Please provide the minimum acceptable mobile resolution to help define responsive breakpoints and ensure
+              complete mobile testing coverage.</p>
           </div>
         </div>
+        <section class='Note'>
+          <h4>Special Notes</h4>
+          <p>1. My default RWD breakpoints are:</p>
+          <p>Desktop: min-width 1190px</p>
+          <p>Tablet: min-width 576px to max-width 1190px</p>
+          <p>Mobile: max-width 576px</p>
+          <p>2. Upon request, I can provide HAML, JS, and partial Dart SCSS files. The complete Dart SCSS cannot be
+            shared as it represents years of personal refinement. Thank you for your understanding.</p>
+        </section>
       </main>
       <!-- / ========================== Main_end ========================== -->
     </div>
