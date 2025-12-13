@@ -113,212 +113,749 @@
         <div class='profileList'>
           <div class='index__project__bg'>
             <section class='index__project__list'>
-              <div class='Layout4'>
-                <article class='project-card'>
-                  <a aria-label='查看 亞洲惡性高熱聯盟 AMHA 專案詳情' href='project-AMHA.html'>
-                    <picture class='card__thumb'>
-                      <source srcset='AMHA/AMHA.webp' type='image/webp'>
-                      <img alt='亞洲惡性高熱聯盟 AMHA網站縮圖' decoding='async' loading='lazy' src='AMHA/AMHA.jpg'>
-                    </picture>
-                    <div class='card__title'>
-                      <h5>亞洲惡性高熱聯盟 AMHA</h5>
-                    </div>
-                    <div class='card__body'>
-                      <div class='card__text'>
-                        <p>本專案為 亞洲惡性高熱聯盟（AMHA） 官方網站的前端靜態網頁製作。該聯盟是一個致力於應對惡性高熱（Malignant
-                          Hyperthermia,MH）的國際非營利醫療組織。專案內容包含完整的 HTML 架構與 CSS
-                          樣式整合，設計素材由原設計方提供，本人負責將視覺設計轉化為符合跨平台瀏覽需求的前端程式碼，呈現清晰且專業的醫療資訊形象網站。</p>
+              <ul class='nav nav-tabs' id='myProject' role='tablist'>
+                <li class='nav-item' role='presentation'>
+                  <button aria-controls='Web-tab-pane' aria-selected='true' class='nav-link h3 active'
+                    data-bs-target='#Web-tab-pane' data-bs-toggle='tab' id='Web-tab' role='tab'
+                    type='button'>Web</button>
+                </li>
+                <li class='nav-item' role='presentation'>
+                  <button aria-controls='DM-tab-pane' aria-selected='false' class='nav-link h3'
+                    data-bs-target='#DM-tab-pane' data-bs-toggle='tab' id='DM-tab' role='tab' type='button'>DM</button>
+                </li>
+                <li class='nav-item' role='presentation'>
+                  <button aria-controls='Banner-tab-pane' aria-selected='false' class='nav-link h3'
+                    data-bs-target='#Banner-tab-pane' data-bs-toggle='tab' id='Banner-tab' role='tab'
+                    type='button'>Banner</button>
+                </li>
+              </ul>
+              <div class='tab-content' id='myProjectContent'>
+                <div aria-labelledby='Web-tab' class='tab-pane fade show active' id='Web-tab-pane' role='tabpanel'
+                  tabindex='0'>
+                  <h2 class='h1'>WEB</h2>
+                  <div class='Layout4'>
+                    <article class='project-card'>
+                      <a aria-label='查看 亞洲惡性高熱聯盟 AMHA 專案詳情' href='project-AMHA.html'>
+                        <picture class='card__thumb'>
+                          <source srcset='AMHA/AMHA.webp' type='image/webp'>
+                          <img alt='亞洲惡性高熱聯盟 AMHA網站縮圖' decoding='async' loading='lazy' src='AMHA/AMHA.jpg'>
+                        </picture>
+                        <div class='card__title'>
+                          <h5>亞洲惡性高熱聯盟 AMHA</h5>
+                        </div>
+                        <div class='card__body'>
+                          <div class='card__text'>
+                            <p>本專案為 亞洲惡性高熱聯盟（AMHA） 官方網站的前端靜態網頁製作。該聯盟是一個致力於應對惡性高熱（Malignant
+                              Hyperthermia,MH）的國際非營利醫療組織。專案內容包含完整的 HTML 架構與 CSS
+                              樣式整合，設計素材由原設計方提供，本人負責將視覺設計轉化為符合跨平台瀏覽需求的前端程式碼，呈現清晰且專業的醫療資訊形象網站。</p>
+                          </div>
+                          <ul aria-label='技術標籤' class='card__tags'>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>RWD</li>
+                            <li>Animation</li>
+                            <li>Bootstrap</li>
+                            <li>FontAwesome</li>
+                            <li>JavaScript</li>
+                          </ul>
+                        </div>
+                      </a>
+                    </article>
+                    <article class='project-card'>
+                      <a aria-label='查看 Dr. 美胸 專案詳情' href='project-Dr.html'>
+                        <picture class='card__thumb'>
+                          <source srcset='dr/dr.webp' type='image/webp'>
+                          <img alt='Dr. 美胸網站縮圖' decoding='async' loading='lazy' src='dr/dr.jpg'>
+                        </picture>
+                        <div class='card__title'>
+                          <h5>Dr. 美胸</h5>
+                        </div>
+                        <div class='card__body'>
+                          <div class='card__text'>
+                            <p>「Dr.美胸」網站切版作品集，內容包含已完成之 HTML 結構、CSS
+                              樣式、動畫效果與展示頁面，設計素材由原設計方提供。此作品展現本人於靜態切版與前端互動畫面製作方面的技術能力，適用於品牌網站、電商頁面或醫美保健領域的前端開發參考。</p>
+                          </div>
+                          <ul aria-label='技術標籤' class='card__tags'>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>RWD</li>
+                            <li>Animation</li>
+                            <li>AOS</li>
+                            <li>Slick</li>
+                            <li>Bootstrap</li>
+                            <li>JavaScript</li>
+                          </ul>
+                        </div>
+                      </a>
+                    </article>
+                    <article class='project-card'>
+                      <a aria-label='查看 雲飛健康寶盒 專案詳情' href='project-YunfeisChoice.html'>
+                        <picture class='card__thumb'>
+                          <source srcset='yunfeis-choice/yunfeis-choice.webp' type='image/webp'>
+                          <img alt='雲飛健康寶盒網站縮圖' decoding='async' loading='lazy' src='yunfeis-choice/yunfeis-choice.jpg'>
+                        </picture>
+                        <div class='card__title'>
+                          <h5>雲飛健康寶盒</h5>
+                        </div>
+                        <div class='card__body'>
+                          <div class='card__text'>
+                            <p>網站前端靜態作品包，內容包含單頁式網站的 HTML 架構、CSS
+                              樣式與完整圖片素材，展現商品視覺導向頁面的切版與互動動畫整合能力。設計素材由原設計方提供，本人負責靜態切版與前端動畫效果製作，適用於品牌形象頁等案例展示。</p>
+                          </div>
+                          <ul aria-label='技術標籤' class='card__tags'>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>RWD</li>
+                            <li>Animation</li>
+                            <li>AOS</li>
+                            <li>Bootstrap</li>
+                            <li>JavaScript</li>
+                          </ul>
+                        </div>
+                      </a>
+                    </article>
+                    <article class='project-card'>
+                      <a aria-label='查看 馬來西亞旅遊線上手冊 專案詳情' href='project-ebookCompany.html'>
+                        <picture class='card__thumb'>
+                          <source srcset='ebook_company/ebook_company.webp' type='image/webp'>
+                          <img alt='馬來西亞旅遊線上手冊網站縮圖' decoding='async' loading='lazy'
+                            src='ebook_company/ebook_company.jpg'>
+                        </picture>
+                        <div class='card__title'>
+                          <h5>馬來西亞旅遊線上手冊</h5>
+                        </div>
+                        <div class='card__body'>
+                          <div class='card__text'>
+                            <p>此線上手冊以靜態網頁形式製作，具備 RWD 響應式設計，適應各種裝置瀏覽。內容製作技術包含 HTML 架構、CSS
+                              樣式設計與完整圖片素材整合，展現視覺導向商品頁面的切版能力。設計素材由原設計方提供，本人負責靜態切版與前端動畫效果製作，適用於品牌形象網站、行銷導向頁面等展示類型專案。</p>
+                          </div>
+                          <ul aria-label='技術標籤' class='card__tags'>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>RWD</li>
+                            <li>Bootstrap</li>
+                            <li>FontAwesome</li>
+                            <li>JavaScript</li>
+                          </ul>
+                        </div>
+                      </a>
+                    </article>
+                    <article class='project-card'>
+                      <a aria-label='查看 手機訂房系統 專案詳情' href='project-MobileBooking.html'>
+                        <picture class='card__thumb'>
+                          <source srcset='GuestHouse/GuestHouse.webp' type='image/webp'>
+                          <img alt='手機訂房系統網站縮圖' decoding='async' loading='lazy' src='GuestHouse/GuestHouse.jpg'>
+                        </picture>
+                        <div class='card__title'>
+                          <h5>手機訂房系統</h5>
+                        </div>
+                        <div class='card__body'>
+                          <div class='card__text'>
+                            <p>本作品為網站前端靜態頁面設計，自起初即針對手機平台開發，包含房間上架、價格設定、訂單與資料管理等功能頁。使用 HTML、CSS
+                              製作，設計素材由設計方提供，本人負責靜態切版與頁面製作。</p>
+                          </div>
+                          <ul aria-label='技術標籤' class='card__tags'>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                            <li>FontAwesome</li>
+                            <li>JavaScript</li>
+                          </ul>
+                        </div>
+                      </a>
+                    </article>
+                    <article class='project-card'>
+                      <a aria-label='查看 AMHA後台線上系統 專案詳情' href='project-AMHASystem.html'>
+                        <picture class='card__thumb'>
+                          <source srcset='AMHA_System/AMHA_System.webp' type='image/webp'>
+                          <img alt='AMHA後台線上系統網站縮圖' decoding='async' loading='lazy' src='AMHA_System/AMHA_System.jpg'>
+                        </picture>
+                        <div class='card__title'>
+                          <h5>AMHA後台線上系統</h5>
+                        </div>
+                        <div class='card__body'>
+                          <div class='card__text'>
+                            <p>本專案為亞洲惡性高熱聯盟（AMHA）後台管理系統，提供資料維護、內容編輯與基本資訊管理等功能。前端以 HTML 與 CSS
+                              製作，搭配原設計方提供之視覺素材，由本人負責靜態切版與前端功能實作。整體設計以實用性為導向，適用於桌機環境下的後台操作與管理。</p>
+                          </div>
+                          <ul aria-label='技術標籤' class='card__tags'>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                            <li>FontAwesome</li>
+                            <li>JavaScript</li>
+                          </ul>
+                        </div>
+                      </a>
+                    </article>
+                    <article class='project-card'>
+                      <a aria-label='查看 企業後台ERP系統 專案詳情' href='project-ERPSystem.html'>
+                        <picture class='card__thumb'>
+                          <source srcset='ERP_System/ERP.webp' type='image/webp'>
+                          <img alt='企業後台ERP系統網站縮圖' decoding='async' loading='lazy' src='ERP_System/ERP.jpg'>
+                        </picture>
+                        <div class='card__title'>
+                          <h5>企業後台ERP系統</h5>
+                        </div>
+                        <div class='card__body'>
+                          <div class='card__text'>
+                            <p>本專案為企業後台 ERP 系統前端樣板，涵蓋飯店專案管理、訂單建立、價格與庫存查詢、供應商與導遊資料維護、系統公告等核心模組。系統介面以 HTML 與 CSS
+                              製作，設計上著重使用者體驗（UX），特別針對桌機操作流程進行優化，讓管理人員在日常操作上更加直覺與高效。由設計方提供視覺素材，本人負責前端靜態切版與互動效果實作，展現企業後台系統在資訊整合與操作便利性的介面製作能力。
+                            </p>
+                          </div>
+                          <ul aria-label='技術標籤' class='card__tags'>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                            <li>FontAwesome</li>
+                            <li>JavaScript</li>
+                          </ul>
+                        </div>
+                      </a>
+                    </article>
+                    <article class='project-card'>
+                      <a aria-label='查看 旅宿業後台系統 專案詳情' href='project-GuesthouseAdminSystem.html'>
+                        <picture class='card__thumb'>
+                          <source srcset='GuestHouse_System/GuestHouse_System.webp' type='image/webp'>
+                          <img alt='旅宿業後台系統網站縮圖' decoding='async' loading='lazy'
+                            src='GuestHouse_System/GuestHouse_System.jpg'>
+                        </picture>
+                        <div class='card__title'>
+                          <h5>旅宿業後台系統</h5>
+                        </div>
+                        <div class='card__body'>
+                          <div class='card__text'>
+                            <p>本專案為旅宿業所設計之後台管理系統前端樣板，功能涵蓋旅宿與房型管理、訂單查詢、推薦碼維護與銷售報表統計等模組。系統以靜態 HTML 與 CSS 製作，支援 RWD
+                              響應式設計，確保在桌機與行動裝置上皆具良好操作體驗。操作介面提供管理者在不同設備上進行房型上架、價格設定與資料維護。設計素材由原設計方提供，本人負責切版與前端頁面整合，展現後台系統在功能性與跨裝置介面上的整合能力。
+                            </p>
+                          </div>
+                          <ul aria-label='技術標籤' class='card__tags'>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>RWD</li>
+                            <li>Bootstrap</li>
+                            <li>FontAwesome</li>
+                            <li>JavaScript</li>
+                          </ul>
+                        </div>
+                      </a>
+                    </article>
+                  </div>
+                </div>
+                <div class='tab-pane fade' id='DM-tab-pane' role='tabpanel'>
+                  <h2 class='h1'>DM</h2>
+                  <div class='Layout4'>
+                    <a data-bs-toggle='modal' href='#DMModal0'>
+                      <img loading='lazy' src='DM/20200707.jpg'>
+                    </a>
+                    <a data-bs-toggle='modal' href='#DMModal1'>
+                      <img loading='lazy' src='DM/20200629.jpg'>
+                    </a>
+                    <a data-bs-toggle='modal' href='#DMModal2'>
+                      <img loading='lazy' src='DM/20200618.jpg'>
+                    </a>
+                    <a data-bs-toggle='modal' href='#DMModal3'>
+                      <img loading='lazy' src='DM/20200610_2.jpg'>
+                    </a>
+                    <a data-bs-toggle='modal' href='#DMModal4'>
+                      <img loading='lazy' src='DM/20200610.jpg'>
+                    </a>
+                    <a data-bs-toggle='modal' href='#DMModal5'>
+                      <img loading='lazy' src='DM/20200609.jpg'>
+                    </a>
+                    <a data-bs-toggle='modal' href='#DMModal6'>
+                      <img loading='lazy' src='DM/20200608.jpg'>
+                    </a>
+                    <a data-bs-toggle='modal' href='#DMModal7'>
+                      <img loading='lazy' src='DM/20200608_1.jpg'>
+                    </a>
+                    <a data-bs-toggle='modal' href='#DMModal8'>
+                      <img loading='lazy' src='DM/20200605.jpg'>
+                    </a>
+                    <a data-bs-toggle='modal' href='#DMModal9'>
+                      <img loading='lazy' src='DM/20200608_2.jpg'>
+                    </a>
+                    <a data-bs-toggle='modal' href='#DMModal10'>
+                      <img loading='lazy' src='DM/20200528.jpg'>
+                    </a>
+                    <a data-bs-toggle='modal' href='#DMModal11'>
+                      <img loading='lazy' src='DM/20200526_1.jpg'>
+                    </a>
+                    <a data-bs-toggle='modal' href='#DMModal12'>
+                      <img loading='lazy' src='DM/20200526_3.jpg'>
+                    </a>
+                    <a data-bs-toggle='modal' href='#DMModal13'>
+                      <img loading='lazy' src='DM/20200526_2.jpg'>
+                    </a>
+                    <a data-bs-toggle='modal' href='#DMModal14'>
+                      <img loading='lazy' src='DM/20150728_EDM.jpg'>
+                    </a>
+                    <a data-bs-toggle='modal' href='#DMModal15'>
+                      <img loading='lazy' src='DM/A1.png'>
+                    </a>
+                    <a data-bs-toggle='modal' href='#DMModal16'>
+                      <img loading='lazy' src='DM/A3.png'>
+                    </a>
+                    <a data-bs-toggle='modal' href='#DMModal17'>
+                      <img loading='lazy' src='DM/A6.png'>
+                    </a>
+                    <a data-bs-toggle='modal' href='#DMModal18'>
+                      <img loading='lazy' src='DM/20131002.jpg'>
+                    </a>
+                    <a data-bs-toggle='modal' href='#DMModal19'>
+                      <img loading='lazy' src='DM/20130218-1.jpg'>
+                    </a>
+                    <a data-bs-toggle='modal' href='#DMModal20'>
+                      <img loading='lazy' src='DM/20130218.jpg'>
+                    </a>
+                  </div>
+                  <div class='modal fade' id='DMModal0' tabindex='-1'>
+                    <div class='modal-dialog modal-dialog-centered modal-xl'>
+                      <div class='modal-content'>
+                        <div class='modal-body text-center'>
+                          <img class='img-fluid' src='DM/20200707.jpg'>
+                        </div>
                       </div>
-                      <ul aria-label='技術標籤' class='card__tags'>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>RWD</li>
-                        <li>Animation</li>
-                        <li>Bootstrap</li>
-                        <li>FontAwesome</li>
-                        <li>JavaScript</li>
-                      </ul>
                     </div>
-                  </a>
-                </article>
-                <article class='project-card'>
-                  <a aria-label='查看 Dr. 美胸 專案詳情' href='project-Dr.html'>
-                    <picture class='card__thumb'>
-                      <source srcset='dr/dr.webp' type='image/webp'>
-                      <img alt='Dr. 美胸網站縮圖' decoding='async' loading='lazy' src='dr/dr.jpg'>
-                    </picture>
-                    <div class='card__title'>
-                      <h5>Dr. 美胸</h5>
-                    </div>
-                    <div class='card__body'>
-                      <div class='card__text'>
-                        <p>「Dr.美胸」網站切版作品集，內容包含已完成之 HTML 結構、CSS
-                          樣式、動畫效果與展示頁面，設計素材由原設計方提供。此作品展現本人於靜態切版與前端互動畫面製作方面的技術能力，適用於品牌網站、電商頁面或醫美保健領域的前端開發參考。</p>
+                  </div>
+                  <div class='modal fade' id='DMModal1' tabindex='-1'>
+                    <div class='modal-dialog modal-dialog-centered modal-xl'>
+                      <div class='modal-content'>
+                        <div class='modal-body text-center'>
+                          <img class='img-fluid' src='DM/20200629.jpg'>
+                        </div>
                       </div>
-                      <ul aria-label='技術標籤' class='card__tags'>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>RWD</li>
-                        <li>Animation</li>
-                        <li>AOS</li>
-                        <li>Slick</li>
-                        <li>Bootstrap</li>
-                        <li>JavaScript</li>
-                      </ul>
                     </div>
-                  </a>
-                </article>
-                <article class='project-card'>
-                  <a aria-label='查看 雲飛健康寶盒 專案詳情' href='project-YunfeisChoice.html'>
-                    <picture class='card__thumb'>
-                      <source srcset='yunfeis-choice/yunfeis-choice.webp' type='image/webp'>
-                      <img alt='雲飛健康寶盒網站縮圖' decoding='async' loading='lazy' src='yunfeis-choice/yunfeis-choice.jpg'>
-                    </picture>
-                    <div class='card__title'>
-                      <h5>雲飛健康寶盒</h5>
-                    </div>
-                    <div class='card__body'>
-                      <div class='card__text'>
-                        <p>網站前端靜態作品包，內容包含單頁式網站的 HTML 架構、CSS
-                          樣式與完整圖片素材，展現商品視覺導向頁面的切版與互動動畫整合能力。設計素材由原設計方提供，本人負責靜態切版與前端動畫效果製作，適用於品牌形象頁等案例展示。</p>
+                  </div>
+                  <div class='modal fade' id='DMModal2' tabindex='-1'>
+                    <div class='modal-dialog modal-dialog-centered modal-xl'>
+                      <div class='modal-content'>
+                        <div class='modal-body text-center'>
+                          <img class='img-fluid' src='DM/20200618.jpg'>
+                        </div>
                       </div>
-                      <ul aria-label='技術標籤' class='card__tags'>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>RWD</li>
-                        <li>Animation</li>
-                        <li>AOS</li>
-                        <li>Bootstrap</li>
-                        <li>JavaScript</li>
-                      </ul>
                     </div>
-                  </a>
-                </article>
-                <article class='project-card'>
-                  <a aria-label='查看 馬來西亞旅遊線上手冊 專案詳情' href='project-ebookCompany.html'>
-                    <picture class='card__thumb'>
-                      <source srcset='ebook_company/ebook_company.webp' type='image/webp'>
-                      <img alt='馬來西亞旅遊線上手冊網站縮圖' decoding='async' loading='lazy' src='ebook_company/ebook_company.jpg'>
-                    </picture>
-                    <div class='card__title'>
-                      <h5>馬來西亞旅遊線上手冊</h5>
-                    </div>
-                    <div class='card__body'>
-                      <div class='card__text'>
-                        <p>此線上手冊以靜態網頁形式製作，具備 RWD 響應式設計，適應各種裝置瀏覽。內容製作技術包含 HTML 架構、CSS
-                          樣式設計與完整圖片素材整合，展現視覺導向商品頁面的切版能力。設計素材由原設計方提供，本人負責靜態切版與前端動畫效果製作，適用於品牌形象網站、行銷導向頁面等展示類型專案。</p>
+                  </div>
+                  <div class='modal fade' id='DMModal3' tabindex='-1'>
+                    <div class='modal-dialog modal-dialog-centered modal-xl'>
+                      <div class='modal-content'>
+                        <div class='modal-body text-center'>
+                          <img class='img-fluid' src='DM/20200610_2.jpg'>
+                        </div>
                       </div>
-                      <ul aria-label='技術標籤' class='card__tags'>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>RWD</li>
-                        <li>Bootstrap</li>
-                        <li>FontAwesome</li>
-                        <li>JavaScript</li>
-                      </ul>
                     </div>
-                  </a>
-                </article>
-                <article class='project-card'>
-                  <a aria-label='查看 手機訂房系統 專案詳情' href='project-MobileBooking.html'>
-                    <picture class='card__thumb'>
-                      <source srcset='GuestHouse/GuestHouse.webp' type='image/webp'>
-                      <img alt='手機訂房系統網站縮圖' decoding='async' loading='lazy' src='GuestHouse/GuestHouse.jpg'>
-                    </picture>
-                    <div class='card__title'>
-                      <h5>手機訂房系統</h5>
-                    </div>
-                    <div class='card__body'>
-                      <div class='card__text'>
-                        <p>本作品為網站前端靜態頁面設計，自起初即針對手機平台開發，包含房間上架、價格設定、訂單與資料管理等功能頁。使用 HTML、CSS 製作，設計素材由設計方提供，本人負責靜態切版與頁面製作。
-                        </p>
+                  </div>
+                  <div class='modal fade' id='DMModal4' tabindex='-1'>
+                    <div class='modal-dialog modal-dialog-centered modal-xl'>
+                      <div class='modal-content'>
+                        <div class='modal-body text-center'>
+                          <img class='img-fluid' src='DM/20200610.jpg'>
+                        </div>
                       </div>
-                      <ul aria-label='技術標籤' class='card__tags'>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Bootstrap</li>
-                        <li>FontAwesome</li>
-                        <li>JavaScript</li>
-                      </ul>
                     </div>
-                  </a>
-                </article>
-                <article class='project-card'>
-                  <a aria-label='查看 AMHA後台線上系統 專案詳情' href='project-AMHASystem.html'>
-                    <picture class='card__thumb'>
-                      <source srcset='AMHA_System/AMHA_System.webp' type='image/webp'>
-                      <img alt='AMHA後台線上系統網站縮圖' decoding='async' loading='lazy' src='AMHA_System/AMHA_System.jpg'>
-                    </picture>
-                    <div class='card__title'>
-                      <h5>AMHA後台線上系統</h5>
-                    </div>
-                    <div class='card__body'>
-                      <div class='card__text'>
-                        <p>本專案為亞洲惡性高熱聯盟（AMHA）後台管理系統，提供資料維護、內容編輯與基本資訊管理等功能。前端以 HTML 與 CSS
-                          製作，搭配原設計方提供之視覺素材，由本人負責靜態切版與前端功能實作。整體設計以實用性為導向，適用於桌機環境下的後台操作與管理。</p>
+                  </div>
+                  <div class='modal fade' id='DMModal5' tabindex='-1'>
+                    <div class='modal-dialog modal-dialog-centered modal-xl'>
+                      <div class='modal-content'>
+                        <div class='modal-body text-center'>
+                          <img class='img-fluid' src='DM/20200609.jpg'>
+                        </div>
                       </div>
-                      <ul aria-label='技術標籤' class='card__tags'>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Bootstrap</li>
-                        <li>FontAwesome</li>
-                        <li>JavaScript</li>
-                      </ul>
                     </div>
-                  </a>
-                </article>
-                <article class='project-card'>
-                  <a aria-label='查看 企業後台ERP系統 專案詳情' href='project-ERPSystem.html'>
-                    <picture class='card__thumb'>
-                      <source srcset='ERP_System/ERP.webp' type='image/webp'>
-                      <img alt='企業後台ERP系統網站縮圖' decoding='async' loading='lazy' src='ERP_System/ERP.jpg'>
-                    </picture>
-                    <div class='card__title'>
-                      <h5>企業後台ERP系統</h5>
-                    </div>
-                    <div class='card__body'>
-                      <div class='card__text'>
-                        <p>本專案為企業後台 ERP 系統前端樣板，涵蓋飯店專案管理、訂單建立、價格與庫存查詢、供應商與導遊資料維護、系統公告等核心模組。系統介面以 HTML 與 CSS
-                          製作，設計上著重使用者體驗（UX），特別針對桌機操作流程進行優化，讓管理人員在日常操作上更加直覺與高效。由設計方提供視覺素材，本人負責前端靜態切版與互動效果實作，展現企業後台系統在資訊整合與操作便利性的介面製作能力。
-                        </p>
+                  </div>
+                  <div class='modal fade' id='DMModal6' tabindex='-1'>
+                    <div class='modal-dialog modal-dialog-centered modal-xl'>
+                      <div class='modal-content'>
+                        <div class='modal-body text-center'>
+                          <img class='img-fluid' src='DM/20200608.jpg'>
+                        </div>
                       </div>
-                      <ul aria-label='技術標籤' class='card__tags'>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Bootstrap</li>
-                        <li>FontAwesome</li>
-                        <li>JavaScript</li>
-                      </ul>
                     </div>
-                  </a>
-                </article>
-                <article class='project-card'>
-                  <a aria-label='查看 旅宿業後台系統 專案詳情' href='project-GuesthouseAdminSystem.html'>
-                    <picture class='card__thumb'>
-                      <source srcset='GuestHouse_System/GuestHouse_System.webp' type='image/webp'>
-                      <img alt='旅宿業後台系統網站縮圖' decoding='async' loading='lazy'
-                        src='GuestHouse_System/GuestHouse_System.jpg'>
-                    </picture>
-                    <div class='card__title'>
-                      <h5>旅宿業後台系統</h5>
-                    </div>
-                    <div class='card__body'>
-                      <div class='card__text'>
-                        <p>本專案為旅宿業所設計之後台管理系統前端樣板，功能涵蓋旅宿與房型管理、訂單查詢、推薦碼維護與銷售報表統計等模組。系統以靜態 HTML 與 CSS 製作，支援 RWD
-                          響應式設計，確保在桌機與行動裝置上皆具良好操作體驗。操作介面提供管理者在不同設備上進行房型上架、價格設定與資料維護。設計素材由原設計方提供，本人負責切版與前端頁面整合，展現後台系統在功能性與跨裝置介面上的整合能力。
-                        </p>
+                  </div>
+                  <div class='modal fade' id='DMModal7' tabindex='-1'>
+                    <div class='modal-dialog modal-dialog-centered modal-xl'>
+                      <div class='modal-content'>
+                        <div class='modal-body text-center'>
+                          <img class='img-fluid' src='DM/20200608_1.jpg'>
+                        </div>
                       </div>
-                      <ul aria-label='技術標籤' class='card__tags'>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>RWD</li>
-                        <li>Bootstrap</li>
-                        <li>FontAwesome</li>
-                        <li>JavaScript</li>
-                      </ul>
                     </div>
-                  </a>
-                </article>
+                  </div>
+                  <div class='modal fade' id='DMModal8' tabindex='-1'>
+                    <div class='modal-dialog modal-dialog-centered modal-xl'>
+                      <div class='modal-content'>
+                        <div class='modal-body text-center'>
+                          <img class='img-fluid' src='DM/20200605.jpg'>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='modal fade' id='DMModal9' tabindex='-1'>
+                    <div class='modal-dialog modal-dialog-centered modal-xl'>
+                      <div class='modal-content'>
+                        <div class='modal-body text-center'>
+                          <img class='img-fluid' src='DM/20200608_2.jpg'>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='modal fade' id='DMModal10' tabindex='-1'>
+                    <div class='modal-dialog modal-dialog-centered modal-xl'>
+                      <div class='modal-content'>
+                        <div class='modal-body text-center'>
+                          <img class='img-fluid' src='DM/20200528.jpg'>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='modal fade' id='DMModal11' tabindex='-1'>
+                    <div class='modal-dialog modal-dialog-centered modal-xl'>
+                      <div class='modal-content'>
+                        <div class='modal-body text-center'>
+                          <img class='img-fluid' src='DM/20200526_1.jpg'>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='modal fade' id='DMModal12' tabindex='-1'>
+                    <div class='modal-dialog modal-dialog-centered modal-xl'>
+                      <div class='modal-content'>
+                        <div class='modal-body text-center'>
+                          <img class='img-fluid' src='DM/20200526_3.jpg'>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='modal fade' id='DMModal13' tabindex='-1'>
+                    <div class='modal-dialog modal-dialog-centered modal-xl'>
+                      <div class='modal-content'>
+                        <div class='modal-body text-center'>
+                          <img class='img-fluid' src='DM/20200526_2.jpg'>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='modal fade' id='DMModal14' tabindex='-1'>
+                    <div class='modal-dialog modal-dialog-centered modal-xl'>
+                      <div class='modal-content'>
+                        <div class='modal-body text-center'>
+                          <img class='img-fluid' src='DM/20150728_EDM.jpg'>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='modal fade' id='DMModal15' tabindex='-1'>
+                    <div class='modal-dialog modal-dialog-centered modal-xl'>
+                      <div class='modal-content'>
+                        <div class='modal-body text-center'>
+                          <img class='img-fluid' src='DM/A1.png'>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='modal fade' id='DMModal16' tabindex='-1'>
+                    <div class='modal-dialog modal-dialog-centered modal-xl'>
+                      <div class='modal-content'>
+                        <div class='modal-body text-center'>
+                          <img class='img-fluid' src='DM/A3.png'>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='modal fade' id='DMModal17' tabindex='-1'>
+                    <div class='modal-dialog modal-dialog-centered modal-xl'>
+                      <div class='modal-content'>
+                        <div class='modal-body text-center'>
+                          <img class='img-fluid' src='DM/A6.png'>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='modal fade' id='DMModal18' tabindex='-1'>
+                    <div class='modal-dialog modal-dialog-centered modal-xl'>
+                      <div class='modal-content'>
+                        <div class='modal-body text-center'>
+                          <img class='img-fluid' src='DM/20131002.jpg'>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='modal fade' id='DMModal19' tabindex='-1'>
+                    <div class='modal-dialog modal-dialog-centered modal-xl'>
+                      <div class='modal-content'>
+                        <div class='modal-body text-center'>
+                          <img class='img-fluid' src='DM/20130218-1.jpg'>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='modal fade' id='DMModal20' tabindex='-1'>
+                    <div class='modal-dialog modal-dialog-centered modal-xl'>
+                      <div class='modal-content'>
+                        <div class='modal-body text-center'>
+                          <img class='img-fluid' src='DM/20130218.jpg'>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class='tab-pane fade' id='Banner-tab-pane' role='tabpanel'>
+                  <h2 class='h1'>Banner</h2>
+                  <div class='Layout4 Banner'>
+                    <a data-bs-toggle='modal' href='#BannerModal0'>
+                      <img loading='lazy' src='Banner/20200708.jpg'>
+                    </a>
+                    <div class='modal fade' id='BannerModal0' tabindex='-1'>
+                      <div class='modal-dialog modal-dialog-centered modal-xl'>
+                        <div class='modal-content'>
+                          <div class='modal-body text-center'>
+                            <img class='img-fluid' src='Banner/20200708.jpg'>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a data-bs-toggle='modal' href='#BannerModal1'>
+                      <img loading='lazy' src='Banner/20200702_1.jpg'>
+                    </a>
+                    <div class='modal fade' id='BannerModal1' tabindex='-1'>
+                      <div class='modal-dialog modal-dialog-centered modal-xl'>
+                        <div class='modal-content'>
+                          <div class='modal-body text-center'>
+                            <img class='img-fluid' src='Banner/20200702_1.jpg'>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a data-bs-toggle='modal' href='#BannerModal2'>
+                      <img loading='lazy' src='Banner/20200702_2.jpg'>
+                    </a>
+                    <div class='modal fade' id='BannerModal2' tabindex='-1'>
+                      <div class='modal-dialog modal-dialog-centered modal-xl'>
+                        <div class='modal-content'>
+                          <div class='modal-body text-center'>
+                            <img class='img-fluid' src='Banner/20200702_2.jpg'>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a data-bs-toggle='modal' href='#BannerModal3'>
+                      <img loading='lazy' src='Banner/20200701_2.jpg'>
+                    </a>
+                    <div class='modal fade' id='BannerModal3' tabindex='-1'>
+                      <div class='modal-dialog modal-dialog-centered modal-xl'>
+                        <div class='modal-content'>
+                          <div class='modal-body text-center'>
+                            <img class='img-fluid' src='Banner/20200701_2.jpg'>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a data-bs-toggle='modal' href='#BannerModal4'>
+                      <img loading='lazy' src='Banner/20200701.jpg'>
+                    </a>
+                    <div class='modal fade' id='BannerModal4' tabindex='-1'>
+                      <div class='modal-dialog modal-dialog-centered modal-xl'>
+                        <div class='modal-content'>
+                          <div class='modal-body text-center'>
+                            <img class='img-fluid' src='Banner/20200701.jpg'>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a data-bs-toggle='modal' href='#BannerModal5'>
+                      <img loading='lazy' src='Banner/20200622.jpg'>
+                    </a>
+                    <div class='modal fade' id='BannerModal5' tabindex='-1'>
+                      <div class='modal-dialog modal-dialog-centered modal-xl'>
+                        <div class='modal-content'>
+                          <div class='modal-body text-center'>
+                            <img class='img-fluid' src='Banner/20200622.jpg'>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a data-bs-toggle='modal' href='#BannerModal6'>
+                      <img loading='lazy' src='Banner/20200420.jpg'>
+                    </a>
+                    <div class='modal fade' id='BannerModal6' tabindex='-1'>
+                      <div class='modal-dialog modal-dialog-centered modal-xl'>
+                        <div class='modal-content'>
+                          <div class='modal-body text-center'>
+                            <img class='img-fluid' src='Banner/20200420.jpg'>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a data-bs-toggle='modal' href='#BannerModal7'>
+                      <img loading='lazy' src='Banner/20191226.jpg'>
+                    </a>
+                    <div class='modal fade' id='BannerModal7' tabindex='-1'>
+                      <div class='modal-dialog modal-dialog-centered modal-xl'>
+                        <div class='modal-content'>
+                          <div class='modal-body text-center'>
+                            <img class='img-fluid' src='Banner/20191226.jpg'>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a data-bs-toggle='modal' href='#BannerModal8'>
+                      <img loading='lazy' src='Banner/B12.jpg'>
+                    </a>
+                    <div class='modal fade' id='BannerModal8' tabindex='-1'>
+                      <div class='modal-dialog modal-dialog-centered modal-xl'>
+                        <div class='modal-content'>
+                          <div class='modal-body text-center'>
+                            <img class='img-fluid' src='Banner/B12.jpg'>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a data-bs-toggle='modal' href='#BannerModal9'>
+                      <img loading='lazy' src='Banner/B13.jpg'>
+                    </a>
+                    <div class='modal fade' id='BannerModal9' tabindex='-1'>
+                      <div class='modal-dialog modal-dialog-centered modal-xl'>
+                        <div class='modal-content'>
+                          <div class='modal-body text-center'>
+                            <img class='img-fluid' src='Banner/B13.jpg'>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a data-bs-toggle='modal' href='#BannerModal10'>
+                      <img loading='lazy' src='Banner/B15.jpg'>
+                    </a>
+                    <div class='modal fade' id='BannerModal10' tabindex='-1'>
+                      <div class='modal-dialog modal-dialog-centered modal-xl'>
+                        <div class='modal-content'>
+                          <div class='modal-body text-center'>
+                            <img class='img-fluid' src='Banner/B15.jpg'>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a data-bs-toggle='modal' href='#BannerModal11'>
+                      <img loading='lazy' src='Banner/B1.jpg'>
+                    </a>
+                    <div class='modal fade' id='BannerModal11' tabindex='-1'>
+                      <div class='modal-dialog modal-dialog-centered modal-xl'>
+                        <div class='modal-content'>
+                          <div class='modal-body text-center'>
+                            <img class='img-fluid' src='Banner/B1.jpg'>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a data-bs-toggle='modal' href='#BannerModal12'>
+                      <img loading='lazy' src='Banner/B7.jpg'>
+                    </a>
+                    <div class='modal fade' id='BannerModal12' tabindex='-1'>
+                      <div class='modal-dialog modal-dialog-centered modal-xl'>
+                        <div class='modal-content'>
+                          <div class='modal-body text-center'>
+                            <img class='img-fluid' src='Banner/B7.jpg'>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a data-bs-toggle='modal' href='#BannerModal13'>
+                      <img loading='lazy' src='Banner/990x400_2.jpg'>
+                    </a>
+                    <div class='modal fade' id='BannerModal13' tabindex='-1'>
+                      <div class='modal-dialog modal-dialog-centered modal-xl'>
+                        <div class='modal-content'>
+                          <div class='modal-body text-center'>
+                            <img class='img-fluid' src='Banner/990x400_2.jpg'>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a data-bs-toggle='modal' href='#BannerModal14'>
+                      <img loading='lazy' src='Banner/990x400_1.jpg'>
+                    </a>
+                    <div class='modal fade' id='BannerModal14' tabindex='-1'>
+                      <div class='modal-dialog modal-dialog-centered modal-xl'>
+                        <div class='modal-content'>
+                          <div class='modal-body text-center'>
+                            <img class='img-fluid' src='Banner/990x400_1.jpg'>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a data-bs-toggle='modal' href='#BannerModal15'>
+                      <img loading='lazy' src='Banner/790x500.jpg'>
+                    </a>
+                    <div class='modal fade' id='BannerModal15' tabindex='-1'>
+                      <div class='modal-dialog modal-dialog-centered modal-xl'>
+                        <div class='modal-content'>
+                          <div class='modal-body text-center'>
+                            <img class='img-fluid' src='Banner/790x500.jpg'>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a data-bs-toggle='modal' href='#BannerModal16'>
+                      <img loading='lazy' src='Banner/naruko_778x83.gif'>
+                    </a>
+                    <div class='modal fade' id='BannerModal16' tabindex='-1'>
+                      <div class='modal-dialog modal-dialog-centered modal-xl'>
+                        <div class='modal-content'>
+                          <div class='modal-body text-center'>
+                            <img class='img-fluid' src='Banner/naruko_778x83.gif'>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a data-bs-toggle='modal' href='#BannerModal17'>
+                      <img loading='lazy' src='Banner/naruko_250x108.gif'>
+                    </a>
+                    <div class='modal fade' id='BannerModal17' tabindex='-1'>
+                      <div class='modal-dialog modal-dialog-centered modal-xl'>
+                        <div class='modal-content'>
+                          <div class='modal-body text-center'>
+                            <img class='img-fluid' src='Banner/naruko_250x108.gif'>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a data-bs-toggle='modal' href='#BannerModal18'>
+                      <img loading='lazy' src='Banner/20110812_B2C.jpg'>
+                    </a>
+                    <div class='modal fade' id='BannerModal18' tabindex='-1'>
+                      <div class='modal-dialog modal-dialog-centered modal-xl'>
+                        <div class='modal-content'>
+                          <div class='modal-body text-center'>
+                            <img class='img-fluid' src='Banner/20110812_B2C.jpg'>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a data-bs-toggle='modal' href='#BannerModal19'>
+                      <img loading='lazy' src='Banner/20110704_EDM.jpg'>
+                    </a>
+                    <div class='modal fade' id='BannerModal19' tabindex='-1'>
+                      <div class='modal-dialog modal-dialog-centered modal-xl'>
+                        <div class='modal-content'>
+                          <div class='modal-body text-center'>
+                            <img class='img-fluid' src='Banner/20110704_EDM.jpg'>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a data-bs-toggle='modal' href='#BannerModal20'>
+                      <img loading='lazy' src='Banner/800x600.jpg'>
+                    </a>
+                    <div class='modal fade' id='BannerModal20' tabindex='-1'>
+                      <div class='modal-dialog modal-dialog-centered modal-xl'>
+                        <div class='modal-content'>
+                          <div class='modal-body text-center'>
+                            <img class='img-fluid' src='Banner/800x600.jpg'>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </section>
           </div>
