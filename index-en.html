@@ -5,44 +5,24 @@
 <meta content='IE=edge' http-equiv='X-UA-Compatible'>
 <meta content='width=device-width, initial-scale=1.0' name='viewport'>
 <title>Jay&#39;s Web Design &amp; Front-End Portfolio</title>
-<meta content='Jay Wang’s Front-End Portfolio: Focused on responsive web design (RWD), interactive animation integration, and front-end optimization, featuring both commercial projects and personal practice works.' name='description'>
+<meta content='Jay Wang&#39;s Front-End Portfolio: Focused on responsive web design (RWD), interactive animation integration, and front-end optimization, featuring both commercial projects and personal practice works.' name='description'>
 <meta content='' name='keywords'>
+<link href='https://cutcodejay.github.io/web-works/' rel='canonical'>
+<meta content='noindex, nofollow' name='robots'>
+<meta content='Jay&#39;s Web Portfolio | Front-End Design' property='og:title'>
+<meta content='Professional, fast, and maintainable web design and front-end development services.' property='og:description'>
+<meta content='/index-en.html' property='og:url'>
+<meta content='/images/og/og-home.jpg' property='og:image'>
 <meta content='website' property='og:type'>
-<meta content='Jay Wang 前端作品集' property='og:title'>
-<meta content='RWD、切版、互動動畫整合。' property='og:description'>
-<meta content='https://cutcodejay.github.io/web-works/images/og-cover.jpg' property='og:image'>
-<meta content='https://cutcodejay.github.io/web-works/' property='og:url'>
-<meta content='summary_large_image' name='twitter:card'>
-
-<link href='images/favicon.ico' rel='shortcut icon'>
-<link href='images/favicon.ico' rel='bookmark' type='image/x-icon'>
-<link href='images/apple-touch-icon.png' rel='apple-touch-icon'>
-<link href='images/apple-touch-icon-72x72.png' rel='apple-touch-icon' sizes='72x72'>
-<link href='images/apple-touch-icon-114x114.png' rel='apple-touch-icon' sizes='114x114'>
-
-<!-- Google tag (gtag.js) -->
-<script async='' src='https://www.googletagmanager.com/gtag/js?id=G-DL4NRWTDWQ'></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-DL4NRWTDWQ');
-</script>
-
-<script type='application/ld+json'>
-{"@context":"https://schema.org","@type":"Person","name":"Jay Wang","jobTitle":"Front-end Developer","url":"https://cutcodejay.github.io/web-works/","image":"https://cutcodejay.github.io/web-works/images/jay.webp","sameAs":["https://github.com/cutcodejay","https://www.linkedin.com/in/jaywangxd"]}
-</script>
-<script type='application/ld+json'>
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://cutcodejay.github.io/web-works/"},{"@type":"ListItem","position":2,"name":"關於Jay","item":"https://cutcodejay.github.io/web-works/about.html"},{"@type":"ListItem","position":3,"name":"AMHA","item":"https://cutcodejay.github.io/web-works/project-AMHA.html"},{"@type":"ListItem","position":4,"name":"Dr. 美胸","item":"https://cutcodejay.github.io/web-works/project-dr.html"},{"@type":"ListItem","position":5,"name":"雲飛健康寶盒","item":"https://cutcodejay.github.io/web-works/project-YunfeisChoice.html"},{"@type":"ListItem","position":6,"name":"馬來西亞旅遊線上手冊","item":"https://cutcodejay.github.io/web-works/project-Malaysia.html"},{"@type":"ListItem","position":7,"name":"手機訂房系統","item":"https://cutcodejay.github.io/web-works/project-MobileBooking.html"},{"@type":"ListItem","position":8,"name":"AMHA後台線上系統","item":"https://cutcodejay.github.io/web-works/project-AMHASystem.html"},{"@type":"ListItem","position":9,"name":"企業後台ERP系統","item":"https://cutcodejay.github.io/web-works/project-ERPSystem.html"},{"@type":"ListItem","position":10,"name":"旅宿業後台系統","item":"https://cutcodejay.github.io/web-works/project-GuesthouseAdminSystem.html"}]}
-</script>
 
 <!-- / === javascripts ====================================================== -->
+<script src='https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js'></script>
 
 <!-- / === All Css ====================================================== -->
 <link href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' rel='stylesheet' type='text/css'>
-<link href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet' type='text/css'>
-<link crossorigin='anonymous' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' rel='stylesheet'>
+<link href='https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css' rel='stylesheet' type='text/css'>
+<link crossorigin='anonymous' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css' integrity='sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB' rel='stylesheet'>
+
 <link href='css/all.css' rel='stylesheet' type='text/css'>
 
 </head>
@@ -50,8 +30,8 @@
 <!-- / ========================== Container_start ========================== -->
 <div id='container'>
 <!-- / ========================== Header_start ========================== -->
-<header class='web__header' id='myHeader'>
-<div class='head_box'>
+<header class='head' id='myHeader' role='banner'>
+<div class='head__inner wrap'>
 <div class='logoImg'>
 <img alt='Jay Logo' class='svg straight' src='images/Jay_Logo.svg'>
 <img alt='Jay Logo' class='svg horizontal' src='images/Jay_Logo-horizontal.svg'>
@@ -69,7 +49,7 @@
 <span></span>
 <span></span>
 </button>
-<nav class='nav_bar'>
+<nav class='site-nav'>
 <button class='closed-menu' type='button'>
 <img alt='closed' class='closed-icon svg' src='images/closed.svg'>
 </button>
@@ -82,7 +62,7 @@
 <a href='index-en.html'>Home</a>
 </li>
 <li class='menu-item'>
-<a href='about-en.html'>about Jay</a>
+<a href='about-en.html'>About Jay</a>
 </li>
 <li class='menu-item'>
 <a href='projectList-en.html'>Case Studies</a>
@@ -116,29 +96,34 @@
 <div class='index__Head_bg'>
 <div class='index__Head_content'>
 <section class='index__Head__introduction'>
-<p class='en' lang='en'>I am Jay, with approximately 20 years of experience in Internet-related design. My expertise includes website design, front-end slicing, RWD (responsive web design), newsletters and EDMs, banner design and production, as well as website maintenance and management. I excel at translating user requirements into smooth and user-friendly interfaces, continuously refining my skills to ensure high-quality results in terms of aesthetics, stability, and usability.</p>
+<p class='en' lang='en'>I&#39;m Jay, with approximately 20 years of Internet design experience, specializing in website design, RWD responsive development, newsletters and EDMs, banner design, and website maintenance. I excel at translating user needs into smooth, intuitive interfaces that achieve high standards of aesthetics, stability, and usability.</p>
+<p class='en' lang='en'>🎨 Design Thinking in the Age of AI — AI tools are making website development faster than ever, but ensuring it looks great, feels professional, and aligns with the brand still requires an experienced designer&#39;s judgment. Drawing on 20 years of visual design expertise, I plan with AI, operate AI, and guide AI to produce design directions that meet real needs — then I conduct quality review and detail refinement. The result: higher efficiency, more precise outcomes. What you get isn&#39;t just a website, but a brand presentation backed by design logic.</p>
+<p class='en' lang='en'>Vibe Design ≠ The end of professional design. A designer with 20 years of visual judgment × AI-powered acceleration — that&#39;s the truly competitive combination.</p>
 </section>
 <article class='index__Head__expertise'>
 <h4>Areas of Expertise</h4>
 <ul>
-<li class='en'>Designed and developed websites and web pages</li>
-<li class='en'>Fixed layout misalignment and broken page issues</li>
-<li class='en'>Sliced and integrated websites, web pages, and front-end frameworks</li>
-<li class='en'>Web UI Design</li>
-<li class='en'>EDM. Banner</li>
+<li class='en'>AI-Assisted Web Design &amp; Front-End Development</li>
+<li class='en'>RWD Responsive Web Design &amp; Layout</li>
+<li class='en'>Website / Web Page / Front-End Framework Slicing &amp; Integration</li>
+<li class='en'>Web Layout Bug Fixes &amp; Alignment Corrections</li>
+<li class='en'>Web Form Interface Design &amp; Development</li>
+<li class='en'>EDM &amp; Banner Design</li>
+<li class='en'>Website Maintenance &amp; Accessible Web</li>
 </ul>
 </article>
 </div>
 </div>
 <div class='index__about_bg'>
-<div class='Layout2 w1200'>
+<div class='grid grid--cols-2-fr075-fr1 gap-md'>
 <div class='imgBox'></div>
 <div class='index__about__content'>
 <div class='text_en'>
 <h2>About Me</h2>
-<p class='intro'>I am Jay from Taiwan, with approximately 20 years of experience in Internet design. I specialize in front-end web development, website design, and RWD (responsive web design), with strong proficiency in HTML and CSS. My expertise also includes newsletters and EDMs, banner design and production, as well as website maintenance and management. I excel at translating user requirements into intuitive and user-friendly interfaces, while continuously enhancing UI/UX design and front-end skills to ensure that my work achieves the highest standards of aesthetics, stability, and usability.</p>
-<p class='intro'>Throughout my career, I have participated in numerous projects from concept to completion, covering websites, newsletters, EDMs, banners, and other digital design initiatives. I possess strong cross-department communication and collaboration skills. I believe that good design is not only visually appealing but also effective and thoughtful. Therefore, I am committed to creating intuitive, smooth, and user-friendly interfaces, ensuring that every project meets high standards of aesthetics, stability, and usability.</p>
-<a class='btn' href='about.html'>Acknowledged, Jay.</a>
+<p class='intro'>Hi, I&#39;m Jay — Senior Visual Web Design × AI Application. 20 years of web visual design experience, crafting professional website visuals for businesses and brands.</p>
+<p class='intro'>I&#39;m Jay, from Taiwan, with approximately 20 years of Internet design experience, specializing in front-end website layout, web design, and RWD responsive web development, with strong proficiency in HTML and CSS. My expertise also covers newsletters and EDMs, banner design and production, as well as website maintenance and management. I excel at translating user needs into intuitive, user-friendly interfaces, continuously advancing my UI/UX design and front-end skills to ensure every project achieves the highest standards of aesthetics, stability, and usability.</p>
+<p class='intro'>Throughout my career, I have participated in planning and producing numerous projects from scratch, covering websites, newsletters, EDMs, banners, and other digital design items, with strong cross-departmental communication and collaboration skills. I believe good design should not only look great but also be efficient and thoughtful — so I&#39;m committed to creating intuitive, fluid, and user-friendly interfaces that meet high standards of aesthetics, stability, and usability.</p>
+<a class='btn' href='about.html'>About Jay</a>
 </div>
 </div>
 </div>
@@ -148,7 +133,10 @@
 <a class='h5 more en' href='projectList-en.html'>More project examples...</a>
 <ul class='nav nav-tabs' id='myProject' role='tablist'>
 <li class='nav-item' role='presentation'>
-<button aria-controls='Web-tab-pane' aria-selected='true' class='nav-link h3 active' data-bs-target='#Web-tab-pane' data-bs-toggle='tab' id='Web-tab' role='tab' type='button'>Web</button>
+<button aria-controls='AI-tab-pane' aria-selected='false' class='nav-link h3 active' data-bs-target='#AI-tab-pane' data-bs-toggle='tab' id='AI-tab' role='tab' type='button'>AI Web</button>
+</li>
+<li class='nav-item' role='presentation'>
+<button aria-controls='Web-tab-pane' aria-selected='true' class='nav-link h3' data-bs-target='#Web-tab-pane' data-bs-toggle='tab' id='Web-tab' role='tab' type='button'>Web</button>
 </li>
 <li class='nav-item' role='presentation'>
 <button aria-controls='DM-tab-pane' aria-selected='false' class='nav-link h3' data-bs-target='#DM-tab-pane' data-bs-toggle='tab' id='DM-tab' role='tab' type='button'>DM</button>
@@ -158,9 +146,55 @@
 </li>
 </ul>
 <div class='tab-content' id='myProjectContent'>
-<div aria-labelledby='Web-tab' class='tab-pane fade show active' id='Web-tab-pane' role='tabpanel' tabindex='0'>
+<div aria-labelledby='AI-tab' class='tab-pane fade show active' id='AI-tab-pane' role='tabpanel' tabindex='0'>
+<h2 class='h1'>AI Web</h2>
+<p class='aiText'>此區作品均由 AI 生成的 Landing Page，部分細節或許尚未完美，但這正是 AI 輔助設計的真實呈現。對於有經驗的設計師而言，這些細節調整並非難事。展示這些作品的目的，在於說明從構想到完稿，AI 能大幅縮短設計流程、加速產出。</p>
+<ul class='aiPrject grid grid--cols-4 gap-md'>
+<li>
+<a href='AI/landing-v1.html' target='_blank'>
+<img alt='Landing v1' src='images/AI/AI_1.jpg'>
+</a>
+</li>
+<li>
+<a href='AI/landing-v2.html' target='_blank'>
+<img alt='Landing v2' src='images/AI/AI_2.jpg'>
+</a>
+</li>
+<li>
+<a href='AI/landing-v3.html' target='_blank'>
+<img alt='Landing v3' src='images/AI/AI_3.jpg'>
+</a>
+</li>
+<li>
+<a href='AI/landing-v4.html' target='_blank'>
+<img alt='Landing v4' src='images/AI/AI_4.jpg'>
+</a>
+</li>
+<li>
+<a href='AI/landing-v5.html' target='_blank'>
+<img alt='Landing v5' src='images/AI/AI_5.jpg'>
+</a>
+</li>
+<li>
+<a href='AI/landing-v6.html' target='_blank'>
+<img alt='Landing v6' src='images/AI/AI_6.jpg'>
+</a>
+</li>
+<li>
+<a href='AI/landing-v7.html' target='_blank'>
+<img alt='Landing v7' src='images/AI/AI_7.jpg'>
+</a>
+</li>
+<li>
+<a href='AI/landing-v8.html' target='_blank'>
+<img alt='Landing v8' src='images/AI/AI_8.jpg'>
+</a>
+</li>
+</ul>
+</div>
+<div class='tab-pane fade' id='Web-tab-pane' role='tabpanel'>
 <h2 class='h1'>WEB</h2>
-<div class='Layout4'>
+<div class='grid grid--cols-4 gap-md Banner'>
 <article class='project-card'>
 <a aria-label='View Asian Malignant Hyperthermia Alliance (AMHA) project' href='project-AMHA-en.html'>
 <picture class='card__thumb'>
@@ -197,7 +231,7 @@
 </div>
 <div class='card__body'>
 <div class='card__text'>
-<p>“Dr. Beautiful Bust” website front-end work. It includes completed HTML structure, CSS styling, animation effects, and demo pages. All visual assets were provided by the original design team. This project highlights my skills in static layout implementation and front-end animation, suitable for brand websites, e-commerce pages, or beauty and wellness web development references.</p>
+<p>This website front-end work includes completed HTML structure, CSS styling, animation effects, and demo pages. All visual assets were provided by the original design team. This project highlights my skills in static layout implementation and front-end animation, suitable for brand websites, e-commerce pages, or beauty and wellness web development references.</p>
 </div>
 <ul aria-label='Tech tags' class='card__tags'>
 <li>HTML</li>
@@ -318,7 +352,7 @@
 </div>
 <div class='card__body'>
 <div class='card__text'>
-<p>This project is a front-end template for an enterprise ERP back-end management system, featuring key modules such as hotel project management, order processing, price and inventory viewing, supplier and guide management, and system announcements. The interface was built using HTML and CSS, with a strong focus on user experience (UX). It is specifically optimized for desktop workflows, providing intuitive and efficient navigation for internal staff. Visual assets were provided by the original designer, while I was responsible for static layout implementation and front-end interaction effects, demonstrating my ability to deliver functional and user-friendly admin interfaces for enterprise environments.</p>
+<p>This project is a front-end template for an enterprise ERP back-end management system, featuring key modules such as hotel project management, order processing, price and inventory viewing, supplier and guide management, and system announcements. The interface was built using HTML and CSS, with a strong focus on user experience (UX). It is specifically optimized for desktop workflows, providing intuitive and efficient navigation for internal staff. Visual assets were provided by the original designer, while I was responsible for static layout implementation and front-end interaction effects.</p>
 </div>
 <ul aria-label='Tech tags' class='card__tags'>
 <li>HTML</li>
@@ -341,7 +375,7 @@
 </div>
 <div class='card__body'>
 <div class='card__text'>
-<p>This project is a front-end template for a guesthouse management back-end system, featuring modules such as property and room listings, order tracking, referral code management, and sales reporting. Developed using static HTML and CSS, the system supports responsive web design (RWD), ensuring a seamless user experience across both desktop and mobile devices. The interface allows administrators to manage listings, pricing, and data maintenance efficiently on any platform. Visual design assets were provided by the original designer, while I was responsible for layout slicing and front-end integration, demonstrating capabilities in building functional and cross-device admin interfaces.</p>
+<p>This project is a front-end template for a guesthouse management back-end system, featuring modules such as property and room listings, order tracking, referral code management, and sales reporting. Developed using static HTML and CSS, the system supports responsive web design (RWD), ensuring a seamless user experience across both desktop and mobile devices. The interface allows administrators to manage listings, pricing, and data maintenance efficiently on any platform. Visual design assets were provided by the original designer, while I was responsible for layout slicing and front-end integration.</p>
 </div>
 <ul aria-label='Tech tags' class='card__tags'>
 <li>HTML</li>
@@ -358,7 +392,7 @@
 </div>
 <div class='tab-pane fade' id='DM-tab-pane' role='tabpanel'>
 <h2 class='h1'>DM</h2>
-<div class='Layout4'>
+<div class='grid grid--cols-4 gap-md'>
 <a data-bs-toggle='modal' href='#DMModal0'>
 <img loading='lazy' src='DM/20200707.jpg'>
 </a>
@@ -576,7 +610,7 @@
 </div>
 <div class='tab-pane fade' id='Banner-tab-pane' role='tabpanel'>
 <h2 class='h1'>Banner</h2>
-<div class='Layout4 Banner'>
+<div class='grid grid--cols-4 gap-md Banner'>
 <a data-bs-toggle='modal' href='#BannerModal0'>
 <img loading='lazy' src='Banner/20200708.jpg'>
 </a>
@@ -684,7 +718,7 @@
 <!-- ========================== Content_end ========================== -->
 
 <!-- / ========================== Footer_start ========================== -->
-<footer class='web__footer'>
+<footer class='footer' role='contentinfo'>
 <div class='footer__content'>
 <address>
 <div class='footer__link-item'>
@@ -716,28 +750,30 @@ Disclaimer
 </div>
 <div class='modal-body'>
 <p class='en'>The website content and visuals displayed in this portfolio represent projects I have participated in during my past work experience. All original designs and copyrights belong to the respective companies or owners.</p>
-<p class='en'>This site is intended solely for personal portfolio display purposes, to demonstrate my professional experience and technical skills. Any confidential information related to the original companies has been blurred or simplified to the best of my ability. This site is for personal reference and display only. Any unauthorized copying, reproduction, or use of the content is the sole responsibility of the individual involved and is not associated with me in any way.</p>
+<p class='en'>This site is intended solely for personal portfolio display purposes, to demonstrate my professional experience and technical skills. Any confidential information related to the original companies has been blurred or simplified to the best of my ability. Any unauthorized copying, reproduction, or use of the content is the sole responsibility of the individual involved and is not associated with me in any way.</p>
 <p class='en'>If any of the showcased works are found to infringe upon the interests of your company, please contact me, and I will address the matter as soon as possible.</p>
 </div>
 </div>
 </div>
 </div>
 </footer>
-<button aria-label='回到頂部' class='btn--to-top' id='BackTop' type='button'>
-<img alt='Back to Top' class='svg' src='images/circle-up.svg'>
+<button class='btn--to-top' id='BackTop' type='button'>
+<img alt='' class='svg' src='images/circle-up.svg'>
 Back to Top
 </button>
 
 <!-- / ========================== Footer_end ========================== -->
 </div>
 <!-- / ========================== Container_end ========================== -->
+<!-- / overlay 的功用是點擊選單外側的半透明遮罩來關閉選單。 -->
+<div class='overlay'></div>
 <!-- / === javascripts ====================================================== -->
-<script src='javascripts/rwd_nav.js'></script>
+<script src="/javascripts/rwd_nav.js"></script>
 <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js'></script>
-<script src='javascripts/js_accordion.js'></script>
-<script src='javascripts/SVGimgtoSVG.js'></script>
-<script src='javascripts/all.js'></script>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css' rel='stylesheet'>
+<script src="/javascripts/SVGimgtoSVG.js"></script>
+<script src="/javascripts/all.js"></script>
 
 </body>
 </html>
