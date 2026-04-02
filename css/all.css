@@ -1707,7 +1707,6 @@ html {
 }
 
 body {
-  height: 100vh;
   overflow-x: hidden;
   background: url(../images/photo.jpg);
 }
@@ -1816,37 +1815,6 @@ main {
 /* =============================================================== */
 /* CSS 功能 設定
 /* =============================================================== */
-#D1:before, #D2:before, #D3:before, #D4:before {
-  display: block;
-  content: " ";
-  margin-top: -60px;
-  height: 60px;
-  visibility: hidden;
-}
-
-.btn--to-top {
-  padding: 2px 0.25rem 0.25rem;
-  margin: 0;
-  position: fixed;
-  right: 1.5%;
-  bottom: 5%;
-  color: #154D71;
-  background-color: transparent;
-  border: 0;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-  display: none;
-  border-radius: 10px;
-}
-.btn--to-top svg, .btn--to-top img {
-  height: 30px;
-  margin: 0 auto 0.25rem;
-  display: block;
-}
-.btn--to-top svg path, .btn--to-top img path {
-  fill: #154D71;
-}
-
 .text_center {
   text-align: center;
 }
@@ -2649,13 +2617,14 @@ footer.footer p, footer.footer .copyright_box {
   margin: 0;
   position: fixed;
   right: 1.5%;
-  bottom: 5%;
+  bottom: 15%;
   color: #fff;
   background-color: transparent;
   border: 0;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-  display: none;
+  -webkit-transition: bottom 0.5s ease, opacity 0.222s ease;
+  transition: bottom 0.5s ease, opacity 0.222s ease;
+  opacity: 0;
+  pointer-events: none;
   border-radius: 10px;
 }
 .btn--to-top svg, .btn--to-top img {
@@ -2665,6 +2634,17 @@ footer.footer p, footer.footer .copyright_box {
 }
 .btn--to-top svg path, .btn--to-top img path {
   fill: #fff;
+}
+@media screen and (max-width: 576px) {
+  .btn--to-top {
+    display: none !important;
+  }
+}
+
+.btn--to-top.is-visible {
+  bottom: 5%;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* =============================================================== */
@@ -2716,12 +2696,6 @@ ul li span {
   width: 1200px;
   padding: 2rem 0;
   margin: 0 auto;
-  display: -ms-grid;
-  display: grid;
-  gap: 1rem;
-  align-items: center;
-  -ms-grid-columns: 1fr auto;
-  grid-template-columns: 1fr auto;
 }
 @media screen and (min-width: 576px) and (max-width: 1190px) {
   .index__Head_content {
@@ -2757,7 +2731,7 @@ ul li span {
 .index__Head__introduction p {
   margin-bottom: 1rem;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.6em;
 }
 @media screen and (min-width: 576px) and (max-width: 1190px) {
@@ -2804,11 +2778,12 @@ ul li span {
   padding: 0;
   margin: 3rem 0 5rem;
   background: url(../images/brickwall_@2X.png) repeat 0px 0px;
+  background-attachment: fixed;
 }
 .index__about_bg .imgBox {
   width: 100%;
   height: 100%;
-  background: url(https://images.unsplash.com/photo-1495576596703-e0063a132b6e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat center 0px/cover;
+  background: url(https://images.unsplash.com/photo-1495576596703-e0063a132b6e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat center/cover;
 }
 @media screen and (max-width: 576px) {
   .index__about_bg {
@@ -2817,6 +2792,7 @@ ul li span {
   }
   .index__about_bg .imgBox {
     height: 350px;
+    background-attachment: scroll;
   }
 }
 
@@ -2887,6 +2863,9 @@ ul li span {
   margin: 0;
   border: 0 none;
 }
+.index__project__list ul.nav-tabs .nav-link:hover {
+  color: #154D71;
+}
 .index__project__list ul.nav-tabs .nav-link.active {
   position: relative;
   color: #154D71;
@@ -2937,6 +2916,32 @@ ul li span {
   .index__project__list {
     width: 90%;
     margin: 0 auto;
+  }
+  .index__project__list a.more {
+    margin-bottom: 1.5rem;
+    display: block;
+    position: static;
+    text-align: center;
+  }
+  .index__project__list ul.nav-tabs {
+    display: -ms-grid;
+    display: grid;
+    gap: 1rem;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    border: 0px none;
+  }
+  .index__project__list ul.nav-tabs .nav-link.active, .index__project__list ul.nav-tabs .nav-link {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #dee2e6;
+    border-radius: 0.5rem;
+  }
+  .index__project__list ul.nav-tabs .nav-link.active::before {
+    content: none;
+  }
+  .index__project__list ul.nav-tabs .nav-link::after, .index__project__list ul.nav-tabs .text-link::after {
+    content: none;
   }
 }
 
@@ -3457,6 +3462,7 @@ article.project__detail .project__system-design li span.main_color, article.proj
 /* =============================================================== */
 .formContent {
   width: 1200px;
+  min-height: 735px;
   margin: 0 auto 2rem;
 }
 .formContent .contact-form {

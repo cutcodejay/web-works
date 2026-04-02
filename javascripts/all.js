@@ -170,16 +170,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const handleScroll = () => {
       if (window.scrollY > 300) {
-          backTopButton.style.display = 'block';
-          backTopButton.style.opacity = '1';
-          backTopButton.style.transition = 'opacity 0.222s';
+          backTopButton.classList.add('is-visible');
       } else {
-          backTopButton.style.opacity = '0';
-          setTimeout(() => {
-              if (window.scrollY <= 300) {
-                  backTopButton.style.display = 'none';
-              }
-          }, 222);
+          backTopButton.classList.remove('is-visible');
       }
   };
 
