@@ -147,7 +147,7 @@ body {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 400;
-  color: #6c757d;
+  color: #495057;
   -webkit-text-size-adjust: none;
   text-rendering: optimizeLegibility;
 }
@@ -156,7 +156,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Noto Serif TC", serif;
   font-weight: 600;
   letter-spacing: 0.5px;
-  color: #6c757d;
+  color: #495057;
   margin-top: 0;
 }
 
@@ -240,7 +240,7 @@ p, li, th, td {
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: 0.2px;
-  color: #6c757d;
+  color: #495057;
   margin-bottom: 1.5rem;
 }
 

@@ -498,7 +498,7 @@ body {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 400;
-  color: #6c757d;
+  color: #495057;
   -webkit-text-size-adjust: none;
   text-rendering: optimizeLegibility;
 }
@@ -507,7 +507,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Noto Serif TC", serif;
   font-weight: 600;
   letter-spacing: 0.5px;
-  color: #6c757d;
+  color: #495057;
   margin-top: 0;
 }
 
@@ -591,7 +591,7 @@ p, li, th, td {
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: 0.2px;
-  color: #6c757d;
+  color: #495057;
   margin-bottom: 1.5rem;
 }
 
@@ -629,7 +629,7 @@ label.form-label {
 }
 
 input.form-control, select.form-select, textarea.form-control {
-  color: #6c757d;
+  color: #495057;
 }
 
 .form-control.is-valid:focus {
@@ -674,7 +674,7 @@ input.form-control, select.form-select, textarea.form-control {
   border-color: #154D71;
 }
 .was-validated .form-check.form-switch .form-check-input:valid ~ .form-check-label {
-  color: #6c757d;
+  color: #495057;
 }
 .was-validated .form-check.form-switch .form-check-input:valid ~ .form-check-label.success {
   color: #198754;
@@ -683,7 +683,7 @@ input.form-control, select.form-select, textarea.form-control {
   color: #dc3545;
 }
 .was-validated .toggle-switchy .form-check-input:valid ~ .form-check-label {
-  color: #6c757d;
+  color: #495057;
 }
 .was-validated .toggle-switchy .form-check-input:valid ~ .form-check-label.success {
   color: #198754;
@@ -1330,7 +1330,7 @@ table.styleTable_left td.one {
     border-bottom: #e9ecef 1px solid;
   }
   table.responTable tbody tr td div {
-    color: #6c757d;
+    color: #495057;
     display: table-cell;
     padding: 0.5rem;
     text-align: left;
@@ -1380,7 +1380,7 @@ table.styleTable_left td.one {
 }
 
 .accordion-item, .accordion-itemLink {
-  color: #6c757d;
+  color: #495057;
   background-color: #fff;
   border-top: #154D71 1px solid !important;
   border-left: #154D71 1px solid;
@@ -1413,10 +1413,10 @@ table.styleTable_left td.one {
   right: 15px;
   position: absolute;
   border-width: 6px;
-  border-top-color: #6c757d;
+  border-top-color: #495057;
   cursor: pointer;
   border-style: solid dashed dashed;
-  border-color: #6c757d transparent transparent;
+  border-color: #495057 transparent transparent;
   overflow: hidden;
   transition: all 0.2s;
   -webkit-transition: all 0.2s;
@@ -1425,7 +1425,7 @@ table.styleTable_left td.one {
 .accordion-item.active .nav-more, .active.accordion-itemLink .nav-more {
   margin-top: -9px;
   border-style: dashed dashed solid;
-  border-color: transparent transparent #6c757d;
+  border-color: transparent transparent #495057;
 }
 
 .accordion-content {
@@ -1969,7 +1969,7 @@ header.head.sticky .opened-menu span {
   height: 100%;
   border: none;
   outline: none;
-  color: #6c757d;
+  color: #495057;
   text-transform: capitalize;
   text-rendering: optimizeLegibility;
   -webkit-transition: all 0.35s ease;
@@ -2601,7 +2601,7 @@ footer.footer p, footer.footer .copyright_box {
 .copyright_box {
   padding: 5px 10px;
   text-align: center;
-  color: #6c757d;
+  color: #495057;
 }
 
 #D1:before, #D2:before, #D3:before, #D4:before {
@@ -2667,7 +2667,7 @@ footer.footer p, footer.footer .copyright_box {
   text-align: left;
 }
 #DisclaimerModal .modal-body p {
-  color: #6c757d;
+  color: #495057;
 }
 
 /***************************************************************************/
@@ -2902,7 +2902,7 @@ ul li span {
 }
 .index__project__list p.aiText {
   padding: 1rem;
-  color: #6c757d;
+  color: #495057;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 5px;
 }
@@ -3314,7 +3314,7 @@ article.project__detail .project__system-design li {
 }
 article.project__detail .project__system-design li > span.title {
   float: left;
-  color: #6c757d;
+  color: #495057;
   white-space: nowrap;
 }
 article.project__detail .project__system-design li span.main_color, article.project__detail .project__system-design li span.minor_color, article.project__detail .project__system-design li span.secondary_color {
@@ -3675,7 +3675,7 @@ fieldset.pageForm__item legend.h4 {
   position: relative;
   display: inline-flex;
   align-items: center;
-  color: #6c757d;
+  color: #495057;
   background-color: #fff;
   border: 1px solid #dee2e6;
   border-radius: 4px;
@@ -3769,7 +3769,7 @@ fieldset.pageForm__item legend.h4 {
   position: relative;
   display: inline-flex;
   align-items: center;
-  color: #6c757d;
+  color: #495057;
   background-color: #fff;
   border: 1px solid #dee2e6;
   border-radius: 4px;
@@ -3867,7 +3867,7 @@ fieldset.pageForm__item legend.h4 {
   position: relative;
   display: inline-flex;
   align-items: center;
-  color: #6c757d;
+  color: #495057;
   background-color: #fff;
   border: 1px solid #dee2e6;
   border-radius: 4px;
@@ -3966,7 +3966,7 @@ button.btn, a.btn {
 button.btn.btn-outline, a.btn.btn-outline {
   white-space: nowrap;
   border: #ced4da 1px solid;
-  color: #6c757d;
+  color: #495057;
   background-color: #fff;
 }
 
@@ -4163,7 +4163,7 @@ CORE STYLES BELOW - NO TOUCHY 核心風格
 }
 .toggle-switchy .form-check-label {
   margin-left: 10px;
-  color: #6c757d;
+  color: #495057;
   font-weight: 500;
 }
 .toggle-switchy .form-check-input:checked ~ .active {
