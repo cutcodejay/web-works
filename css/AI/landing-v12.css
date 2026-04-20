@@ -1,0 +1,1135 @@
+@charset "UTF-8";
+/* =============================================================== */
+/* Typography TW 繁體字型
+/* =============================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap");
+/* =============================================================== */
+/* Typography EN 英文字型
+/* =============================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+/* =============================================================== */
+/* Typography Number 數字,英文 字型
+/* =============================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Graduate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+/***************************************************************************/
+/*                              Color Style                                */
+/***************************************************************************/
+.success {
+  color: #198754;
+}
+
+.danger {
+  color: #dc3545;
+}
+
+.warning {
+  color: #ffc107;
+}
+
+.info {
+  color: #0dcaf0;
+}
+
+.bg--success {
+  background-color: #198754;
+}
+
+.bg--danger {
+  background-color: #dc3545;
+}
+
+.bg--warning {
+  background-color: #ffc107;
+}
+
+.bg--info {
+  background-color: #0dcaf0;
+}
+
+/* =============================================================== */
+/* Spacing Scale（間距尺度系統）
+/* =============================================================== */
+/***************************************************************************/
+/*                                 Typography                              */
+/***************************************************************************/
+.display-1 {
+  font-size: calc(1.625rem + 4.5vw);
+  font-weight: 300;
+  line-height: 1.25;
+}
+@media screen and (min-width: 1190px) {
+  .display-1 {
+    font-size: 5rem;
+  }
+}
+
+.display-2 {
+  font-size: calc(1.575rem + 3.9vw);
+  font-weight: 300;
+  line-height: 1.25;
+}
+@media screen and (min-width: 1190px) {
+  .display-2 {
+    font-size: 4.5rem;
+  }
+}
+
+.display-3 {
+  font-size: calc(1.525rem + 3.3vw);
+  font-weight: 300;
+  line-height: 1.25;
+}
+@media screen and (min-width: 1190px) {
+  .display-3 {
+    font-size: 4rem;
+  }
+}
+
+.display-4 {
+  font-size: calc(1.475rem + 2.7vw);
+  font-weight: 300;
+  line-height: 1.25;
+}
+@media screen and (min-width: 1190px) {
+  .display-4 {
+    font-size: 3.5rem;
+  }
+}
+
+.display-5 {
+  font-size: calc(1.425rem + 2.1vw);
+  font-weight: 300;
+  line-height: 1.25;
+}
+@media screen and (min-width: 1190px) {
+  .display-5 {
+    font-size: 3rem;
+  }
+}
+
+.display-6 {
+  font-size: calc(1.375rem + 1.5vw);
+  font-weight: 300;
+  line-height: 1.25;
+}
+@media screen and (min-width: 1190px) {
+  .display-6 {
+    font-size: 2.5rem;
+  }
+}
+
+body {
+  font-family: "Noto Sans TC", "Microsoft Jhenghei", "微軟正黑體", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: #6c757d;
+  -webkit-text-size-adjust: none;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Noto Serif TC", serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #6c757d;
+  margin-top: 0;
+}
+
+h1, .h1 {
+  font-size: calc(1.375rem + 1.5vw);
+  margin-bottom: 1.8125rem;
+}
+
+h2, .h2 {
+  font-size: calc(1.325rem + 0.9vw);
+  margin-bottom: 0.8125rem;
+}
+
+h3, .h3 {
+  font-size: calc(1.3rem + 0.6vw);
+  margin-bottom: 1rem;
+}
+
+h4, .h4 {
+  font-size: calc(1.275rem + 0.3vw);
+  margin-bottom: 1.3125rem;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+  margin-bottom: 0.375rem;
+}
+
+@media (min-width: 1200px) {
+  h1, .h1 {
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+  }
+  h2, .h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  h3, .h3 {
+    font-size: 1.75rem;
+    line-height: 2.625rem;
+  }
+  h4, .h4 {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+  h5, .h5 {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+  h6, .h6 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  h1, .h1 {
+    margin-bottom: 2.25rem;
+  }
+  h2, .h2 {
+    margin-bottom: 1.5rem;
+  }
+  h3, .h3 {
+    margin-bottom: 1.875rem;
+  }
+  h4, .h4 {
+    margin-bottom: 0.75rem;
+  }
+  h5, .h5 {
+    margin-bottom: 1.125rem;
+  }
+  h6, .h6 {
+    margin-bottom: 0rem;
+  }
+}
+p, li, th, td {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+}
+
+th, td {
+  line-height: 1.25rem;
+  margin-bottom: 0;
+}
+
+p.small {
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+}
+
+dl, ol, ul {
+  margin-bottom: 1.5rem;
+  line-height: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+p:last-child, li:last-child {
+  margin-bottom: 0;
+}
+
+.content {
+  margin: 0 auto;
+}
+
+.v12-page {
+  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  background-color: #0A0A0A;
+  color: #F0F0F0;
+}
+
+.v12-page h2, .v12-page h3, .v12-page h4 {
+  font-family: "Noto Serif TC", "PingFang TC", serif;
+  margin-bottom: 0;
+}
+
+.v12-btn {
+  background: #FF5500;
+  color: #fff;
+  display: inline-block;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+.v12-btn:hover {
+  opacity: 0.85;
+  color: #fff;
+}
+
+.v12-cta__btn {
+  background: #0A0A0A;
+  color: #fff;
+  display: inline-block;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 1rem 2.75rem;
+  border-radius: 0.125rem;
+  text-decoration: none;
+}
+.v12-cta__btn:hover {
+  opacity: 0.85;
+  color: #fff;
+}
+
+.v12-nav {
+  background: #0A0A0A;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.v12-nav__logo {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: #F0F0F0;
+  letter-spacing: 0.1875rem;
+  text-decoration: none;
+}
+
+.v12-nav__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2.25rem;
+}
+
+.v12-nav__links li {
+  margin-bottom: 0;
+}
+
+.v12-nav__link {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8125rem;
+  color: #F0F0F0;
+  opacity: 0.7;
+  text-decoration: none;
+}
+.v12-nav__link:hover {
+  opacity: 1;
+}
+
+.v12-nav__cta {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: #fff;
+  background: #FF5500;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  display: inline-block;
+}
+.v12-nav__cta:hover {
+  opacity: 0.85;
+  color: #fff;
+}
+
+.v12-hero {
+  background: #0A0A0A;
+  overflow: hidden;
+}
+
+.v12-hero__inner {
+  min-height: 648px;
+  align-items: stretch;
+}
+@media screen and (min-width: 576px) and (max-width: 1190px) {
+  .v12-hero__inner {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .v12-hero__inner {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+}
+
+.v12-hero__left {
+  flex-direction: column;
+  gap: 1.75rem;
+  padding: 5rem 0;
+}
+@media screen and (min-width: 576px) and (max-width: 1190px) {
+  .v12-hero__left {
+    padding: 3.5rem 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .v12-hero__left {
+    padding: 3rem 0;
+  }
+}
+
+.v12-hero__eye {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: #FF5500;
+  letter-spacing: 0.25rem;
+}
+
+.v12-hero__h2 {
+  font-family: "Noto Serif TC", serif;
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #F0F0F0;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 576px) and (max-width: 1190px) {
+  .v12-hero__h2 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .v12-hero__h2 {
+    font-size: 2rem;
+  }
+}
+
+.v12-hero__sub {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 1rem;
+  color: #F0F0F0;
+  opacity: 0.7;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+.v12-hero__cta-row {
+  gap: 1rem;
+}
+
+.v12-hero__right {
+  position: relative;
+  overflow: hidden;
+  min-height: 360px;
+}
+@media screen and (min-width: 576px) and (max-width: 1190px) {
+  .v12-hero__right {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .v12-hero__right {
+    display: none;
+  }
+}
+
+.v12-hero__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.v12-avp {
+  background: #F2F2F2;
+}
+
+.v12-avp .wrap {
+  padding-right: 0;
+}
+@media screen and (min-width: 576px) and (max-width: 1190px) {
+  .v12-avp .wrap {
+    padding-right: 2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .v12-avp .wrap {
+    padding-right: 2rem;
+  }
+}
+
+.v12-avp__inner {
+  align-items: stretch;
+  -ms-grid-columns: 520px 1fr;
+  grid-template-columns: 520px 1fr;
+}
+@media screen and (min-width: 576px) and (max-width: 1190px) {
+  .v12-avp__inner {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 576px) {
+  .v12-avp__inner {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+.v12-avp__left {
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 5rem 2rem;
+}
+@media screen and (min-width: 576px) and (max-width: 1190px) {
+  .v12-avp__left {
+    padding: 3.5rem 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .v12-avp__left {
+    padding: 3rem 0;
+  }
+}
+
+.v12-avp__label {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: #FF5500;
+  letter-spacing: 0.1875rem;
+}
+
+.v12-avp__h2 {
+  font-family: "Noto Serif TC", serif;
+  font-size: 2.125rem;
+  font-weight: 600;
+  color: #0A0A0A;
+  line-height: 1.35;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 576px) and (max-width: 1190px) {
+  .v12-avp__h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .v12-avp__h2 {
+    font-size: 1.75rem;
+  }
+}
+
+.v12-avp__body {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 1rem;
+  color: #0A0A0A;
+  opacity: 0.65;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+.v12-avp__right {
+  position: relative;
+}
+@media screen and (min-width: 576px) and (max-width: 1190px) {
+  .v12-avp__right {
+    display: flex;
+  }
+}
+@media screen and (max-width: 576px) {
+  .v12-avp__right {
+    display: flex;
+  }
+}
+
+.v12-avp__stats {
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  right: 0;
+}
+@media screen and (min-width: 576px) and (max-width: 1190px) {
+  .v12-avp__stats {
+    position: static;
+  }
+}
+@media screen and (max-width: 576px) {
+  .v12-avp__stats {
+    position: static;
+  }
+}
+
+.v12-avp__stat {
+  flex: 1;
+  flex-direction: column;
+  text-align: center;
+  padding: 4rem 2.5rem;
+}
+@media screen and (min-width: 576px) and (max-width: 1190px) {
+  .v12-avp__stat {
+    padding: 3rem 2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .v12-avp__stat {
+    padding: 2.5rem 1.5rem;
+  }
+}
+
+.v12-avp__stat--1 {
+  background: #0A0A0A;
+}
+
+.v12-avp__stat--2 {
+  background: rgb(22.75, 22.75, 22.75);
+}
+
+.v12-avp__num {
+  font-family: "Roboto", sans-serif;
+  font-size: 5rem;
+  font-weight: 700;
+  color: #FF5500;
+  line-height: 1;
+}
+
+.v12-avp__cap {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 0.8125rem;
+  color: #F0F0F0;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.v12-feat {
+  background: #0A0A0A;
+  padding: 5rem 0;
+}
+
+.v12-feat__inner {
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.v12-feat__label {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: #FF5500;
+  letter-spacing: 0.1875rem;
+}
+
+.v12-feat__h2 {
+  font-family: "Noto Serif TC", serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #F0F0F0;
+  margin-bottom: 0;
+}
+
+.v12-feat__grid {
+  align-items: stretch;
+}
+@media screen and (min-width: 576px) and (max-width: 1190px) {
+  .v12-feat__grid {
+    -ms-grid-columns: (minmax(0, 1fr))[3];
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media screen and (max-width: 576px) {
+  .v12-feat__grid {
+    -ms-grid-columns: (minmax(0, 1fr))[2];
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.v12-feat__card {
+  background: rgb(22.75, 22.75, 22.75);
+  border-radius: 0.25rem;
+  padding: 1.75rem 1.25rem;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.v12-feat__bar {
+  width: 32px;
+  height: 3px;
+  background: #FF5500;
+  flex-shrink: 0;
+}
+
+.v12-feat__title {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #F0F0F0;
+}
+
+.v12-feat__desc {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 0.875rem;
+  color: #F0F0F0;
+  opacity: 0.6;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.v12-exp {
+  background: #F2F2F2;
+}
+
+.v12-exp__inner {
+  align-items: stretch;
+  -ms-grid-columns: 1fr 560px;
+  grid-template-columns: 1fr 560px;
+}
+@media screen and (min-width: 576px) and (max-width: 1190px) {
+  .v12-exp__inner {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 576px) {
+  .v12-exp__inner {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+.v12-exp__left {
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 5rem 4rem;
+}
+@media screen and (min-width: 576px) and (max-width: 1190px) {
+  .v12-exp__left {
+    padding: 3.5rem 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .v12-exp__left {
+    padding: 3rem 0;
+  }
+}
+
+.v12-exp__label {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: #FF5500;
+  letter-spacing: 0.1875rem;
+}
+
+.v12-exp__h2 {
+  font-family: "Noto Serif TC", serif;
+  font-size: 2.125rem;
+  font-weight: 600;
+  color: #0A0A0A;
+  line-height: 1.35;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 576px) and (max-width: 1190px) {
+  .v12-exp__h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .v12-exp__h2 {
+    font-size: 1.75rem;
+  }
+}
+
+.v12-exp__divider {
+  width: 40px;
+  height: 3px;
+  background: #FF5500;
+  flex-shrink: 0;
+}
+
+.v12-exp__body {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 1rem;
+  color: #0A0A0A;
+  opacity: 0.7;
+  line-height: 1.9;
+  margin-bottom: 0;
+}
+
+.v12-exp__right {
+  width: 560px;
+  position: relative;
+  overflow: hidden;
+  min-height: 560px;
+}
+@media screen and (min-width: 576px) and (max-width: 1190px) {
+  .v12-exp__right {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .v12-exp__right {
+    display: none;
+  }
+}
+
+.v12-exp__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.v12-gal {
+  background: #0A0A0A;
+  padding: 5rem 0;
+}
+
+.v12-gal__inner {
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.v12-gal__label {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: #FF5500;
+  letter-spacing: 0.1875rem;
+}
+
+.v12-gal__h2 {
+  font-family: "Noto Serif TC", serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #F0F0F0;
+  margin-bottom: 0;
+}
+
+.v12-gal__grid {
+  height: 360px;
+}
+@media screen and (min-width: 576px) and (max-width: 1190px) {
+  .v12-gal__grid {
+    height: 240px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .v12-gal__grid {
+    height: auto;
+    flex-wrap: wrap;
+  }
+}
+
+.v12-gal__img-wrap {
+  flex: 1;
+  min-width: 0;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+@media screen and (max-width: 576px) {
+  .v12-gal__img-wrap {
+    flex: 0 0 calc(50% - 0.25rem);
+    height: 180px;
+  }
+}
+
+.v12-gal__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.v12-tes {
+  background: #F2F2F2;
+  padding: 5rem 0;
+}
+
+.v12-tes__inner {
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.v12-tes__label {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: #FF5500;
+  letter-spacing: 0.1875rem;
+}
+
+.v12-tes__h2 {
+  font-family: "Noto Serif TC", serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0A0A0A;
+  margin-bottom: 0;
+}
+
+.v12-tes__grid {
+  gap: 1.25rem;
+}
+@media screen and (max-width: 576px) {
+  .v12-tes__grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+.v12-tes__card {
+  background: #fff;
+  border-radius: 0.25rem;
+  padding: 2rem 1.75rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.v12-tes__num {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.25rem;
+  font-weight: 700;
+  color: #FF5500;
+  line-height: 1;
+}
+
+.v12-tes__sub {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 0.8125rem;
+  color: #0A0A0A;
+  opacity: 0.6;
+}
+
+.v12-tes__divider {
+  height: 1px;
+  background: #EEEEEE;
+  flex-shrink: 0;
+}
+
+.v12-tes__quote {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 0.875rem;
+  color: #0A0A0A;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+.v12-tes__attr {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 0.75rem;
+  color: #FF5500;
+}
+
+.v12-proc {
+  background: #0A0A0A;
+  padding: 5rem 0;
+}
+
+.v12-proc__inner {
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.v12-proc__label {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: #FF5500;
+  letter-spacing: 0.1875rem;
+}
+
+.v12-proc__h2 {
+  font-family: "Noto Serif TC", serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #F0F0F0;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 576px) and (max-width: 1190px) {
+  .v12-proc__row {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .v12-proc__row {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+.v12-proc__step {
+  flex-direction: column;
+  gap: 0.75rem;
+  text-align: center;
+}
+
+.v12-proc__dot {
+  width: 48px;
+  height: 48px;
+  background: #FF5500;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.v12-proc__step-title {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #F0F0F0;
+}
+
+.v12-proc__step-desc {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 0.875rem;
+  color: #F0F0F0;
+  opacity: 0.55;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.v12-cta {
+  background: #FF5500;
+  padding: 6.25rem 0;
+}
+
+.v12-cta__inner {
+  flex-direction: column;
+  gap: 1.25rem;
+  text-align: center;
+}
+
+.v12-cta__label {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: #fff;
+  opacity: 0.8;
+  letter-spacing: 0.1875rem;
+}
+
+.v12-cta__h2 {
+  font-family: "Noto Serif TC", serif;
+  font-size: 2.75rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.3;
+  margin-bottom: 0;
+  max-width: 640px;
+}
+@media screen and (min-width: 576px) and (max-width: 1190px) {
+  .v12-cta__h2 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .v12-cta__h2 {
+    font-size: 2rem;
+  }
+}
+
+.v12-cta__sub {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  opacity: 0.85;
+  margin-bottom: 0;
+}
+
+.v12-cta__note {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 0.8125rem;
+  color: #fff;
+  opacity: 0.7;
+  margin-bottom: 0;
+}
+
+.v12-ftr {
+  background: #0A0A0A;
+  padding: 3.5rem 0;
+}
+
+.v12-ftr__inner {
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.v12-ftr__brand {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.v12-ftr__logo {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #F0F0F0;
+  letter-spacing: 0.125rem;
+}
+
+.v12-ftr__tagline {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+  color: #F0F0F0;
+  opacity: 0.4;
+  letter-spacing: 0.0625rem;
+}
+
+.v12-ftr__info {
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-end;
+}
+
+.v12-ftr__addr, .v12-ftr__phone, .v12-ftr__hours {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 0.75rem;
+  color: #F0F0F0;
+  opacity: 0.5;
+  margin-bottom: 0;
+}
+
+.v12-ftr__line {
+  height: 1px;
+  background: #fff;
+  opacity: 0.07;
+  flex-shrink: 0;
+}
+
+.v12-ftr__copy {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.6875rem;
+  color: #F0F0F0;
+  opacity: 0.3;
+}

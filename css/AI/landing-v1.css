@@ -30,12 +30,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Graduate&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
-/* =============================================================== */
-/* Spacing Scale（間距尺度系統）
-/* =============================================================== */
-/***************************************************************************/
-/*                                 Typography                              */
-/***************************************************************************/
 /***************************************************************************/
 /*                              Color Style                                */
 /***************************************************************************/
@@ -71,6 +65,16 @@
   background-color: #0dcaf0;
 }
 
+/* =============================================================== */
+/* Spacing Scale（間距尺度系統）
+/* =============================================================== */
+/***************************************************************************/
+/*                             CloudSync Pro                               */
+/*                         Landing Page Styles                             */
+/***************************************************************************/
+/***************************************************************************/
+/*                                 Typography                              */
+/***************************************************************************/
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
   font-weight: 300;
@@ -151,7 +155,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Noto Serif TC", serif;
   font-weight: 600;
   letter-spacing: 0.5px;
-  color: #495057;
+  color: #6c757d;
   margin-top: 0;
 }
 
@@ -290,9 +294,7 @@ p:last-child, li:last-child {
   background-color: #0B1420;
   border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.08);
 }
-.nav-bar .wrap {
-  padding: 0 3.75rem;
-}
+
 @media screen and (min-width: 576px) and (max-width: 1190px) {
   .nav-bar .wrap {
     padding: 0 3rem;
@@ -303,30 +305,20 @@ p:last-child, li:last-child {
     padding: 0 1.5rem;
   }
 }
-.nav-bar__inner {
-  padding: 1rem 0;
-}
-@media screen and (min-width: 576px) and (max-width: 1190px) {
-  .nav-bar__inner {
-    padding: 0.75rem 0;
-  }
-}
-@media screen and (max-width: 576px) {
-  .nav-bar__inner {
-    padding: 0.75rem 0;
-  }
-}
+
 .nav-bar__brand {
   gap: 0.5rem;
   text-decoration: none;
   flex-shrink: 0;
 }
+
 .nav-bar__brand span {
   font-size: 1rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #fff;
   letter-spacing: 0.02rem;
 }
+
 .nav-bar__logo {
   width: 28px;
   height: 28px;
@@ -334,10 +326,11 @@ p:last-child, li:last-child {
   background-color: #2563EB;
   flex-shrink: 0;
 }
+
 .nav-bar .btn-primary {
   background-color: #2563EB;
   border: 0.0625rem solid #2563EB;
-  color: #FFFFFF;
+  color: #fff;
   font-size: 0.875rem;
   font-weight: 600;
   padding: 0.5rem 1.25rem;
@@ -347,7 +340,7 @@ p:last-child, li:last-child {
   transition: background-color 0.2s ease;
 }
 .nav-bar .btn-primary:hover {
-  background-color: #1D4ED8;
+  background-color: rgb(29.3417857143, 88.1529906205, 217.1582142857);
 }
 @media screen and (max-width: 576px) {
   .nav-bar .btn-primary {
@@ -377,7 +370,7 @@ p:last-child, li:last-child {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../images/hero-bg-1.png"), url("../images/hero-bg-2.png");
+  background-image: url("../../images/AI/hero-bg-1.png"), url("../../images/AI/hero-bg-2.png");
   background-repeat: no-repeat;
   background-position: center center, center center;
   background-size: cover, cover;
@@ -406,7 +399,7 @@ p:last-child, li:last-child {
 .hero h2 {
   font-weight: 700;
   line-height: 1.15;
-  color: #FFFFFF;
+  color: #fff;
   letter-spacing: -0.02rem;
   max-width: 800px;
   margin: 0;
@@ -504,7 +497,7 @@ p:last-child, li:last-child {
 .hero .btn-primary {
   background-color: #2563EB;
   border: 0.0625rem solid #2563EB;
-  color: #FFFFFF;
+  color: #fff;
   font-size: 1rem;
   font-weight: 600;
   padding: 1rem 2rem;
@@ -516,7 +509,7 @@ p:last-child, li:last-child {
   transition: background-color 0.2s ease;
 }
 .hero .btn-primary:hover {
-  background-color: #1D4ED8;
+  background-color: rgb(29.3417857143, 88.1529906205, 217.1582142857);
 }
 
 .value-proposition {
@@ -537,7 +530,7 @@ p:last-child, li:last-child {
   display: inline-block;
   padding: 0.25rem 1rem;
   border-radius: 1.25rem;
-  background-color: #DBEAFE;
+  background-color: rgb(223.8571428571, 232.7142857143, 252.1428571429);
   color: #2563EB;
   font-size: 0.75rem;
   font-weight: 600;
@@ -578,7 +571,7 @@ p:last-child, li:last-child {
   margin: 0;
 }
 .value-proposition__card {
-  background: #FFFFFF;
+  background: #fff;
   border-radius: 1rem;
   padding: 2rem;
   -webkit-box-shadow: 0 0.25rem 1.25rem rgba(30, 58, 95, 0.09);
@@ -615,7 +608,7 @@ p:last-child, li:last-child {
 }
 
 .features {
-  background-color: #060D1A;
+  background-color: rgb(8.3906976744, 15.2558139535, 24.4093023256);
   padding: 4.5rem 0;
 }
 @media screen and (min-width: 576px) and (max-width: 1190px) {
@@ -651,7 +644,7 @@ p:last-child, li:last-child {
 .features__header h2 {
   font-size: 2.25rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #fff;
   margin: 0;
 }
 @media screen and (min-width: 576px) and (max-width: 1190px) {
@@ -686,7 +679,7 @@ p:last-child, li:last-child {
 .features__card h3 {
   font-size: 1.375rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #fff;
   margin: 0;
 }
 .features__card p {
@@ -728,8 +721,8 @@ p:last-child, li:last-child {
 }
 
 .social-proof {
-  background: -webkit-gradient(linear, left top, right top, from(#1D4ED8), to(#1E40AF));
-  background: linear-gradient(90deg, #1D4ED8 0%, #1E40AF 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgb(29.3417857143, 88.1529906205, 217.1582142857)), to(rgb(27.5707142857, 74.7153174603, 178.1292857143)));
+  background: linear-gradient(90deg, rgb(29.3417857143, 88.1529906205, 217.1582142857) 0%, rgb(27.5707142857, 74.7153174603, 178.1292857143) 100%);
   padding: 3.75rem 5rem;
 }
 @media screen and (min-width: 576px) and (max-width: 1190px) {
@@ -764,7 +757,7 @@ p:last-child, li:last-child {
   padding: 0.25rem 1rem;
   border-radius: 1.25rem;
   background-color: rgba(255, 255, 255, 0.13);
-  color: #BFDBFE;
+  color: rgb(195.8285714286, 212.6571428571, 249.5714285714);
   font-size: 0.75rem;
   font-weight: 600;
 }
@@ -775,7 +768,7 @@ p:last-child, li:last-child {
 .social-proof__content h2 {
   font-size: 2rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #fff;
   margin: 0;
   max-width: 400px;
 }
@@ -787,7 +780,7 @@ p:last-child, li:last-child {
 .social-proof__content p {
   font-size: 0.9375rem;
   line-height: 1.6;
-  color: #BFDBFE;
+  color: rgb(195.8285714286, 212.6571428571, 249.5714285714);
   margin: 0;
   max-width: 400px;
 }
@@ -804,7 +797,7 @@ p:last-child, li:last-child {
   font-size: 3.25rem;
   font-weight: 700;
   line-height: 1;
-  color: #BFDBFE;
+  color: rgb(195.8285714286, 212.6571428571, 249.5714285714);
 }
 @media screen and (max-width: 576px) {
   .social-proof__stat strong {
@@ -812,22 +805,22 @@ p:last-child, li:last-child {
   }
 }
 .social-proof__stat:last-child strong {
-  color: #FFFFFF;
+  color: #fff;
 }
 .social-proof__stat span {
   font-size: 0.8125rem;
-  color: #93C5FD;
+  color: rgb(153.7857142857, 182.5714285714, 245.7142857143);
 }
 .social-proof__arrow {
   flex-shrink: 0;
 }
 .social-proof__arrow i {
   font-size: 2rem;
-  color: #FFFFFF;
+  color: #fff;
 }
 .social-proof__label {
   font-size: 0.875rem;
-  color: #93C5FD;
+  color: rgb(153.7857142857, 182.5714285714, 245.7142857143);
   text-align: center;
 }
 
@@ -868,7 +861,7 @@ p:last-child, li:last-child {
 .process__header h2 {
   font-size: 2rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #fff;
   margin: 0;
 }
 @media screen and (min-width: 576px) and (max-width: 1190px) {
@@ -901,7 +894,7 @@ p:last-child, li:last-child {
 .process__step h3 {
   font-size: 1rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #fff;
   margin: 0;
 }
 .process__step p {
@@ -942,7 +935,7 @@ p:last-child, li:last-child {
   display: inline-block;
   padding: 0.25rem 1rem;
   border-radius: 1.25rem;
-  background-color: #DBEAFE;
+  background-color: rgb(223.8571428571, 232.7142857143, 252.1428571429);
   color: #2563EB;
   font-size: 0.75rem;
   font-weight: 600;
@@ -975,7 +968,7 @@ p:last-child, li:last-child {
   }
 }
 .testimonials__card {
-  background: #FFFFFF;
+  background: #fff;
   border-radius: 1.25rem;
   padding: 2.25rem;
   flex-direction: column;
@@ -1049,7 +1042,7 @@ p:last-child, li:last-child {
 .cta h2 {
   font-size: 2.25rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #fff;
   margin: 0;
 }
 @media screen and (min-width: 576px) and (max-width: 1190px) {
@@ -1064,7 +1057,7 @@ p:last-child, li:last-child {
 }
 .cta p {
   font-size: 1rem;
-  color: #BFDBFE;
+  color: rgb(195.8285714286, 212.6571428571, 249.5714285714);
   max-width: 560px;
   margin: 0;
 }
@@ -1085,10 +1078,10 @@ p:last-child, li:last-child {
 }
 .cta__note {
   font-size: 0.875rem;
-  color: #BFDBFE;
+  color: rgb(195.8285714286, 212.6571428571, 249.5714285714);
 }
 .cta .btn-white {
-  background-color: #FFFFFF;
+  background-color: #fff;
   color: #2563EB;
   font-size: 1rem;
   font-weight: 700;
@@ -1104,7 +1097,7 @@ p:last-child, li:last-child {
 }
 
 .landing-footer {
-  background-color: #040A14;
+  background-color: rgb(5.7813953488, 10.511627907, 16.8186046512);
 }
 .landing-footer .wrap {
   padding-top: 1.75rem;
@@ -1132,7 +1125,7 @@ p:last-child, li:last-child {
 .landing-footer__brand span {
   font-size: 1rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #fff;
 }
 .landing-footer__logo {
   width: 24px;

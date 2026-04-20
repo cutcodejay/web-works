@@ -26,12 +26,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Graduate&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
-/* =============================================================== */
-/* Spacing Scale（間距尺度系統）
-/* =============================================================== */
-/***************************************************************************/
-/*                                 Typography                              */
-/***************************************************************************/
 /***************************************************************************/
 /*                              Color Style                                */
 /***************************************************************************/
@@ -67,6 +61,12 @@
   background-color: #0dcaf0;
 }
 
+/* =============================================================== */
+/* Spacing Scale（間距尺度系統）
+/* =============================================================== */
+/***************************************************************************/
+/*                                 Typography                              */
+/***************************************************************************/
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
   font-weight: 300;
@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Noto Serif TC", serif;
   font-weight: 600;
   letter-spacing: 0.5px;
-  color: #495057;
+  color: #6c757d;
   margin-top: 0;
 }
 
@@ -265,12 +265,12 @@ p:last-child, li:last-child {
 .v6-page {
   font-family: "Manrope", "Space Grotesk", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", "蘋方-繁", sans-serif;
   color: #E8E8E8;
-  background-color: #1a1a1a;
+  background-color: rgb(30.4, 30.4, 30.4);
 }
 
 .v6-page h1, .v6-page h2, .v6-page h3, .v6-page h4 {
   font-family: "Manrope", "Space Grotesk", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", "蘋方-繁", sans-serif;
-  color: #FFFFFF;
+  color: #fff;
   font-weight: 700;
 }
 
@@ -287,7 +287,7 @@ p:last-child, li:last-child {
   cursor: pointer;
 }
 .v6-btn-primary:hover {
-  background-color: #B8E91C;
+  background-color: rgb(187.33798985, 243.5061363636, 20.9938636364);
   color: #0A0A0A;
 }
 
@@ -326,38 +326,21 @@ p:last-child, li:last-child {
 }
 
 .v6-nav {
-  background-color: #1a1a1a;
+  background-color: rgb(30.4, 30.4, 30.4);
   position: sticky;
   top: 0;
   z-index: 100;
   border-bottom: 0.0625rem solid #3a3a3f;
 }
 
-nav.v6-nav .wrap {
-  padding: 0 5rem;
-}
 @media screen and (min-width: 576px) and (max-width: 1190px) {
-  nav.v6-nav .wrap {
+  .v6-nav .wrap {
     padding: 0 3rem;
   }
 }
 @media screen and (max-width: 576px) {
-  nav.v6-nav .wrap {
+  .v6-nav .wrap {
     padding: 0 1.5rem;
-  }
-}
-
-.v6-nav__inner {
-  padding: 1rem 0;
-}
-@media screen and (min-width: 576px) and (max-width: 1190px) {
-  .v6-nav__inner {
-    padding: 0.75rem 0;
-  }
-}
-@media screen and (max-width: 576px) {
-  .v6-nav__inner {
-    padding: 0.75rem 0;
   }
 }
 
@@ -372,7 +355,7 @@ nav.v6-nav .wrap {
 .v6-nav__name {
   font-size: 1rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .v6-nav__links {
@@ -395,7 +378,7 @@ nav.v6-nav .wrap {
 }
 
 .v6-hero {
-  background-color: #141414;
+  background-color: rgb(22.75, 22.75, 22.75);
   padding: 5rem 0;
 }
 
@@ -449,7 +432,7 @@ nav.v6-nav .wrap {
 }
 
 .v6-vp {
-  background-color: #1a1a1a;
+  background-color: rgb(30.4, 30.4, 30.4);
   padding: 5rem 0;
   border-top: 0.0625rem solid #3a3a3f;
 }
@@ -555,7 +538,7 @@ nav.v6-nav .wrap {
 }
 
 .v6-features {
-  background-color: #141414;
+  background-color: rgb(22.75, 22.75, 22.75);
   padding: 5rem 0;
 }
 
@@ -622,7 +605,7 @@ nav.v6-nav .wrap {
 }
 
 .v6-exp {
-  background-color: #1a1a1a;
+  background-color: rgb(30.4, 30.4, 30.4);
   padding: 5rem 0;
 }
 
@@ -671,7 +654,7 @@ nav.v6-nav .wrap {
 }
 
 .v6-process {
-  background-color: #141414;
+  background-color: rgb(22.75, 22.75, 22.75);
   padding: 5rem 0;
 }
 
@@ -739,7 +722,7 @@ nav.v6-nav .wrap {
 }
 
 .v6-testimonials {
-  background-color: #1a1a1a;
+  background-color: rgb(30.4, 30.4, 30.4);
   padding: 5rem 0;
 }
 
@@ -805,7 +788,7 @@ nav.v6-nav .wrap {
 .v6-testimonials__name {
   font-size: 1rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .v6-testimonials__role {
@@ -835,8 +818,8 @@ nav.v6-nav .wrap {
 }
 
 .v6-cta .v6-btn-primary {
-  background-color: #141414;
-  color: #FFFFFF;
+  background-color: rgb(22.75, 22.75, 22.75);
+  color: #fff;
   margin-top: 2rem;
 }
 .v6-cta .v6-btn-primary:hover {
@@ -851,7 +834,7 @@ nav.v6-nav .wrap {
 }
 
 .v6-footer {
-  background-color: #1a1a1a;
+  background-color: rgb(30.4, 30.4, 30.4);
   padding: 3rem 0;
   border-top: 0.0625rem solid #3a3a3f;
 }

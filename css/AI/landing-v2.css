@@ -30,12 +30,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Graduate&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
-/* =============================================================== */
-/* Spacing Scale（間距尺度系統）
-/* =============================================================== */
-/***************************************************************************/
-/*                                 Typography                              */
-/***************************************************************************/
 /***************************************************************************/
 /*                              Color Style                                */
 /***************************************************************************/
@@ -71,6 +65,16 @@
   background-color: #0dcaf0;
 }
 
+/* =============================================================== */
+/* Spacing Scale（間距尺度系統）
+/* =============================================================== */
+/***************************************************************************/
+/*                             CloudSync Pro                               */
+/*                      Landing v2 — Glassmorphism                        */
+/***************************************************************************/
+/***************************************************************************/
+/*                                 Typography                              */
+/***************************************************************************/
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
   font-weight: 300;
@@ -151,7 +155,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Noto Serif TC", serif;
   font-weight: 600;
   letter-spacing: 0.5px;
-  color: #495057;
+  color: #6c757d;
   margin-top: 0;
 }
 
@@ -333,9 +337,7 @@ p:last-child, li:last-child {
   right: 0;
   z-index: 100;
 }
-.nav-bar .wrap {
-  padding: 0 3rem;
-}
+
 @media screen and (min-width: 576px) and (max-width: 1190px) {
   .nav-bar .wrap {
     padding: 0 3rem;
@@ -346,26 +348,18 @@ p:last-child, li:last-child {
     padding: 0 1.5rem;
   }
 }
+
 .nav-bar__inner {
   position: relative;
-  padding: 1rem 0;
 }
-@media screen and (min-width: 576px) and (max-width: 1190px) {
-  .nav-bar__inner {
-    padding: 0.75rem 0;
-  }
-}
-@media screen and (max-width: 576px) {
-  .nav-bar__inner {
-    padding: 0.75rem 0;
-  }
-}
+
 .nav-bar__brand {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #fff;
   text-decoration: none;
 }
+
 .nav-bar__links {
   list-style: none;
   margin: 0;
@@ -383,6 +377,7 @@ p:last-child, li:last-child {
     display: none;
   }
 }
+
 .nav-bar__links a {
   font-size: 0.875rem;
   font-weight: 500;
@@ -390,11 +385,12 @@ p:last-child, li:last-child {
   text-decoration: none;
 }
 .nav-bar__links a:hover {
-  color: #FFFFFF;
+  color: #fff;
 }
+
 .nav-bar .btn-primary {
   background: #7C3AED;
-  color: #FFFFFF;
+  color: #fff;
   font-size: 0.875rem;
   font-weight: 600;
   padding: 0.5rem 1.5rem;
@@ -405,7 +401,7 @@ p:last-child, li:last-child {
   transition: background 0.2s;
 }
 .nav-bar .btn-primary:hover {
-  background: #6D28D9;
+  background: rgb(110.041491815, 40.6473837209, 228.8526162791);
 }
 
 .hero {
@@ -442,7 +438,7 @@ p:last-child, li:last-child {
 }
 .hero h2 {
   font-weight: 800;
-  color: #FFFFFF;
+  color: #fff;
   margin: 0;
   line-height: 1.15;
 }
@@ -504,7 +500,7 @@ p:last-child, li:last-child {
 .hero__stat strong {
   font-size: 1.75rem;
   font-weight: 800;
-  color: #FFFFFF;
+  color: #fff;
 }
 @media screen and (max-width: 576px) {
   .hero__stat strong {
@@ -529,7 +525,7 @@ p:last-child, li:last-child {
 }
 .hero .btn-primary {
   background: #7C3AED;
-  color: #FFFFFF;
+  color: #fff;
   font-size: 1rem;
   font-weight: 600;
   padding: 1rem 2rem;
@@ -540,7 +536,7 @@ p:last-child, li:last-child {
   transition: background 0.2s;
 }
 .hero .btn-primary:hover {
-  background: #6D28D9;
+  background: rgb(110.041491815, 40.6473837209, 228.8526162791);
 }
 
 .value-proposition {
@@ -565,7 +561,7 @@ p:last-child, li:last-child {
 .value-proposition__header h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #fff;
   margin: 0;
 }
 @media screen and (min-width: 576px) and (max-width: 1190px) {
@@ -613,7 +609,7 @@ p:last-child, li:last-child {
 .value-proposition__card h3 {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #fff;
   margin: 0;
 }
 .value-proposition__card p {
@@ -651,7 +647,7 @@ p:last-child, li:last-child {
 .features__header h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #fff;
   margin: 0;
 }
 @media screen and (min-width: 576px) and (max-width: 1190px) {
@@ -697,7 +693,7 @@ p:last-child, li:last-child {
 .features__card h3 {
   font-size: 1.125rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #fff;
   margin: 0;
 }
 .features__card p {
@@ -780,7 +776,7 @@ p:last-child, li:last-child {
 .social-proof__header h2 {
   font-size: 2rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #fff;
   margin: 0;
 }
 @media screen and (max-width: 576px) {
@@ -862,7 +858,7 @@ p:last-child, li:last-child {
           box-shadow: 0 0.5rem 2rem rgba(124, 58, 237, 0.3);
 }
 .social-proof__stat--after strong {
-  color: #FFFFFF;
+  color: #fff;
 }
 .social-proof__stat--after span {
   color: #C4B5FD;
@@ -895,7 +891,7 @@ p:last-child, li:last-child {
 .process__header h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #fff;
   margin: 0;
 }
 @media screen and (min-width: 576px) and (max-width: 1190px) {
@@ -941,7 +937,7 @@ p:last-child, li:last-child {
 .process__step h3 {
   font-size: 1.125rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #fff;
   margin: 0;
 }
 .process__step p {
@@ -995,7 +991,7 @@ p:last-child, li:last-child {
 .testimonials__header h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #fff;
   margin: 0;
 }
 @media screen and (min-width: 576px) and (max-width: 1190px) {
@@ -1059,7 +1055,7 @@ p:last-child, li:last-child {
 .testimonials__info strong {
   font-size: 0.9375rem;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #fff;
 }
 .testimonials__info span {
   font-size: 0.8125rem;
@@ -1103,7 +1099,7 @@ p:last-child, li:last-child {
 .cta h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #fff;
   margin: 0;
 }
 @media screen and (min-width: 576px) and (max-width: 1190px) {
@@ -1124,7 +1120,7 @@ p:last-child, li:last-child {
 }
 .cta .btn-primary {
   background: #7C3AED;
-  color: #FFFFFF;
+  color: #fff;
   font-size: 1.125rem;
   font-weight: 600;
   padding: 1rem 2.5rem;
@@ -1135,7 +1131,7 @@ p:last-child, li:last-child {
   transition: background 0.2s;
 }
 .cta .btn-primary:hover {
-  background: #6D28D9;
+  background: rgb(110.041491815, 40.6473837209, 228.8526162791);
 }
 .cta__notes {
   flex-wrap: wrap;

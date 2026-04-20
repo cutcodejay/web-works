@@ -26,12 +26,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Graduate&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
-/* =============================================================== */
-/* Spacing Scale（間距尺度系統）
-/* =============================================================== */
-/***************************************************************************/
-/*                                 Typography                              */
-/***************************************************************************/
 /***************************************************************************/
 /*                              Color Style                                */
 /***************************************************************************/
@@ -67,6 +61,12 @@
   background-color: #0dcaf0;
 }
 
+/* =============================================================== */
+/* Spacing Scale（間距尺度系統）
+/* =============================================================== */
+/***************************************************************************/
+/*                                 Typography                              */
+/***************************************************************************/
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
   font-weight: 300;
@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Noto Serif TC", serif;
   font-weight: 600;
   letter-spacing: 0.5px;
-  color: #495057;
+  color: #6c757d;
   margin-top: 0;
 }
 
@@ -269,7 +269,7 @@ p:last-child, li:last-child {
 }
 
 .v5-btn-primary {
-  background-color: #1D4ED8;
+  background-color: rgb(29.3417857143, 88.1529906205, 217.1582142857);
   color: #fff;
   border: none;
   border-radius: 0.375rem;
@@ -281,12 +281,12 @@ p:last-child, li:last-child {
   cursor: pointer;
 }
 .v5-btn-primary:hover {
-  background-color: #1E40AF;
+  background-color: rgb(27.5707142857, 74.7153174603, 178.1292857143);
   color: #fff;
 }
 
 .v5-btn-primary-lg {
-  background-color: #1D4ED8;
+  background-color: rgb(29.3417857143, 88.1529906205, 217.1582142857);
   color: #fff;
   border: none;
   border-radius: 0.375rem;
@@ -298,7 +298,7 @@ p:last-child, li:last-child {
   cursor: pointer;
 }
 .v5-btn-primary-lg:hover {
-  background-color: #1E40AF;
+  background-color: rgb(27.5707142857, 74.7153174603, 178.1292857143);
   color: #fff;
 }
 
@@ -336,31 +336,14 @@ p:last-child, li:last-child {
   border-bottom: 0.0625rem solid #E2E8F0;
 }
 
-nav.v5-nav .wrap {
-  padding: 0 3.75rem;
-}
 @media screen and (min-width: 576px) and (max-width: 1190px) {
-  nav.v5-nav .wrap {
+  .v5-nav .wrap {
     padding: 0 3rem;
   }
 }
 @media screen and (max-width: 576px) {
-  nav.v5-nav .wrap {
+  .v5-nav .wrap {
     padding: 0 1.5rem;
-  }
-}
-
-.v5-nav__inner {
-  padding: 1rem 0;
-}
-@media screen and (min-width: 576px) and (max-width: 1190px) {
-  .v5-nav__inner {
-    padding: 0.75rem 0;
-  }
-}
-@media screen and (max-width: 576px) {
-  .v5-nav__inner {
-    padding: 0.75rem 0;
   }
 }
 
@@ -368,7 +351,7 @@ nav.v5-nav .wrap {
   width: 28px;
   height: 28px;
   border-radius: 0.375rem;
-  background-color: #1D4ED8;
+  background-color: rgb(29.3417857143, 88.1529906205, 217.1582142857);
   flex-shrink: 0;
 }
 
@@ -394,7 +377,7 @@ nav.v5-nav .wrap {
   text-decoration: none;
 }
 .v5-nav__link:hover {
-  color: #1D4ED8;
+  color: rgb(29.3417857143, 88.1529906205, 217.1582142857);
 }
 
 .v5-hero {
@@ -454,15 +437,15 @@ nav.v5-nav .wrap {
 .v5-hero__badge {
   display: inline-flex;
   align-items: center;
-  background-color: #DBEAFE;
-  border: 0.0625rem solid #BFDBFE;
+  background-color: rgb(223.8571428571, 232.7142857143, 252.1428571429);
+  border: 0.0625rem solid rgb(195.8285714286, 212.6571428571, 249.5714285714);
   border-radius: 0.25rem;
   padding: 0.25rem 1rem;
 }
 .v5-hero__badge span {
   font-size: 0.75rem;
   font-weight: 600;
-  color: #1D4ED8;
+  color: rgb(29.3417857143, 88.1529906205, 217.1582142857);
 }
 
 .v5-hero h2 {
@@ -520,11 +503,11 @@ nav.v5-nav .wrap {
   height: auto;
   display: block;
   border-radius: 0.75rem;
-  border: 0.0625rem solid #BFDBFE;
+  border: 0.0625rem solid rgb(195.8285714286, 212.6571428571, 249.5714285714);
 }
 
 .v5-stats {
-  background-color: #1D4ED8;
+  background-color: rgb(29.3417857143, 88.1529906205, 217.1582142857);
   padding: 2.5rem 0;
 }
 @media screen and (min-width: 576px) and (max-width: 1190px) {
@@ -565,7 +548,7 @@ nav.v5-nav .wrap {
 
 .v5-stats__label {
   font-size: 0.875rem;
-  color: #BFDBFE;
+  color: rgb(195.8285714286, 212.6571428571, 249.5714285714);
   font-weight: normal;
 }
 
@@ -622,8 +605,8 @@ nav.v5-nav .wrap {
 
 .v5-vp__badge {
   display: inline-block;
-  background-color: #DBEAFE;
-  color: #1D4ED8;
+  background-color: rgb(223.8571428571, 232.7142857143, 252.1428571429);
+  color: rgb(29.3417857143, 88.1529906205, 217.1582142857);
   font-size: 0.6875rem;
   font-weight: 600;
   letter-spacing: 0.0625rem;
@@ -684,7 +667,7 @@ nav.v5-nav .wrap {
   background-color: #EFF6FF;
 }
 .v5-vp__card-icon--blue i {
-  color: #1D4ED8;
+  color: rgb(29.3417857143, 88.1529906205, 217.1582142857);
 }
 
 .v5-vp__card-icon--green {
@@ -766,8 +749,8 @@ nav.v5-nav .wrap {
 
 .v5-feat__badge {
   display: inline-block;
-  background-color: #DBEAFE;
-  color: #1D4ED8;
+  background-color: rgb(223.8571428571, 232.7142857143, 252.1428571429);
+  color: rgb(29.3417857143, 88.1529906205, 217.1582142857);
   font-size: 0.6875rem;
   font-weight: 600;
   letter-spacing: 0.0625rem;
@@ -916,8 +899,8 @@ nav.v5-nav .wrap {
 
 .v5-experience__badge {
   display: inline-block;
-  background-color: #DBEAFE;
-  color: #1D4ED8;
+  background-color: rgb(223.8571428571, 232.7142857143, 252.1428571429);
+  color: rgb(29.3417857143, 88.1529906205, 217.1582142857);
   font-size: 0.6875rem;
   font-weight: 600;
   letter-spacing: 0.0625rem;
@@ -1027,7 +1010,7 @@ nav.v5-nav .wrap {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background-color: #1D4ED8;
+  background-color: rgb(29.3417857143, 88.1529906205, 217.1582142857);
   color: #fff;
   font-size: 1rem;
   font-weight: 700;
@@ -1096,8 +1079,8 @@ nav.v5-nav .wrap {
 
 .v5-testimonials__badge {
   display: inline-block;
-  background-color: #DBEAFE;
-  color: #1D4ED8;
+  background-color: rgb(223.8571428571, 232.7142857143, 252.1428571429);
+  color: rgb(29.3417857143, 88.1529906205, 217.1582142857);
   font-size: 0.6875rem;
   font-weight: 600;
   letter-spacing: 0.0625rem;
@@ -1228,7 +1211,7 @@ nav.v5-nav .wrap {
 }
 
 .v5-footer {
-  background-color: #040A14;
+  background-color: rgb(5.7813953488, 10.511627907, 16.8186046512);
   padding: 2.5rem 0;
 }
 

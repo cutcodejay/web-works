@@ -1,0 +1,957 @@
+@charset "UTF-8";
+/* =============================================================== */
+/* Typography TW 繁體字型
+/* =============================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap");
+/* =============================================================== */
+/* Typography EN 英文字型
+/* =============================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+/* =============================================================== */
+/* Typography Number 數字,英文 字型
+/* =============================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Graduate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+/***************************************************************************/
+/*                              Color Style                                */
+/***************************************************************************/
+.success {
+  color: #198754;
+}
+
+.danger {
+  color: #dc3545;
+}
+
+.warning {
+  color: #ffc107;
+}
+
+.info {
+  color: #0dcaf0;
+}
+
+.bg--success {
+  background-color: #198754;
+}
+
+.bg--danger {
+  background-color: #dc3545;
+}
+
+.bg--warning {
+  background-color: #ffc107;
+}
+
+.bg--info {
+  background-color: #0dcaf0;
+}
+
+/* =============================================================== */
+/* Spacing Scale（間距尺度系統）
+/* =============================================================== */
+/***************************************************************************/
+/*                                 Typography                              */
+/***************************************************************************/
+.display-1 {
+  font-size: calc(1.625rem + 4.5vw);
+  font-weight: 300;
+  line-height: 1.25;
+}
+@media screen and (min-width: 1190px) {
+  .display-1 {
+    font-size: 5rem;
+  }
+}
+
+.display-2 {
+  font-size: calc(1.575rem + 3.9vw);
+  font-weight: 300;
+  line-height: 1.25;
+}
+@media screen and (min-width: 1190px) {
+  .display-2 {
+    font-size: 4.5rem;
+  }
+}
+
+.display-3 {
+  font-size: calc(1.525rem + 3.3vw);
+  font-weight: 300;
+  line-height: 1.25;
+}
+@media screen and (min-width: 1190px) {
+  .display-3 {
+    font-size: 4rem;
+  }
+}
+
+.display-4 {
+  font-size: calc(1.475rem + 2.7vw);
+  font-weight: 300;
+  line-height: 1.25;
+}
+@media screen and (min-width: 1190px) {
+  .display-4 {
+    font-size: 3.5rem;
+  }
+}
+
+.display-5 {
+  font-size: calc(1.425rem + 2.1vw);
+  font-weight: 300;
+  line-height: 1.25;
+}
+@media screen and (min-width: 1190px) {
+  .display-5 {
+    font-size: 3rem;
+  }
+}
+
+.display-6 {
+  font-size: calc(1.375rem + 1.5vw);
+  font-weight: 300;
+  line-height: 1.25;
+}
+@media screen and (min-width: 1190px) {
+  .display-6 {
+    font-size: 2.5rem;
+  }
+}
+
+body {
+  font-family: "Noto Sans TC", "Microsoft Jhenghei", "微軟正黑體", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: #6c757d;
+  -webkit-text-size-adjust: none;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Noto Serif TC", serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #6c757d;
+  margin-top: 0;
+}
+
+h1, .h1 {
+  font-size: calc(1.375rem + 1.5vw);
+  margin-bottom: 1.8125rem;
+}
+
+h2, .h2 {
+  font-size: calc(1.325rem + 0.9vw);
+  margin-bottom: 0.8125rem;
+}
+
+h3, .h3 {
+  font-size: calc(1.3rem + 0.6vw);
+  margin-bottom: 1rem;
+}
+
+h4, .h4 {
+  font-size: calc(1.275rem + 0.3vw);
+  margin-bottom: 1.3125rem;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+  margin-bottom: 0.375rem;
+}
+
+@media (min-width: 1200px) {
+  h1, .h1 {
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+  }
+  h2, .h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  h3, .h3 {
+    font-size: 1.75rem;
+    line-height: 2.625rem;
+  }
+  h4, .h4 {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+  h5, .h5 {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+  h6, .h6 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  h1, .h1 {
+    margin-bottom: 2.25rem;
+  }
+  h2, .h2 {
+    margin-bottom: 1.5rem;
+  }
+  h3, .h3 {
+    margin-bottom: 1.875rem;
+  }
+  h4, .h4 {
+    margin-bottom: 0.75rem;
+  }
+  h5, .h5 {
+    margin-bottom: 1.125rem;
+  }
+  h6, .h6 {
+    margin-bottom: 0rem;
+  }
+}
+p, li, th, td {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+}
+
+th, td {
+  line-height: 1.25rem;
+  margin-bottom: 0;
+}
+
+p.small {
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+}
+
+dl, ol, ul {
+  margin-bottom: 1.5rem;
+  line-height: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+p:last-child, li:last-child {
+  margin-bottom: 0;
+}
+
+.content {
+  margin: 0 auto;
+}
+
+.a04-nav {
+  background-color: #FAF8F5;
+  border-bottom: 0.0625rem solid rgba(201, 169, 110, 0.2);
+}
+
+.a04-nav__name {
+  font-family: "Noto Serif TC", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.375rem;
+  color: #1A1A1A;
+  text-decoration: none;
+}
+
+.a04-nav__links {
+  list-style: none;
+  margin-bottom: 0;
+  gap: 2rem;
+}
+
+.a04-nav__link {
+  text-decoration: none;
+  font-size: 0.875rem;
+  color: #6c757d;
+  letter-spacing: 0.0625rem;
+}
+.a04-nav__link:hover {
+  color: #C9A96E;
+}
+
+.a04-nav__right {
+  gap: 2rem;
+}
+
+.a04-nav__cta {
+  text-decoration: none;
+  font-size: 0.875rem;
+  color: #1A1A1A;
+  letter-spacing: 0.0625rem;
+  border-bottom: 0.0625rem solid #C9A96E;
+  padding-bottom: 0.25rem;
+}
+.a04-nav__cta:hover {
+  color: #C9A96E;
+}
+
+.a04-hero {
+  position: relative;
+  min-height: 700px;
+  overflow: hidden;
+}
+
+.a04-hero__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.a04-hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 8, 5, 0)), color-stop(60%, rgba(10, 8, 5, 0.8)));
+  background: linear-gradient(to bottom, rgba(10, 8, 5, 0) 0%, rgba(10, 8, 5, 0.8) 60%);
+}
+
+.a04-hero .wrap {
+  position: relative;
+  z-index: 2;
+  min-height: 700px;
+}
+
+.a04-hero__inner {
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 700px;
+  padding-bottom: 5rem;
+  position: relative;
+}
+
+.a04-hero__badge {
+  display: block;
+  font-size: 0.875rem;
+  letter-spacing: 0.25rem;
+  color: #C9A96E;
+  margin-bottom: 1rem;
+}
+
+.a04-hero__title {
+  font-size: 3.25rem;
+  font-family: "Noto Serif TC", serif;
+  font-weight: 700;
+  letter-spacing: 0.1875rem;
+  color: #fff;
+  line-height: 1.25;
+  margin-bottom: 1.5rem;
+}
+
+.a04-hero__desc {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+  max-width: 560px;
+  margin-bottom: 2rem;
+}
+
+.a04-hero__actions {
+  gap: 2rem;
+}
+
+.a04-hero__btn {
+  display: inline-block;
+  background-color: #C9A96E;
+  color: #1A1A1A;
+  text-decoration: none;
+  font-size: 0.875rem;
+  padding: 0.75rem 2.5rem;
+  letter-spacing: 0.0625rem;
+}
+.a04-hero__btn:hover {
+  background-color: rgb(189.9286432161, 151.367839196, 80.2713567839);
+}
+
+.a04-hero__hint {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.0625rem;
+}
+
+.a04-hero__watermark {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-family: "Noto Serif TC", serif;
+  font-weight: 300;
+  color: rgba(201, 169, 110, 0.15);
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  letter-spacing: 1rem;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          -ms-user-select: none;
+      user-select: none;
+}
+
+.a04-vp {
+  background-color: #1A1A1A;
+  padding: 6.25rem 5rem;
+}
+
+.a04-vp__inner {
+  gap: 5rem;
+}
+
+.a04-vp__text {
+  flex: 1;
+}
+
+.a04-vp__label {
+  font-size: 0.875rem;
+  letter-spacing: 0.25rem;
+  color: #C9A96E;
+  margin-bottom: 0.75rem;
+}
+
+.a04-vp__title {
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.a04-vp__rule {
+  width: 32px;
+  height: 2px;
+  background-color: #C9A96E;
+  margin-bottom: 1.5rem;
+}
+
+.a04-vp__desc {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.a04-vp__stats {
+  flex: 0 0 500px;
+  gap: 0.25rem;
+}
+
+.a04-vp__stat {
+  background-color: rgb(36.2, 36.2, 36.2);
+  padding: 2rem;
+  text-align: center;
+}
+
+.a04-vp__stat--highlight {
+  background-color: #C9A96E;
+}
+
+.a04-vp__num {
+  color: #C9A96E;
+  font-family: "Noto Serif TC", serif;
+  font-weight: 300;
+  line-height: 1.25;
+  margin-bottom: 0.5rem;
+}
+
+.a04-vp__stat--highlight .a04-vp__num {
+  color: #1A1A1A;
+}
+
+.a04-vp__stat-label {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 0;
+}
+
+.a04-vp__stat--highlight .a04-vp__stat-label {
+  color: rgba(26, 26, 26, 0.7);
+}
+
+.a04-feat {
+  background-color: #FAF8F5;
+  padding: 5rem 0;
+}
+
+.a04-feat__hdr {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.a04-feat__label {
+  font-size: 0.875rem;
+  letter-spacing: 0.25rem;
+  color: #C9A96E;
+  margin-bottom: 0.75rem;
+}
+
+.a04-feat__title {
+  color: #1A1A1A;
+  margin-bottom: 0;
+}
+
+.a04-feat__grid {
+  gap: 1.25rem;
+}
+
+.a04-feat__card {
+  flex: 1;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.a04-feat__img-wrap {
+  overflow: hidden;
+}
+
+.a04-feat__img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.a04-feat__body {
+  padding: 1.5rem;
+}
+
+.a04-feat__category {
+  font-size: 0.875rem;
+  color: #C9A96E;
+  letter-spacing: 0.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.a04-feat__name {
+  font-size: 1.25rem;
+  color: #1A1A1A;
+  margin-bottom: 0.75rem;
+}
+
+.a04-feat__desc {
+  font-size: 0.875rem;
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+.a04-gal {
+  background-color: #1A1A1A;
+}
+
+.a04-gal__hdr {
+  padding: 3.5rem 0;
+  text-align: center;
+}
+
+.a04-gal__label {
+  font-size: 0.875rem;
+  letter-spacing: 0.25rem;
+  color: #C9A96E;
+  margin-bottom: 0.75rem;
+}
+
+.a04-gal__title {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.a04-gal__inner {
+  height: 520px;
+  gap: 0.25rem;
+  overflow: hidden;
+}
+
+.a04-gal__main {
+  flex: 0 0 58%;
+  position: relative;
+  overflow: hidden;
+}
+
+.a04-gal__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.a04-gal__side {
+  flex: 1;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.a04-gal__thumb {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.a04-gal__thumb-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.a04-gal__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(26, 26, 26, 0.85)), to(transparent));
+  background: linear-gradient(to top, rgba(26, 26, 26, 0.85) 0%, transparent 100%);
+  font-size: 0.875rem;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.a04-tes {
+  background-color: #FAF8F5;
+  padding: 5rem 0;
+}
+
+.a04-tes__hdr {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.a04-tes__label {
+  font-size: 0.875rem;
+  letter-spacing: 0.25rem;
+  color: #C9A96E;
+  margin-bottom: 0.75rem;
+}
+
+.a04-tes__title {
+  color: #1A1A1A;
+  margin-bottom: 0;
+}
+
+.a04-tes__card {
+  background-color: #fff;
+  border: 1px solid rgba(201, 169, 110, 0.2);
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.a04-tes__quote-mark {
+  color: rgba(201, 169, 110, 0.12);
+  font-family: "Noto Serif TC", serif;
+  line-height: 1.25;
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  pointer-events: none;
+}
+
+.a04-tes__quote {
+  font-size: 1rem;
+  color: #495057;
+  line-height: 2;
+  font-style: normal;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.a04-tes__author {
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.a04-tes__author-bar {
+  width: 2px;
+  height: 40px;
+  background-color: #C9A96E;
+  flex-shrink: 0;
+}
+
+.a04-tes__name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1A1A1A;
+  margin-bottom: 0.25rem;
+}
+
+.a04-tes__role {
+  font-size: 0.875rem;
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+.a04-proc {
+  background-color: #F2EFE9;
+  padding: 5rem 0;
+}
+
+.a04-proc__hdr {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.a04-proc__label {
+  font-size: 0.875rem;
+  letter-spacing: 0.25rem;
+  color: #C9A96E;
+  margin-bottom: 0.75rem;
+}
+
+.a04-proc__title {
+  color: #1A1A1A;
+  margin-bottom: 0;
+}
+
+.a04-proc__steps {
+  gap: 0;
+}
+
+.a04-proc__step {
+  flex: 1;
+  flex-direction: column;
+  padding: 2rem;
+  border-right: 1px solid rgba(201, 169, 110, 0.3);
+}
+.a04-proc__step:last-child {
+  border-right: none;
+}
+
+.a04-proc__num {
+  font-size: 2.5rem;
+  font-family: "Noto Serif TC", serif;
+  font-weight: 300;
+  color: rgba(201, 169, 110, 0.3);
+  margin-bottom: 1rem;
+  line-height: 1.25;
+}
+
+.a04-proc__step-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1A1A1A;
+  margin-bottom: 0.75rem;
+}
+
+.a04-proc__step-desc {
+  font-size: 0.875rem;
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+.a04-cta {
+  position: relative;
+  background-image: url("../../images/AI/hero-bg-a04.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.a04-cta__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(10, 8, 5, 0.8);
+}
+
+.a04-cta .wrap {
+  position: relative;
+  z-index: 2;
+}
+
+.a04-cta__content {
+  flex-direction: column;
+  text-align: center;
+  padding: 7.5rem 0;
+}
+
+.a04-cta__label {
+  font-size: 0.875rem;
+  letter-spacing: 0.25rem;
+  color: #C9A96E;
+  margin-bottom: 1rem;
+}
+
+.a04-cta__title {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.a04-cta__sub {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2.5rem;
+}
+
+.a04-cta__btn {
+  display: inline-block;
+  background-color: #C9A96E;
+  color: #1A1A1A;
+  text-decoration: none;
+  font-size: 0.875rem;
+  padding: 0.75rem 2.5rem;
+  letter-spacing: 0.0625rem;
+}
+.a04-cta__btn:hover {
+  background-color: rgb(189.9286432161, 151.367839196, 80.2713567839);
+}
+
+.a04-ftr {
+  background-color: #0D0B08;
+  padding: 3rem 0;
+}
+
+.a04-ftr__top {
+  margin-bottom: 2rem;
+}
+
+.a04-ftr__name {
+  font-family: "Noto Serif TC", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #C9A96E;
+  letter-spacing: 0.375rem;
+}
+
+.a04-ftr__watermark {
+  font-family: "Noto Serif TC", serif;
+  font-size: 1.75rem;
+  font-weight: 300;
+  color: rgba(201, 169, 110, 0.1);
+  letter-spacing: 0.5rem;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          -ms-user-select: none;
+      user-select: none;
+}
+
+.a04-ftr__copy {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 0.5rem;
+}
+
+.a04-ftr__contact {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 576px) and (max-width: 1190px) {
+  .a04-vp {
+    padding: 3.5rem 3rem;
+  }
+  .a04-vp__inner {
+    flex-direction: column;
+  }
+  .a04-vp__stats {
+    flex: none;
+    width: 100%;
+  }
+  .a04-hero__watermark {
+    display: none;
+  }
+  .a04-gal__side {
+    flex-direction: column;
+  }
+  .a04-proc__step {
+    padding: 1.5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .a04-nav__links {
+    display: none;
+  }
+  .a04-hero {
+    min-height: 560px;
+  }
+  .a04-hero .wrap {
+    min-height: 560px;
+  }
+  .a04-hero__inner {
+    min-height: 560px;
+    padding-bottom: 3rem;
+  }
+  .a04-hero__title {
+    font-size: 2.5rem;
+  }
+  .a04-hero__watermark {
+    display: none;
+  }
+  .a04-vp {
+    padding: 3rem 1.5rem;
+  }
+  .a04-vp__inner {
+    flex-direction: column;
+  }
+  .a04-vp__stats {
+    flex: none;
+    width: 100%;
+  }
+  .a04-gal__inner {
+    flex-direction: column;
+    height: auto;
+    gap: 0.25rem;
+  }
+  .a04-gal__main {
+    flex: none;
+    height: 280px;
+  }
+  .a04-gal__side {
+    flex-direction: row;
+    height: 200px;
+  }
+  .a04-gal__thumb {
+    flex: 1;
+  }
+  .a04-feat__grid {
+    flex-wrap: wrap;
+  }
+  .a04-feat__card {
+    flex: 0 0 calc(50% - 0.75rem);
+  }
+  .a04-proc__steps {
+    flex-wrap: wrap;
+  }
+  .a04-proc__step {
+    flex: 0 0 calc(50% - 1rem);
+    border-right: none;
+    border-bottom: 1px solid rgba(201, 169, 110, 0.3);
+  }
+  .a04-proc__step:last-child {
+    border-bottom: none;
+  }
+  .a04-cta__content {
+    padding: 4.5rem 0;
+  }
+}

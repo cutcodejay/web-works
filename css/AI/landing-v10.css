@@ -26,12 +26,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Graduate&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
-/* =============================================================== */
-/* Spacing Scale（間距尺度系統）
-/* =============================================================== */
-/***************************************************************************/
-/*                                 Typography                              */
-/***************************************************************************/
 /***************************************************************************/
 /*                              Color Style                                */
 /***************************************************************************/
@@ -67,6 +61,12 @@
   background-color: #0dcaf0;
 }
 
+/* =============================================================== */
+/* Spacing Scale（間距尺度系統）
+/* =============================================================== */
+/***************************************************************************/
+/*                                 Typography                              */
+/***************************************************************************/
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
   font-weight: 300;
@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Noto Serif TC", serif;
   font-weight: 600;
   letter-spacing: 0.5px;
-  color: #495057;
+  color: #6c757d;
   margin-top: 0;
 }
 
@@ -272,7 +272,7 @@ p:last-child, li:last-child {
   font-family: "Cormorant Garamond", "Noto Sans TC", serif;
   font-weight: 600;
   margin-bottom: 0;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .v10-btn-primary {
@@ -331,7 +331,7 @@ p:last-child, li:last-child {
 }
 .v10-btn-login:hover {
   background-color: #2A2A2A;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .v10-btn-cta-sm {
@@ -401,10 +401,6 @@ p:last-child, li:last-child {
   z-index: 100;
 }
 
-.v10-nav__inner {
-  padding: 1rem 0;
-}
-
 .v10-nav__logo {
   width: 24px;
   height: 24px;
@@ -417,7 +413,7 @@ p:last-child, li:last-child {
   font-family: "Cormorant Garamond", serif;
   font-size: 1rem;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #fff;
   letter-spacing: 0.1875rem;
 }
 
@@ -431,6 +427,7 @@ p:last-child, li:last-child {
   padding: 0;
   gap: 2.5rem;
 }
+
 .v10-nav__links li {
   margin-bottom: 0;
 }
@@ -442,7 +439,7 @@ p:last-child, li:last-child {
   text-decoration: none;
 }
 .v10-nav__link:hover {
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .v10-nav__actions {
@@ -612,7 +609,7 @@ p:last-child, li:last-child {
 }
 
 .v10-vp__card {
-  background-color: #141414;
+  background-color: rgb(20.2, 20.2, 20.2);
   border: 0.0625rem solid #2A2A2A;
   flex: 1;
   display: flex;
@@ -1000,7 +997,7 @@ p:last-child, li:last-child {
   font-family: "Cormorant Garamond", serif;
   font-size: 1.25rem;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #fff;
   line-height: 1.8;
   margin-bottom: 0;
 }
@@ -1028,7 +1025,7 @@ p:last-child, li:last-child {
   font-family: "Inter", "Noto Sans TC", sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .v10-testimonials__role {
@@ -1121,7 +1118,7 @@ p:last-child, li:last-child {
   text-decoration: none;
 }
 .v10-footer__link:hover {
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .v10-footer__divider {
