@@ -2570,7 +2570,16 @@ footer.footer address svg path {
 footer.footer address a {
   color: #fff;
 }
-footer.footer p, footer.footer .copyright_box {
+footer.footer nav.footer__nav {
+  margin: 1rem 0;
+}
+footer.footer nav.footer__nav ul.footer__nav-list {
+  margin-bottom: 0;
+}
+footer.footer nav.footer__nav ul.footer__nav-list a {
+  color: #fff;
+}
+footer.footer p {
   color: #fff;
 }
 @media screen and (min-width: 576px) and (max-width: 1190px) {
@@ -2599,9 +2608,9 @@ footer.footer p, footer.footer .copyright_box {
 }
 
 .copyright_box {
-  padding: 5px 10px;
+  margin: 0 0 1rem 0;
   text-align: center;
-  color: #495057;
+  color: #fff;
 }
 
 #D1:before, #D2:before, #D3:before, #D4:before {
@@ -3579,6 +3588,38 @@ section.Note ul li {
 }
 @media screen and (max-width: 576px) {
   section.Note {
+    width: 90%;
+  }
+}
+
+/* =============================================================== */
+/* AI Certificate AI 證書
+/* =============================================================== */
+.certificateContent {
+  width: 1200px;
+  margin: 0 auto 2rem;
+}
+.certificateContent h4 {
+  color: #fff;
+}
+.certificateContent a {
+  padding-bottom: 0.5rem;
+  display: block;
+  text-align: center;
+  color: #154D71;
+  background-color: #fff;
+  text-decoration: none;
+}
+.certificateContent a img {
+  width: 100%;
+}
+@media screen and (min-width: 576px) and (max-width: 1190px) {
+  .certificateContent {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .certificateContent {
     width: 90%;
   }
 }
